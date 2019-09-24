@@ -1,0 +1,118 @@
+
+    @import url('https://fonts.googleapis.com/css?family=Allura|Architects+Daughter|Bad+Script|Bilbo+Swash+Caps|Covered+By+Your+Grace|Gruppo|Happy+Monkey|Julius+Sans+One|Love+Ya+Like+A+Sister|Metrophobic|Rock+Salt|Sansita|Shadows+Into+Light+Two|Spectral+SC|Walter+Turncoat&display=swap');
+
+body {
+  background-color: grey;
+  background-size: 250%;
+}
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #d8d8d8;
+  border: 2px black solid;
+  border-radius: 20px;
+  box-shadow: 20px 20px 20px #403E49;
+  right: 30px;
+  top: 30px;
+}
+.header {
+ background-color: #403E49; 
+  background: linear-gradient(300deg, #537895 0%, #09203f 55%, #537895 75%);
+ text-align: center;
+ font-family: 'Gruppo', cursive, sans-serif;
+    font-size: 3em;
+    color: white;
+    border-bottom: 2px black solid;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  border-radius: 20px;
+  box-shadow: 20px 20px 20px #403E49;
+  right: 30px;
+  top: 30px;
+  }
+
+#profile-pic {
+  width: 150px;
+  float: right;
+  margin-top: -50px;
+  position: relative;
+  border: 2px black solid;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #403E49;
+  right: 10px;
+  top: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gruppo', cursive, sans-serif;
+  font-size: 2.25em;
+  line-height: 1.1em;
+  color: black;
+  text-align: center;
+  padding: 10px;
+}    
+p {
+  font-family: 'Architects Daughter', Helvetica, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: white;
+  padding: 10px;
+}
+
+.hspec {
+  text-align: left;
+  padding-left: 1em;
+  border-bottom: 2px black solid;
+}
+
+.pspec {
+  text-align: left;
+  background-color: #d8d8d8;
+  margin-top: 1em;
+}
+
+nav li {
+  font-family: 'Metrophobic', Geneva, sans-serif;
+  padding: .2em;
+  font-size: 1.5em;
+  margin-left: 3em;
+
+}
+nav ul {
+margin: 0;
+}
+
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #403E49; 
+  background: linear-gradient(300deg, #537895 0%, #09203f 55%, #537895 75%);
+  border-top: 2px solid black;
+  border-radius: 20px;
+}
+
+#info {
+  font-family: 'Happy Monkey', Geneva, sans-serif;
+  font-size: 14px;
+  color: white;
+ text-align: center;
+}
+#info2 {
+  font-family: 'Happy Monkey', Geneva, sans-serif;
+  font-size: 14px;
+  color: pink;
+ text-align: center;
+ margin-top: 0em;
+}
+
+.link {
+  color: white;
+}
+
+.pink {
+  color: #e639a1;
+}
