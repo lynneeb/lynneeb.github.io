@@ -1,5 +1,4 @@
 
-    @import url('https://fonts.googleapis.com/css?family=Allura|Architects+Daughter|Bad+Script|Bilbo+Swash+Caps|Covered+By+Your+Grace|Gruppo|Happy+Monkey|Julius+Sans+One|Love+Ya+Like+A+Sister|Metrophobic|Rock+Salt|Sansita|Shadows+Into+Light+Two|Spectral+SC|Walter+Turncoat&display=swap');
 
 body {
   background-color: grey;
@@ -44,7 +43,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Rokkitt', serif;
+ font-family: 'Lobster', cursive;
   font-size: 2.25em;
   line-height: 1.1em;
   color: black;
