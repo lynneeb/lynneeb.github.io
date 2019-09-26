@@ -18,7 +18,7 @@ body {
  background-color: #403E49; 
   background: linear-gradient(300deg, #537895 0%, #09203f 55%, #537895 75%);
  text-align: center;
- font-family: 'Metrophobic', sans-serif;
+ font-family: 'Roboto', sans-serif;
     font-size: 3em;
     color: white;
     border-bottom: 2px black solid;
@@ -43,7 +43,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
- font-family: 'Metrophobic', sans-serif;
+ font-family: 'Roboto', sans-serif;
   font-size: 2.25em;
   line-height: 1.1em;
   color: black;
