@@ -1,10 +1,26 @@
 @media only screen and (min-width: 32.5em) {
-h1 {
+    h1 {
     font-family: 'Roboto', sans-serif;
      font-size: 2.5rem;
-   }    
-   h2 {
+    }    
+    h2 {
      font-size: 1.5rem;
      margin-bottom: 0.5rem;
-   }
+    }
+    header, footer {
+    border-radius: 20px;
+    }
+    #content {
+    border-radius: 20px;
+    }
+    #profile-pic {
+        float: right;
+        margin-top: -50px;
+        position: relative;
+        border: 2px black solid;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px #403E49;
+        right: 10px;
+        top: 10px;
+      }
 }
