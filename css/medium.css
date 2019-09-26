@@ -16,7 +16,7 @@
     #profile-pic {
         float: right;
         margin-top: -50px;
-        position: relative;
+        /* position: relative; */
         border: 2px black solid;
         border-radius: 5px;
         box-shadow: 5px 5px 5px #403E49;
