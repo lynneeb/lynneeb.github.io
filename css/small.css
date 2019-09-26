@@ -22,8 +22,8 @@ body {
     font-size: 3em;
     color: white;
     border-bottom: 2px black solid;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   border-radius: 20px;
   box-shadow: 20px 20px 20px #403E49;
   right: 30px;
@@ -42,24 +42,25 @@ body {
   top: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
  font-family: 'Roboto', sans-serif;
-  font-size: 2.25em;
-  line-height: 1.1em;
-  color: black;
-  text-align: center;
-  padding: 10px;
+  font-size: 1.5rem;
+  margin: 0.15rem;
 }    
+h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
 p {
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   color: white;
   padding: 10px;
 }
 
 .hspec {
   text-align: left;
-  padding-left: 1em;
+  padding-left: 1rem;
   border-bottom: 2px black solid;
 }
 
@@ -70,9 +71,9 @@ p {
 }
 
 nav li {
-  padding: .2em;
-  font-size: 1.5em;
-  margin-left: 3em;
+  padding: .2rem;
+  font-size: 1.5rem;
+  margin-left: 3rem;
 
 }
 nav ul {
