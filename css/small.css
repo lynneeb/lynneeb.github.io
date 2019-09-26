@@ -4,7 +4,7 @@ body {
   background-color: grey;
   background-size: 250%;
 }
-/* #content {
+#content {
   max-width: 960px;
   margin: 0 auto;
   background-color: #d8d8d8;
@@ -13,7 +13,7 @@ body {
   box-shadow: 20px 20px 20px #403E49;
   right: 30px;
   top: 30px;
-} */
+}
 .header {
  background-color: #403E49; 
   background: linear-gradient(300deg, #537895 0%, #09203f 55%, #537895 75%);
