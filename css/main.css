@@ -19,6 +19,7 @@ body {
   background: linear-gradient(300deg, #537895 0%, #09203f 55%, #537895 75%);
  text-align: center;
  font-family: 'Oleo Script', cursive;
+ /* font-family: 'Oleo Script', cursive; */
     font-size: 3em;
     color: white;
     border-bottom: 2px black solid;
