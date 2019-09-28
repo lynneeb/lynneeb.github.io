@@ -39,8 +39,7 @@ h1 {
   margin: 0.15rem;
 }    
 h2 {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
+  padding-bottom: 0.8rem;
 }
 p {
   font-size: 1.5rem;
@@ -55,22 +54,12 @@ p {
   border-bottom: 2px black solid;
 }
 
-.pspec {
-  text-align: left;
-  background-color: #d8d8d8;
-  margin-top: 1em;
-}
-
-nav li {
-  padding: .2rem;
-  font-size: 1.5rem;
+nav ul li {
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
   margin-left: 3rem;
 
 }
-nav ul {
-margin: 0;
-}
-
 
 footer {
   display: flex;
@@ -86,7 +75,7 @@ footer {
 #info {
   font-size: 14px;
   color: white;
- text-align: center;
+  text-align: center;
 }
  
 .link {
