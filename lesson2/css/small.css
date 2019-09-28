@@ -1,17 +1,10 @@
 /****** small or phone view (same as main.css) ***********/
-/* font-family: 'Baloo Chettan', cursive; */
-/* font-family: 'Raleway', sans-serif; */
-
-         /*** the * means to apply these styles to all elements ***/
-    /* box-sizing: border-box; */
-   
 
 body {
     margin: 0;
     padding: 0;
     line-height: 1rem;
     background-color: #565e6b;
-    /* font-size: 16px; */
 }
 
 #content {
@@ -28,15 +21,14 @@ header {
     background-color: #5e8591;
     text-align: center;
     color: #f1f2d0;
-    border-top: 4px solid black;
+    border-top: 1px solid black;
     border-bottom: 4px solid black;
-
 }
 
 h1 {
     font-family: 'Baloo Chettan', cursive;
     font-size: 1.5rem;
-    text-shadow: rgba(0, 87, 25, .75) 3px 3px 3px
+    text-shadow: rgba(17, 17, 19, 0.75) 3px 3px 3px
 }
 
 main {
@@ -49,9 +41,10 @@ h2 {
 }
 
 p {
+    font-family: 'Raleway', sans-serif;
     padding: 1rem;
     font-size: 1rem;
-    font-family: 'Raleway', sans-serif;
+    line-height: 1.2rem;
 	color: #f1f2d0;
 }
 
@@ -66,34 +59,73 @@ main section {
     padding: 0rem;
 	background-color: grey;
 }
-section:nth-child(2) {
-	display: none;
+
+.column {
+    background-position: 100%;
+    border-radius: 25px;
+    border: 5px black solid;
+    box-shadow: 10px 10px 10px #403E49;
 }
 
-.title {
+.c1 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5rem;
+    color: white;
     text-align: center;
-    font-family: 'Baloo Chettan', cursive;
-    color: black;
+    background-color: rgb(134, 16, 105);
+    margin-top: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: .5rem;
+    padding-bottom: .6rem;
+    margin-bottom: 0rem;
+    border-bottom: 3px black solid;
+}
+
+.c2 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5rem;
+    color: white;
+    text-align: center;
+    background-color: rgb(26, 134, 16);
+    margin-top: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: .5rem;
+    padding-bottom: .6rem;
+    margin-bottom: 0rem;
+    border-bottom: 3px black solid;
+}
+
+.c3 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5rem;
+    color: white;
+    text-align: center;
+    background-color: rgb(13, 2, 112);
+    margin-top: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: .5rem;
+    padding-bottom: .6rem;
+    margin-bottom: 0rem;
+    border-bottom: 3px black solid;
 }
 
 .business {
-    margin-left: 1rem;
-    font-family: 'Raleway', sans-serif;
     color: white;
 }
 
 main picture {
     display: block;
+    padding-top: 0px;
 }
 
 main section picture img {
     height: auto;
     width: 100%;
-    vertical-align: middle;
-}
-
-img {
-	box-shadow: 0 0 30px #333;
+    vertical-align: center;
+    border-bottom: 3px black solid;
 }
 
 footer {
@@ -102,8 +134,7 @@ footer {
     padding: .5rem;
     color: white;
     border-top: 4px solid black;
-    border-bottom: 4px solid black;
-
+    border-bottom: 1px solid black;
 }
 
 #info {

@@ -1,6 +1,7 @@
-/* 2 columns for medium sized screens */
+/* 2 columns for medium sized screens (600px is 37.5em)*/
 
 @media only screen and (min-width: 37.5em) {
+
 main {
     grid-template-columns: 1fr 1fr;
 }   /* view changed to 2 fractional columns*/
@@ -17,9 +18,9 @@ main picture {
 
 }
 
-/* header img {
+header img {
     width: 100px;
-} */
+}
 
 h1 {
     font-size: 1.5rem;
