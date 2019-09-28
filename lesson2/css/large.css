@@ -1,0 +1,26 @@
+/* 3 columns for large sized screens */
+
+@media only screen and (min-width: 60em) {
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }   /* view changed to 3 fractional columns*/
+    
+    section:nth-child(3) {
+		grid-column: span 1;
+	}
+
+    /* header img {
+        width: 150px;
+    } */
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .headertitle {
+        margin-left: 4rem;
+    }
+    
+
+}

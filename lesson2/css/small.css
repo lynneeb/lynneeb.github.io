@@ -1,0 +1,137 @@
+/****** small or phone view (same as main.css) ***********/
+/* font-family: 'Baloo Chettan', cursive; */
+/* font-family: 'Raleway', sans-serif; */
+
+ * {         /*** the * means to apply these styles to all elements ***/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#content {
+	max-width: 767px;
+    margin: 0 auto;
+    background-color: #d8d8d8;
+    border: 2px black solid;
+    box-shadow: 20px 20px 20px #403E49;
+    right: 30px;
+    top: 30px;
+}
+
+/* header {
+    background-color: #403E49; 
+     background: linear-gradient(300deg, #537895 0%, #09203f 55%, #537895 75%);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+       font-size: 3em;
+       color: white;
+       border-bottom: 2px black solid;
+       padding: 1rem;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+     box-shadow: 20px 20px 20px #403E49;
+     right: 30px;
+     top: 30px;
+}  */
+   
+
+header {
+    background-color: #5e8591;
+    text-align: center;
+    padding: .5rem;
+    color: #f1f2d0;
+}
+
+/* header img {
+    display: inline-block;
+    width: 75px;
+    height: auto;
+    vertical-align: middle;
+} */
+
+
+/* .headertitle {
+    margin-left: .5rem; 
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}   */
+
+h1 {
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 1.5rem;
+    text-shadow: rgba(0, 87, 25, .75) 3px 3px 3px
+}
+
+main {
+	max-width: 767px;
+	margin: 0 auto;  /*important to center*/
+}
+h2 {
+    font-family: 'Baloo Chettan', cursive;
+	color: black;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+main section {
+	margin: 0.5rem;
+	border: 2px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+}
+section:nth-child(2) {
+	display: none;
+	margin: 0.5rem;
+}
+
+main picture {
+    display: block;
+    padding: 0.5rem;
+    
+}
+main section picture img {
+	height: auto;
+    border: 1px solid #bbb;
+    width: 75px;
+    vertical-align: middle;
+}
+
+img {
+	box-shadow: 0 0 30px #333;
+}
+
+footer {
+	max-width: 767px;
+    background-color: #5e8591;
+    text-align: center;
+    padding: .5rem;
+    color: white;
+}
+
+
+/* footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #403E49; 
+    background: linear-gradient(300deg, #537895 0%, #09203f 55%, #537895 75%);
+    border-top: 2px solid black;
+  } */
+
+  .link {
+    color: white;
+  }
+  
