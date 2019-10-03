@@ -1,0 +1,152 @@
+/****** small or phone view (same as main.css) ***********/
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+    background-color: #565e6b;
+}
+
+#content {
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #6f9777;
+    border: 4px black solid;
+    box-shadow: 20px 20px 20px #403E49;
+    right: 30px;
+    top: 30px;
+  }
+
+header {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #403E49; 
+    background: linear-gradient(300deg, #537895 0%, #09203f 55%, #537895 75%);
+    text-align: center;
+    line-height: 1.8rem;
+    font-family: 'Baloo Chettan', cursive;
+    color: white;
+    border-bottom: 2px black solid;
+    box-shadow: 20px 20px 20px #403E49;
+    right: 30px;
+    top: 30px;
+}
+.subhead {
+    color: white;
+}
+
+header {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header,
+nav,
+main,
+footer {
+	/* max-width: 767px; */
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+h2 {
+    color: #536878;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.8rem;
+}
+
+nav {
+	background-color: #36454f;
+	text-align: center;
+    box-shadow: 0 2px 15px gray;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav li a {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+nav a:hover {
+	background-color: #bbb;
+	color: #36454f;
+}
+nav a:active {
+	color: rgb(255, 6, 180);
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+main article {
+    margin: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    border: 4px solid rgb(73, 71, 71);
+	padding: 0 1rem;
+    background-color: #eee;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px #403E49;
+    right: 30px;
+    top: 30px;
+}
+main picture {
+	display: none;
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+	padding: 10px;
+    border-top: 4px solid black;
+    background-color: #403E49; 
+    background: linear-gradient(300deg, #537895 0%, #09203f 55%, #537895 75%);
+    text-align: center;
+    line-height: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    box-shadow: 20px 20px 20px #403E49;
+    right: 30px;
+    top: 30px;
+}
+
+#info {
+    color: white;
+    font-size: 1rem;
+}
+
+  .link {
+    color: white;
+  }
+
+  .date {
+    color: black;
+    font-family: 'Baloo Chettan', cursive;
+
+  }

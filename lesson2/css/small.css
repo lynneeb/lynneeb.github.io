@@ -28,6 +28,7 @@ header {
 h1 {
     font-family: 'Baloo Chettan', cursive;
     font-size: 1.5rem;
+    line-height: 1.8rem;
     text-shadow: rgba(17, 17, 19, 0.75) 3px 3px 3px
 }
 
