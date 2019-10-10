@@ -30,3 +30,4 @@ const monthName = months[d.getMonth()];
 const year = d.getFullYear();
 const fulldate = dayName + ", " + d.getDate() + " " + monthName + " " + year;
 document.getElementById("currentdate").textContent = fulldate;
+// document.getElementById("currentdate").textContent = fulldate;
