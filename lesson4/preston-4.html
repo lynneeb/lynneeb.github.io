@@ -28,7 +28,7 @@
 
 <!-- see codePen - Responsive 'Hamburger Menu' -->
     <nav>
-            <ul class="navigation">
+            <ul class="navigation responsive">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -50,12 +50,14 @@
     </main>
     <footer> 
         <div id="info">&copy; <span id="currentYear"></span> Forcast For Fun | Attributions | Lynnette Beatty<br> 
-            <!-- <span class="date"><span id="currentDate"></span></span></div> -->
+            <span class="date"><span id="currentDate"></span></span>
+        </div>
     </footer>
 
           <script src="js/currentYear.js"></script>
-          <!-- <script src="js/currentDate.js"></script> -->
+          <script src="js/currentDate.js"></script>
           <script src="js/toggleMenu.js"></script>
-        </div>
+          <script id="rendered-js" src="js/toggleMenu.js"></script>
+    </div>
 </body>
 </html>
