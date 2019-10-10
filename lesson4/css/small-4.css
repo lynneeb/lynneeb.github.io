@@ -46,7 +46,7 @@ header,
 nav,
 main,
 footer {
-	max-width: 760px;
+    max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -60,7 +60,6 @@ footer {
 /* see codePen - Responsive 'Hamburger Menu' */
 nav {
     margin: 0 auto;
-	max-width: 760px;
 	background-color: #BC986A;
 }
 .navigation {
@@ -86,15 +85,15 @@ nav {
 	background-color: #fff;
 	font-weight: 700;
 }
+.active {
+    color: #659DBD;
+}
 
 /* the onclick JS toggles the .repsonsive class from display none (.navigation li) 
 to display block because the repsonsive class is added to the end of the class list 
 like this in HTML Line #6.
   <ul class="navigation responsive">
   */
-/* .navigation li {
-	display: block;
-} */
 .responsive li {
 	display: block;
 }
@@ -103,10 +102,11 @@ like this in HTML Line #6.
 
 .contentbox {
     display: block;
+    max-width: 760px;
     margin: 10px auto;
     border: 1px dashed #000; 
     padding: 15px;
-    background-color: #8D8741;
+	background-color: #BC986A;
     color: black;
     font-style: italic;
 }

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forecast For Fun</title>
-    <meta name="Preston Idaho - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho" content="Lynnette Beatty Weather Site Plan">
+    <meta name="Preston Town Page - Preston, Idaho - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho" content="Lynnette Beatty Preston Town Page">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Chettan%7cRaleway&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small-4.css">
@@ -28,7 +28,7 @@
 
 <!-- see codePen - Responsive 'Hamburger Menu' -->
     <nav>
-            <ul class="navigation responsive">
+            <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -49,15 +49,14 @@
            
     </main>
     <footer> 
-        <div id="info">&copy; <span id="currentYear"></span> Forcast For Fun | Attributions | Lynnette Beatty<br> 
-            <span class="date"><span id="currentDate"></span></span>
+        <div id="info">&copy; <span id="currentyear"></span> Forcast For Fun | Attributions | Lynnette Beatty<br> 
+            <span class="date">Current Date: <span id="currentdate"></span></span>
         </div>
     </footer>
 
-          <script src="js/currentYear.js"></script>
-          <script src="js/currentDate.js"></script>
+          <script src="js/currentyear.js"></script>
+          <script src="js/currentdate.js"></script>
           <script src="js/toggleMenu.js"></script>
-          <script id="rendered-js" src="js/toggleMenu.js"></script>
     </div>
 </body>
 </html>

@@ -1,3 +1,3 @@
 var currentYear = new Date().getFullYear();
 
-document.getElementById('currentYear').textContent = currentYear;
+document.getElementById('currentyear').textContent = currentYear;
