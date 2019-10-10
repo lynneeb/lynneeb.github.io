@@ -58,11 +58,9 @@ footer {
 }
 
 /* see codePen - Responsive 'Hamburger Menu' */
-nav {
+.navigation {
     margin: 0 auto;
 	background-color: #BC986A;
-}
-.navigation {
 	list-style: none;
 	text-align: center;
 	padding: 0;
