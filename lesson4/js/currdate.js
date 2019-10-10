@@ -1,5 +1,5 @@
 // The footer must display the current date using JavaScript 
-// in the following format: Wednesday, 24 July 2020
+// in this format Wednesday, 24 July 2020
 
 const daynames = [
 	"Sunday",
@@ -30,4 +30,3 @@ const monthName = months[d.getMonth()];
 const year = d.getFullYear();
 const fulldate = dayName + ", " + d.getDate() + " " + monthName + " " + year;
 document.getElementById("currentdate").textContent = fulldate;
-// document.getElementById("currentdate").textContent = fulldate;
