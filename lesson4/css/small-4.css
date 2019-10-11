@@ -78,7 +78,7 @@ header img {
 	font-weight: 700;
 }
 .active {
-    color: #659DBD;
+    background-color: #8D8741;
 }
 
 /* the onclick JS toggles the .repsonsive class from display none (.navigation li) 
@@ -130,6 +130,5 @@ footer {
   }
 
 .date {
-    color: black;
-    font-family: 'Baloo Chettan', cursive;
+    color: white;
   }
