@@ -3,7 +3,6 @@ body {
     padding: 0;
     margin: 0;
 }
-/* see codePen - Header using Flexbox */
 header {
     max-width: 100%;
 	margin: 0 auto;
@@ -39,7 +38,6 @@ header img {
     font-size: 1rem;
     font-weight: bold;
 }
-/* ******************************* */
 .content {
     min-height: 100%;
 }
@@ -51,7 +49,6 @@ header img {
     line-height: 1.8rem;
 }
 
-/* see codePen - Responsive 'Hamburger Menu' */
 .navigation {
     max-width: 100%;
     margin: 0 auto;
