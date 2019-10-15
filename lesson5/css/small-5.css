@@ -1,0 +1,216 @@
+body {
+    background-color: #FBEEC1;
+    padding: 0;
+    margin: 0;
+}
+header {
+    max-width: 100%;
+	margin: 0 auto;
+    background-color: #659DBD; 
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+	font-size: 1.6rem;
+	margin: 0 0 0 17px;
+    color: white;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+.m {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: black;
+	margin-left: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.content {
+    min-height: 100%;
+}
+
+.subhead {
+    text-align: center;
+    color: #536878;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.8rem;
+}
+
+.navigation {
+    max-width: 100%;
+    margin: 0 auto;
+	background-color: #BC986A;
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: black;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation a:hover {
+	color:#BC986A;
+	background-color: #fff;
+	font-weight: 700;
+}
+.active {
+    background-color: #8D8741;
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) 
+to display block because the repsonsive class is added to the end of the class list 
+like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
+}
+
+/* *********************************** */
+
+
+/* Start Breadcrumbs */
+.breadcrumbs { 
+    font-size: .85em; 
+    color: #ccc; 
+    line-height: 1.5; 
+    margin: 18px; 
+    padding-left: 0;
+}
+  .bc { 
+      display: inline; 
+    list-style-type: none; 
+    margin-left: 0; 
+    }
+
+  .bc:before { 
+      content: "|"; 
+      font-weight: bolder;
+      color: black;
+      padding-right: 3px; 
+    }
+
+  .bc:first-child:before { 
+      content: ""; 
+      padding-right: 0; 
+    }
+
+
+/* End Breadcrumbs */
+/* ***************************************** */
+
+.newsbanner {
+    position: fixed;
+    display: block;
+    max-width: 400px;
+    margin: 0 0;
+    border: 1px solid #000; 
+    padding: 10px;
+	background-color: rgba(255, 20, 145, 0.4);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.newsbanneroff {
+    display: none;
+}
+
+
+.contentbox {
+    display: block;
+    max-width: 960px;
+    margin: 10px auto;
+    border: 1px dashed #000; 
+    padding: 10px;
+	background-color: #BC986A;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+h2 {
+    text-align: center;
+}
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    max-width: 960px;
+    height: 250px;
+}
+.hero-ph {
+    position: absolute;
+    background-color: #eee;
+    border: 1px solid #333;
+    width: auto;
+    height: 250px;
+}
+.weathersummary {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    display: grid;
+    background-image: radial-gradient(ellipse, white, transparent 70%);
+    background-color: rgba(10, 36, 169, 0.5);
+    border: 1px solid blue;
+    /* background-color: rgba(13, 226, 13, 0.36); */
+    /* border: 1px solid green; */
+    padding: .5rem;
+    box-shadow: 0 0 30px #777;
+}
+
+.label {
+    text-align: right justify;
+}
+
+footer {
+    max-width: 760px;
+	margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+	padding: 10px;
+    background-color: #659DBD; 
+    text-align: center;
+    line-height: 1rem;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+#info {
+    color: white;
+    font-size: .9rem;
+}
+
+.link {
+    color: white;
+  }
+
+.date {
+    color: white;
+  }
