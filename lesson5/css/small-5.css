@@ -94,7 +94,7 @@ like this in HTML Line #6.
 
 
 /* Start Breadcrumbs */
-.breadcrumbs { 
+/* .breadcrumbs { 
     font-size: .85em; 
     color: #ccc; 
     line-height: 1.5; 
@@ -117,8 +117,7 @@ like this in HTML Line #6.
   .bc:first-child:before { 
       content: ""; 
       padding-right: 0; 
-    }
-
+    }    */
 
 /* End Breadcrumbs */
 /* ***************************************** */
@@ -140,7 +139,6 @@ like this in HTML Line #6.
     display: none;
 }
 
-
 .contentbox {
     display: block;
     max-width: 960px;
@@ -157,17 +155,17 @@ h2 {
     text-align: center;
 }
 .herodiv {
-    margin: 10px auto;
+    margin: 1rem auto;
     position: relative;
-    max-width: 960px;
-    height: 250px;
+    max-width: 60rem;
+    height: 15rem;
 }
 .hero-ph {
-    position: absolute;
+    position: relative;
     background-color: #eee;
     border: 1px solid #333;
-    width: auto;
-    height: 250px;
+    width: 60rem;
+    height: auto;
 }
 .weathersummary {
     position: absolute;
@@ -186,7 +184,60 @@ h2 {
 .label {
     text-align: right justify;
 }
+.article {
+    display: block;
+    max-width: 960px;
+    margin: 10px auto;
+    border: 1px dashed #000; 
+    padding: 10px;
+    background-color: #BC986A;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.8rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.articleimg {
+    width: 20rem;
+    height: auto;
+    float: right;
+    padding: .1rem .1rem .5rem .5rem;
+}
+.contact {
+    display: block;
+    max-width: 960px;
+    margin: 10px auto;
+    border: 1px dashed #000; 
+    padding: 1rem;
+    background-color: #BC986A;
+    
+}
+.map {
+    width: 10rem;
+    height: auto;
+    float: left;
+    padding: .1rem .5rem .1rem .1rem;
+}
+.address {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.8rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 1rem 1rem 10rem;
 
+}
+.sm {
+    width: 2rem;
+    height: auto;
+    padding: .1rem .1rem .1rem .1rem;
+}
+.pin {
+    width: .6rem;
+    height: auto;
+    padding: .1rem .5rem .1rem .1rem;
+}
 footer {
     max-width: 760px;
 	margin: 0 auto;

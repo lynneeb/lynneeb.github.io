@@ -14,8 +14,8 @@ const dayName = daynames[d.getDay()];
 
 
 function bannerad() {
-    if (dayName!=Friday) {
-        document.getElementsByClassName('newsbanner')
-	[0].classList.toggle('newsbanneroff');
+    if (dayName!="Friday") {
+        document.getElementsByClassName("newsbanner")
+	[0].classList.toggle("newsbanneroff");
     }
 }
