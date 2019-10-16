@@ -213,7 +213,7 @@ h2 {
     
 }
 .map {
-    width: 10rem;
+    width: 15rem;
     height: auto;
     float: left;
     padding: .1rem .5rem .1rem .1rem;
@@ -236,7 +236,7 @@ h2 {
 .pin {
     width: .6rem;
     height: auto;
-    padding: .1rem .5rem .1rem .1rem;
+    /* padding: .1rem .5rem .1rem .1rem; */
 }
 footer {
     max-width: 760px;
