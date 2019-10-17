@@ -106,15 +106,16 @@ like this in HTML Line #6.
     font-weight: bold;
 }
 
-.newsbanneroff {
+/* .newsbanneroff {
     display: none;
-}
+} */
 
 .contentbox {
     display: block;
-    max-width: 960px;
-    margin: 10px auto;
-    border: 1px dashed #000; 
+    max-width: 60rem;
+    height: auto;
+    margin: auto;
+    border: 1px solid #000; 
     padding: 10px;
 	background-color: #BC986A;
     color: black;
@@ -126,16 +127,18 @@ h2 {
     text-align: center;
 }
 .herodiv {
-    margin: 1rem auto;
     position: relative;
+    display: block;
     max-width: 60rem;
-    height: 15rem;
+    margin: auto;
+    border: 1px solid #000; 
+    height: auto;
+    padding: 10px;
+	background-color: #BC986A;
 }
 .hero-ph {
-    position: relative;
-    background-color: #eee;
-    border: 1px solid #333;
-    width: 60rem;
+    /* position: relative; */
+    max-width: 60rem;
     height: auto;
 }
 .weathersummary {
@@ -248,12 +251,13 @@ h2 {
 
 
 footer {
-    max-width: 760px;
+    max-width: 60rem;
 	margin: 0 auto;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    border: 1px solid #000; 
 	padding: 10px;
     background-color: #659DBD; 
     text-align: center;
