@@ -39,14 +39,16 @@ header img {
     font-weight: bold;
 }
 #content {
-    min-height: 100%;
+     min-height: 100%;
 }
 
 .subhead {
     text-align: center;
-    color: #536878;
+    color: black;
     font-family: 'Raleway', sans-serif;
+    font-style: bold;
     line-height: 1.8rem;
+    text-shadow: 3px 3px 5px grey;
 }
 
 .navigation {
@@ -89,37 +91,6 @@ like this in HTML Line #6.
 .responsive li {
 	display: block;
 }
-
-/* *********************************** */
-
-
-/* Start Breadcrumbs */
-/* .breadcrumbs { 
-    font-size: .85em; 
-    color: #ccc; 
-    line-height: 1.5; 
-    margin: 18px; 
-    padding-left: 0;
-}
-  .bc { 
-      display: inline; 
-    list-style-type: none; 
-    margin-left: 0; 
-    }
-
-  .bc:before { 
-      content: "|"; 
-      font-weight: bolder;
-      color: black;
-      padding-right: 3px; 
-    }
-
-  .bc:first-child:before { 
-      content: ""; 
-      padding-right: 0; 
-    }    */
-
-/* End Breadcrumbs */
 /* ***************************************** */
 
 .newsbanner {
@@ -169,26 +140,46 @@ h2 {
 }
 .weathersummary {
     position: absolute;
-    top: 40px;
-    left: 40px;
-    display: grid;
-    background-image: radial-gradient(ellipse, white, transparent 70%);
+    top: 1rem;
+    left: 1rem;
+    width: 14rem;
+    height: auto;
+    /* background-image: radial-gradient(ellipse, white, transparent 70%); */
     background-color: rgba(10, 36, 169, 0.5);
     border: 1px solid blue;
-    /* background-color: rgba(13, 226, 13, 0.36); */
-    /* border: 1px solid green; */
     padding: .5rem;
-    box-shadow: 0 0 30px #777;
+    box-shadow: 0 0 2rem #777;
+    font-family: 'Raleway', sans-serif;
+    font-style: bold;
+}
+.weathertitle {
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+.weatherinfo {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: .5rem;
+    padding: .5rem .5rem .5rem .5rem;
+    font-size: 1.2rem;
+}
+.c1 {
+    justify-content: right;
+    /* text-align: right justify; */
+    color: white;
+}
+.c2 {
+    /* text-align: left justify; */
+    color: yellow;
 }
 
-.label {
-    text-align: right justify;
-}
 .article {
     display: block;
-    max-width: 960px;
+    max-width: 60rem;
     margin: 10px auto;
-    border: 1px dashed #000; 
+    border: 1px solid #000; 
     padding: 10px;
     background-color: #BC986A;
     font-family: 'Raleway', sans-serif;
@@ -203,41 +194,59 @@ h2 {
     float: right;
     padding: .1rem .1rem .5rem .5rem;
 }
-.contact {
-    display: block;
-    max-width: 960px;
-    margin: 10px auto;
-    border: 1px dashed #000; 
-    padding: 1rem;
-    background-color: #BC986A;
-    
-}
-.map {
-    width: 15rem;
+.contact  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 60rem;
     height: auto;
-    float: left;
-    padding: .1rem .5rem .1rem .1rem;
-}
-.address {
-    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #BC986A;
+    border: 1px solid #000; 
     font-family: 'Raleway', sans-serif;
     line-height: 1.8rem;
     color: black;
     font-size: 1rem;
     font-weight: bold;
-    padding: 1rem 1rem 1rem 10rem;
-
 }
+.contactimg {
+    width: 22rem;
+    height: auto;
+    padding: .1rem 0rem .1rem .1rem;
+}
+
+.address {
+    width: 13rem;
+    height: auto;
+    justify-content: left;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 3rem;
+    padding: 1rem .5rem 0rem 2rem;
+    /* background: white; */
+}
+
 .sm {
     width: 2rem;
     height: auto;
-    padding: .1rem .1rem .1rem .1rem;
+    justify-content: left;
+    padding: .2rem .2rem .2rem 0rem;
 }
+
 .pin {
-    width: .6rem;
+    width: .7rem;
     height: auto;
-    /* padding: .1rem .5rem .1rem .1rem; */
 }
+
+.map {
+    width: 14rem;
+    height: auto;
+    padding: .6rem 2rem .5rem 5rem;
+}
+
+
 footer {
     max-width: 760px;
 	margin: 0 auto;
