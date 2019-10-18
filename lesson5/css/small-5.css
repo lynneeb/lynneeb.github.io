@@ -110,7 +110,7 @@ like this in HTML Line #6.
 
 #bannerad {
     position: fixed;
-    display: block;
+    display: none;
     max-width: 400px;
     margin: 0 0;
     border: 1px solid #000; 
