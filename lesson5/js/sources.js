@@ -38,6 +38,20 @@ document.getElementById("currentdate").textContent = fulldate;
 
 
 //code for banner ad
-if (d.getDay() === 0, 1, 2, 3, 4, 5, 7) {
-    document.getElementById("newsbanner").hidden = true;
+// if (d.getDay() === 5) {
+//     document.getElementById("bannerad").hidden = false;
+// }
+
+//code for banner ad
+// function togglebannerad() {
+// 	if (d.getDay() !== 5) {
+// 		document.getElementById("bannerad").hidden = true;
+// 	}
+// }
+
+function togglebannerad() {
+	var x = document.getElementById('bannerad');
+	if (d.getDay() !== 5) {
+		x.style.visibility = 'hidden';
+	}
 }
