@@ -257,6 +257,12 @@ h2 {
     color: darkblue;
     font-weight: bolder;
   }
+
+.weather-icon {
+    max-width: 6rem;
+    height: auto;
+}
+
   /* ******************End*********************************
   *********5-Day Forecast Table ************************
   ****************************************************** */
