@@ -109,11 +109,10 @@ like this in HTML Line #6.
 /* ***************************************** */
 
 #bannerad {
-    position: fixed;
     visibility: hidden;
-    /* display: none; */
-    max-width: 400px;
-    margin: 0 0;
+    position: fixed;
+    max-width: 100%;
+    margin: 0 auto;
     border: 1px solid #000; 
     padding: 10px;
 	background-color: rgba(255, 20, 145, 0.4);
@@ -121,19 +120,6 @@ like this in HTML Line #6.
     font-size: 1.2rem;
     font-weight: bold;
 }
-
-/* .showbannerad {
-    display: block;
-    position: fixed;
-    max-width: 400px;
-    margin: 0 0;
-    border: 1px solid #000; 
-    padding: 10px;
-	background-color: rgba(255, 20, 145, 0.4);
-    color: black;
-    font-size: 1.2rem;
-    font-weight: bold;
-} */
 
 .contentbox {
     display: block;
@@ -163,14 +149,6 @@ h2 {
 
 .hero-ph {
     box-shadow: 5px 5px 5px black;
-
-    /* padding-right: 10px; */
-    /* margin-right: 10px; */
-    /* padding-right: 10px; */
-    /* max-width: 60rem; */
-    /* height: auto; */
-    /* width: auto; */
-    /* size: 100%; */
 }
 .weathersummary {
     position: absolute;
@@ -201,11 +179,9 @@ h2 {
 }
 .c1 {
     justify-content: right;
-    /* text-align: right justify; */
     color: white;
 }
 .c2 {
-    /* text-align: left justify; */
     color: yellow;
 }
 
@@ -329,7 +305,6 @@ h2 {
     font-weight: bold;
     margin-left: 3rem;
     padding: 1rem .5rem 0rem 2rem;
-    /* background: white; */
 }
 
 .sm {
