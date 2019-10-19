@@ -110,7 +110,8 @@ like this in HTML Line #6.
 
 #bannerad {
     position: fixed;
-    display: none;
+    visibility: hidden;
+    /* display: none; */
     max-width: 400px;
     margin: 0 0;
     border: 1px solid #000; 
@@ -121,8 +122,17 @@ like this in HTML Line #6.
     font-weight: bold;
 }
 
-/* .newsbanneroff {
-    display: none;
+/* .showbannerad {
+    display: block;
+    position: fixed;
+    max-width: 400px;
+    margin: 0 0;
+    border: 1px solid #000; 
+    padding: 10px;
+	background-color: rgba(255, 20, 145, 0.4);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
 } */
 
 .contentbox {
