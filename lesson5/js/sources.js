@@ -38,7 +38,7 @@ const fulldate = dayName + ", " + d.getDate() + " " + monthName + " " + year;
 document.getElementById("currentdate").textContent = fulldate;
 
 
-// **********  make the bannerad visible only on Friday  ****************
+// **********  Only make the bannerad visible on Friday  ****************
   function showbannerad() {
     if (d.getDay() === 5) {
         document.getElementById("bannerad").style.visibility = "visible";
