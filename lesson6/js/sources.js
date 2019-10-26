@@ -39,11 +39,18 @@ document.getElementById("currentdate").textContent = fulldate;
 
 
 // **********  Only make the bannerad visible on Friday  ****************
-  function showbannerad() {
+//   function showbannerad() {
+//     if (d.getDay() === 5) {
+//         document.getElementById("bannerad").style.visibility = "visible";
+//     }
+// }
+
+function showbannerad() {
     if (d.getDay() === 5) {
-        document.getElementById("bannerad").style.visibility = "visible";
+        document.getElementById("bannerad").style.display = "block";
     }
 }
+
 // ****************Start windChill****************************************
 /* Defining Table
           Input: temperature & wind speed
