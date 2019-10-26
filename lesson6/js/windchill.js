@@ -14,7 +14,7 @@
 
 		var windChillFactor = windChill(inTemp, inWind);
 
-		//	round number to two decimal plaaces
+		//	round number to integer
 		output = Math.round(windChillFactor);
 
 		document.getElementById('windch').textContent = output;
