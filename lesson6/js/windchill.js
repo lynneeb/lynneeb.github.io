@@ -1,20 +1,12 @@
-/* Defining Table
-          Input: temperature & wind speed
-          Input requirements: "Wind Chill Temperature is officially defined for temperatures at or below 10 °C (50 °F) 
-          and wind speeds above 4.8 kilometres per hour (3.0 mph).
-	 	 Processing: get input from the user
-	 	 	call the  windChill function and enter values into that function
-	 	 	compute wind chill
-	 	 	return windChill
-          Output:  display windchill in div from windChill function
-          
-	 */
+		//   Compute windChill 
+		//   Input requirements: "Wind Chill Temperature is officially defined for temperatures at or below 10 °C (50 °F) 
+        //   and wind speeds above 4.8 kilometres per hour (3.0 mph).
 
 	function doInputOutput() {
 
 		//	input
-		var inTemp = parseFloat(document.getElementById("temp").value);
-		var inWind = parseFloat(document.getElementById("windsp").value);
+		var inTemp = parseFloat(document.getElementById("temp").textContent);
+		var inWind = parseFloat(document.getElementById("windsp").textContent);
 
         if (inTemp <= 50 && inWind > 3) {
 
@@ -23,13 +15,13 @@
 		var windChillFactor = windChill(inTemp, inWind);
 
 		//	round number to two decimal plaaces
-		output = Math.round(100 * windChillFactor) / 100 ;
+		output = Math.round(windChillFactor);
 
-		document.getElementById('windch').innerHTML = output;
+		document.getElementById('windch').textContent = output;
         }
        
         else {
-		document.getElementById('windch').innerHTML = "N/A";
+		document.getElementById('windch').textContent = "N/A";
         }
 	}
 
