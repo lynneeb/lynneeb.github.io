@@ -112,7 +112,7 @@ like this in HTML Line #6.
     margin: 0 auto;
     display: none;
     /* visibility: hidden; */
-    justify-content: center; 
+    text-align: center; 
     border: 1px solid #000; 
     padding: .8rem;
 	background-color: rgba(255, 20, 145, 0.4);
