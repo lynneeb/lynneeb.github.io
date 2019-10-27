@@ -120,6 +120,7 @@ like this in HTML Line #6.
     font-size: 1.3rem;
     font-weight: bold;
     position: fixed;
+    z-index: 1;
 }
 
 .contentbox {
