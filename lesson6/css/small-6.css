@@ -203,7 +203,9 @@ h2 {
   ****************************************************** */
 
 .article {
-    display: block;
+    display: flex;
+	justify-items: flex-start;
+	flex-direction: column;
     max-width: 60rem;
     margin: 10px auto;
     border: 1px solid #000; 
@@ -216,14 +218,16 @@ h2 {
     font-weight: bold;
 }
 .articleimg {
-    width: 20rem;
-    height: auto;
-    float: right;
+    order: 2;
+    max-width: 100%;
+    margin: 1rem auto;
     box-shadow: 5px 5px 5px black;
 }
 .contact  {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
     max-width: 60rem;
     height: auto;
     margin: 10px auto;
@@ -231,7 +235,6 @@ h2 {
     background-color: #BC986A;
     border: 1px solid #000; 
     font-family: 'Raleway', sans-serif;
-    line-height: 1.8rem;
     color: black;
     font-size: 1rem;
     font-weight: bold;
@@ -242,15 +245,15 @@ h2 {
 }
 
 .address {
-    width: 13rem;
-    height: auto;
+    align-content: center;
     justify-content: left;
     font-family: 'Raleway', sans-serif;
     color: black;
     font-size: 1rem;
     font-weight: bold;
-    margin-left: 3rem;
-    padding: 1rem .5rem 0rem 2rem;
+    padding: 1rem;
+
+    white-space: nowrap;
 }
 
 .sm {

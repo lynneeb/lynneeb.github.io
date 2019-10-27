@@ -105,11 +105,22 @@
   *********5-Day Forecast Table ************************
   ****************************************************** */
 
+  .article {
+    display: block;
+}
+.articleimg {
+    width: 20rem;
+    height: auto;
+    float: right;
+    margin: 1rem;
+    box-shadow: 5px 5px 5px black;
+}
+
 .map {
-	display: block;
+  display: flex;
 	width: 14rem;
-	height: auto;
-	padding: .6rem 2rem .5rem 5rem;
+  height: auto;
+  padding: 1rem;
 }
 
 }
