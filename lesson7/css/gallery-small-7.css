@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(200, 218, 171);;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 400px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+img[data-src] {
+	filter: blur(0.5em);
+}
+
+img {
+	grid-column: 1 / 1;
+	filter: blur(0em);
+	transition: filter 3s;
+}
