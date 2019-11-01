@@ -6,7 +6,7 @@ h1 {
     text-align: center;
 }
 
-figure {
+picture {
     display: grid;
     grid-template-columns: 300px;
     grid-template-rows: 400px;
