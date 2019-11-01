@@ -1,7 +1,7 @@
 /* Media Query for medium + screens */
 @media only screen and (min-width: 32.5em) {
 
-	header img {
+	.logo {
 		width: 100%;
 	}
 	.headings h1 {
@@ -32,8 +32,9 @@
 		font-size: 1.2rem;
 		text-align: center;
 	}
-	.contentbox {
-		font-size: 1rem;
+	.gridbox {
+    font-size: 1rem;
+    grid-template-columns: auto auto;
 	}
 
 /*******************************************************

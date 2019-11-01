@@ -8,9 +8,25 @@
 		font-size: 2rem;
 	}
 
-    .contentbox {
+    .gridbox {
         font-size: 1.1rem;
+        grid-template-columns: auto auto auto;
     }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    img:hover {
+        box-shadow: 5px 5px 5px black;
+    }
+
+    figcaption:hover {
+        text-shadow: 3px 3px 5px black;
+        box-shadow: 5px 5px 5px black;
+    }
+
     .contactimg {
         display: block;
         max-width: 22rem;

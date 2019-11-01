@@ -123,7 +123,7 @@ like this in HTML Line #6.
 
 .gridbox {
     /* display: block; */
-    max-width: 60rem;
+    max-width: 100%;
     height: auto;
     margin: auto;
     border: 1px solid #000; 
@@ -134,7 +134,7 @@ like this in HTML Line #6.
     font-weight: bold;
     /* font-style: italic; */
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     /* grid-template-columns: repeat(2, 1fr); */
     /* grid-template-rows: repeat(6, 400px); */
     gap: 1rem;
@@ -155,14 +155,6 @@ like this in HTML Line #6.
     text-shadow: 3px 3px 5px black;
 }
 
-/* figure {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 400px);
-    gap: 20px;
-    justify-content: center;
-} */
-
 img[data-src] {
 	filter: blur(0.5em);
 }
@@ -174,18 +166,15 @@ img {
 }
  figcaption {
     font-family: 'Raleway', sans-serif;
-    color: black;
+    color: white;
     text-align: center;
     font-size: 1.1rem;
     font-weight: bold;
-    /* justify-content: center; */
+    background: #8D8741;
+    padding: .8rem;
  }
 /* --------------------------- */
 
-
-/* h2 {
-    text-align: center;
-} */
 
 
 /*******************************************************
@@ -251,7 +240,7 @@ img {
 }
 
 footer {
-    max-width: 60rem;
+    max-width: 100%;
 	margin: 0 auto;
     display: flex;
     flex-flow: column;
