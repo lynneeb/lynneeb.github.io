@@ -134,6 +134,13 @@ like this in HTML Line #6.
     padding: .5rem;
 }
 
+figure{
+    background-color: #659DBD;
+    padding: 10px;
+    margin: 2rem auto;
+    display: grid;
+}
+
 img[data-src] {
     filter: blur(0.5em);
     width: 100%;
@@ -156,6 +163,7 @@ img {
     font-weight: bold;
     background: #8D8741;
     padding: .8rem;
+    text-shadow: 3px 3px 5px black;
  }
 /* --------------------------- */
 
