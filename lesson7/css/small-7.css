@@ -135,8 +135,9 @@ like this in HTML Line #6.
 }
 
 figure{
+    display: grid;
     background-color: #659DBD;
-    padding: 10px;
+    padding: 1rem;
     margin: 2rem auto;
     display: grid;
 }
