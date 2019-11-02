@@ -8,9 +8,9 @@
 		font-size: 2rem;
 	}
 
-    .gridbox {
-        font-size: 1.1rem;
-        grid-template-columns: auto auto auto;
+    img[data-src] {
+        width: 100%;
+        height: auto;
     }
 
     img {
@@ -19,6 +19,7 @@
     }
     
     img:hover {
+        /* box-shadow: 0 0 50px #333; */
         box-shadow: 5px 5px 5px black;
     }
 
