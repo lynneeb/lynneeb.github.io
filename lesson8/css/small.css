@@ -1,0 +1,30 @@
+* { box-sizing: border-box }
+
+table {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 10px #628ca6;
+    border-collapse: collapse;
+    border: 1px solid #628ca6;
+  }
+  table, td, th {
+    border: 1px solid #7fb9c2;
+  }
+  tbody {
+    background-color: #e7f0ed;
+    color: black;
+  }
+  tfoot {
+    background-color: #7fb9c2;
+    color: black;
+  }
+  table tr:nth-child(even) {
+    background-color: #e7ffed;
+  }
+ 
+  
