@@ -40,11 +40,11 @@ document.getElementById("currentdate").textContent = fulldate;
 
 // **********  Only make the bannerad visible on Friday  ****************
 
-function showbannerad() {
-    if (d.getDay() === 5) {
-        document.getElementById("bannerad").style.display = "block";
-    }
-}
+// function showbannerad() {
+//     if (d.getDay() === 5) {
+//         document.getElementById("bannerad").style.display = "block";
+//     }
+// }
 
 
 // get fonts
