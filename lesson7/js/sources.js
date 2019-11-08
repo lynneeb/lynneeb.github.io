@@ -55,7 +55,7 @@ function getfonts() {
 
 // call the functions
 function start() {
-    showbannerad();
+    // showbannerad();
 	doInputOutput();
 	getfonts();
 }
