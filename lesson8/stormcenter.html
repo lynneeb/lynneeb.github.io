@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast For Fun | Gallery</title>
+    <meta name="author" content="Lynnette Beatty">
+    <meta name="description" 
+    content="Gallery of Weather Pictures - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Chettan%7cRaleway&display=swap">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-8.css">
+    <link rel="stylesheet" href="css/medium-8.css">
+    <link rel="stylesheet" href="css/large-8.css">
+
+</head>
+<body>
+    
+    <div id="content">
+    <header>
+        <picture>
+            <img class="logo" src="images/forecast-for-fun-logo.jpg" alt="logo">
+        </picture>
+        <section class="headings">
+            <h1>Forecast For Fun</h1>
+            <div class="m">Be prepared to play outdoors!</div>
+        </section>
+    </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="hambmenu" href="#" onclick="togglemenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="../lesson6/preston-6.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+                <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+	<main>
+    <h2 class="title">Storm Center</h2>
+    <div class="box">
+            <h3 class="report">Report the Weather in Your Area</h3>
+
+        <div id=stormform>
+
+    <form id="report-weather" name="weather" method="get" action="thanks.html">  
+        <fieldset class="fieldset" name="personal-info">
+            <legend>Personal Information</legend>
+            <label class="top" for="name">*Full Name: <input type="text" id="name" size="30" name="fname" placeholder="your name" required pattern="[A-Za-z]{5,}" title="Five or more characters"></label>
+            <label class="top">Email: <input type="email" size="30" name="email" placeholder="someone@gmail.com"></label>
+            <label class="top" for="p">*Phone number: <input type="tel" id="p" name="phone" placeholder="123-444-5678" required></label>
+            <label class="top" for="num">*Zip Code: <input type="number" id="num" name="zipcode" placeholder="12345" required></label>
+        </fieldset>
+        <fieldset class="fieldset" name="storm-info">
+            <legend>Storm Information</legend>
+            <label class="top">Storm Date: <input type="date" name="stormdate"></label>
+
+            <label class="top" for="stormtype">Storm Type: <input class="top" list="stormlist" id="stormtype" placeholder="select one..."name="stormtype">
+            <datalist id="stormlist">
+                <option value="">Choose Storm</option>
+                <option value="Blizzard">Blizzard</option>
+                <option value="Dust Storm">Dust Storm</option>
+                <option value="Earthquake">Earthquake</option>
+                <option value="Flood">Flood</option>
+                <option value="Hail">Hail</option>
+                <option value="Hurricane">Hurricane</option>
+                <option value="Lightening">Lightening</option>
+                <option value="Rain">Rain</option>
+                <option value="Snow">Snow</option>
+                <option value="Tornado">Tornado</option>
+            </datalist></label>
+
+            <label class="top" for="rating">Storm Severity: 
+		<input type="range" name="rating" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><br>
+		<span id="ratingvalue">5</span></label><br>
+
+        <label class="top" for="storm-region">Storm Region: 
+        <select name="location" id="storm-region">
+            <option value="">Select Region...</option>
+            <option value="preston">Preston</option>
+            <option value="sugar-city">Sugar City</option>
+            <option value="fish-haven">Fish Haven</option>
+        </select></label><br>
+
+        <label class="top" for="danger">Are you in danger?</label>
+            <label class="sbs" for="danger1"><input type="radio" id="danger1" name="danger" value=yes> yes</label>
+            <label class="sbs" for="danger2"><input type="radio" id="danger2" name="danger" value=maybe> maybe</label>
+            <label class="sbs" for="danger3"><input type="radio" id="danger3" name="danger" value=no> no</label>
+        </fieldset>
+        <fieldset class="fieldset" name="information">
+            <legend>Additional Information</legend>
+        <label><textarea rows="8" cols="50" name="comment" form="report-weather" placeholder="Enter more detail about the storm here..."></textarea></label>  
+        </fieldset>
+    <label><input type="submit" name="button" value="Report My Weather" class="submit-button"></label>
+    </form> 
+
+    </div>
+</div>
+    </main>
+    <footer> 
+                    <div id="info">&copy; Forecast For Fun | Attributions | <a class="link" target="_blank" href="../index.html">Lynnette Beatty</a><br> 
+            <span class="date">Current Date: <span id="currentdate"></span></span>
+        </div>
+    </footer>
+        
+        </div>
+          <script src="js/sources.js"></script>
+          <script src="js/proload.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script>WebFont.load({google: {families: ["Baloo Chettan","Raleway"]}});</script>
+</body>
+</html>

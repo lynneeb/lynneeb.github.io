@@ -6,3 +6,6 @@ const d = new Date();
 const month = parseInt(d.getMonth() + 1);
 const outdate = month + "." + d.getDate() + "." + d.getFullYear();
 document.getElementById("currentdate").textContent = outdate;
+
+
+// WebFont.load({google: {families: ["Ubuntu"]}});
