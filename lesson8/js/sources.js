@@ -59,7 +59,7 @@ function getfonts() {
 
 // call the functions
 function start() {
-    showbannerad();
+    // showbannerad();
 	doInputOutput();
 	adjustRating(rating)
 	getfonts();
