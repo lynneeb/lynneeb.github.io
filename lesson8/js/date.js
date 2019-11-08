@@ -8,4 +8,3 @@ const outdate = month + "." + d.getDate() + "." + d.getFullYear();
 document.getElementById("currentdate").textContent = outdate;
 
 
-// WebFont.load({google: {families: ["Ubuntu"]}});
