@@ -45,13 +45,22 @@ function showbannerad() {
         document.getElementById("bannerad").style.display = "block";
     }
 }
-// call the functions
-function start(){
-    showbannerad();
-    doInputOutput();
-}
 
 // storm severity
 function adjustRating(rating) {
     document.getElementById("ratingvalue").innerHTML = rating;
+}
+
+// get fonts
+function getfonts() {
+	WebFont.load({google: {families: ["Baloo Chettan","Raleway"]}});
+}
+
+
+// call the functions
+function start() {
+    showbannerad();
+	doInputOutput();
+	adjustRating(rating)
+	getfonts();
 }

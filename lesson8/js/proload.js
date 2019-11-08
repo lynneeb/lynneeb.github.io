@@ -28,5 +28,3 @@ else {
     loadImages(img);
   });
 }
-
-WebFont.load({google: {families: ["Baloo Chettan","Raleway"]}});
