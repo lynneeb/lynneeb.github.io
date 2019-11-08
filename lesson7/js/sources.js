@@ -45,8 +45,17 @@ function showbannerad() {
         document.getElementById("bannerad").style.display = "block";
     }
 }
+
+
+// get fonts
+function getfonts() {
+	WebFont.load({google: {families: ["Baloo Chettan","Raleway"]}});
+}
+
+
 // call the functions
-function start(){
+function start() {
     showbannerad();
-    doInputOutput();
+	doInputOutput();
+	getfonts();
 }
