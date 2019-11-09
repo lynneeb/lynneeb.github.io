@@ -61,6 +61,6 @@ function getfonts() {
 function start() {
     // showbannerad();
 	// doInputOutput();
-	adjustRating(rating)
+	adjustRating(rating);
 	getfonts();
 }

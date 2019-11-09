@@ -108,10 +108,20 @@ like this in HTML Line #6.
 /*----------- MAIN --------------*/
 
 
+.box {
+    max-width: 60rem;
+    justify-content: center;
+    padding: 1rem;
+    height: auto;
+    margin: auto;
+    border-top: 1px solid #000; 
+    border-right: 1px solid #000; 
+    border-left: 1px solid #000; 
+    background-color: #BC986A;
+    
+}
 /* Storm Center */
 .title {
-   
-    width: 100vw;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -125,154 +135,203 @@ like this in HTML Line #6.
     padding-bottom: .5rem;
 }
 
-/*----------Weather Form------------------------*/
+/*------------FORM---------------*/
 
-/* ---Subhead - Report the Weather in Your Area */
+/* Report the Weather in Your Area */
 .report {
-    display: flex;
-    max-width: 60rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    height: auto;
-    margin: auto;
-    justify-content: center;
     color: white;
+    text-align: center;
     font-size: 2rem;
     background-color: #659DBD;
     border: 4px solid #000; 
     text-shadow: 3px 3px 5px black;
     padding-top: .5rem;
     padding-bottom: .5rem; 
+    padding-left: .5rem; 
 }
 
-/* ---dark brown box--- */
-.box {
-    display: flex;
-    max-width: 60rem;
-    justify-content: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    height: auto;
-    margin: auto;
-    border-right: 4px solid #000; 
-    border-left: 4px solid #000; 
-    background-color: #BC986A;
+/* CSS for "Storm Center" Page ********************************************/
+
+/* .report {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+} */
+
+#content {
+    padding: 0 2%;
+    min-height: 20rem;
 }
-/* -----------tan form box -------- */
+
 #stormform {
-    display: flex; 
-    width: 50%;
-    min-width: 20rem;
-    height: auto;
+    padding: .2rem 14rem 2rem 14rem;
+    /* min-height: 20rem; */
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     background-color: #FBEEC1;
-    border-collapse: collapse;
-    justify-content: center;
+    border: 1px solid black;
+    margin: 2rem;
+    /* align-content: center; */
 }
+/* 
+.fieldset {
+    margin: 2rem 0;
+    border: 2px solid #445ba9;
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-bottom: 2rem;
+} */
 
-/* ----blue fieldset boxes---- */
 form fieldset {
-    display: flex;
-    margin: 1rem;
-    border: 4px solid #445ba9;
-    border-collapse: collapse;
+    margin: 2rem 0;
+    border: 2px solid #445ba9;
     border-radius: 10px;
     justify-content: center;
+    padding-bottom: 2rem;
+    padding-left: 2.5rem;
+    /* align-content: center; */
+    /* padding: .5rem 2%; */
 }
 
-/* -----blue form title----- */
+/* legend {
+    color: darkblue;
+    font-size: 1.5rem;
+    font-weight: bold; 
+    margin: 0 1rem;
+    padding: .5rem;
+} */
+
+
 form legend {
     color: #445ba9;
     font-size: 1.5rem;
     font-weight: bold; 
-    margin-left: .5rem;
+    margin: 5 1rem;
+    padding: 0 .5rem;
+    /* align-content: center; */
 }
 
-.top, .storm, .radio, .comment {
+.top, .comment, .radio {
     display: block;
-    border-collapse: collapse;
-    padding: .5rem;
+    padding-top: 1rem;
+    /* padding-bottom: 1rem; */
     color: #9c2c13;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
+/* .top:focus { */
+    /* box-shadow: 0 0 10px #ccc; */
+    /* box-shadow: 0 0 20px rgb(151, 148, 148); */
+    /* box-shadow: 0 0 20px blue; */
+/* } */
 /* -----------------focus------------------- */
+/* @import "compass/css3";
 
-.top:focus, .comment:focus {
-    box-shadow: 0 0 15px rgb(151, 148, 148);
+input[type=text], textarea {
+  @include transition(all 0.30s ease-in-out);
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
 }
+ 
+input[type=text]:focus, textarea:focus {
+  @include box-shadow(0 0 5px rgba(81, 203, 238, 1));
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+} */
 
-/* --inside the input box---- */
+/* ------------------------------------------------ */
+
+
+
 .top input,
 .top select,
 .comment input,
 textarea {
-    display: flex;
+    -webkit-appearance: none;
+    display: block;
     font-size: 1.2rem;
     font-weight: bold;
     border: solid 4px rgb(156, 150, 141);
     border-radius: 4px;
     padding: .75rem;
     color: #555;
-    width: 92%;
-    border-collapse: collapse;
-    background-color: rgba(178, 219, 245, 0.356);
-}
-
-/* ---Storm Region input box--- */
-.top select {
     width: 100%;
+    max-width: 20rem;
+    background-color: rgba(178, 219, 245, 0.356);
+    /* align-content: center; */
 }
 
-/* -----no, maybe, yes----- */
+.top select {
+    max-width: 21.5rem;
+}
+
 form label.sbs {
     display: block;
-    padding: .3rem;
+    padding: 3px;
+}
+
+.severity {
+	display: block;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    color: #9c2c13;
+}
+
+p, .sbs {
     color: #9c2c13;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-/* ---Label- Are you in danger?--- */
-p {
-    color: #9c2c13;
-    font-weight: bold;
-    font-size: 1.3rem;
-    margin: 0;
-}
-
-/* ---inside comment box--- */
 textarea {
     height: 5rem;
-    width: 88%;
 }
 
-/* ---red/blue submit button--- */
 .submit-button {
     border: 4px solid black;
     background-color: #9c2c13;
     justify-content: center;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    width: 100%;
-    max-width: 15rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
+    /* margin: 0 0 2rem 2%; */
+    /* margin: 0 0 2rem 2%; */
+    left: 50%;
+  /* margin-right: -50%; */
+    width: 60%;
+    max-width: 30rem;
     box-shadow: 10px 10px 10px black;
 }
 .submit-button:hover { background-color: #8D8741; color: white; }
 
+/* form input.submit-button {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+} */
+
 form label.top input:required {
+    /* border-left: red solid 6px; */
     border: #9c2c13 solid 4px;
+    /* background-color: #f3d3cc; */
 }
 
 form label.top input:required:valid {
+    /* border-left: green solid 6px; */
     border: #8D8741 solid 4px;
     background-color: rgb(204, 241, 204);
 }
@@ -281,6 +340,17 @@ input:hover,
 form label.top select {
     cursor: pointer;
 }
+
+.rating {
+    width: 20rem;
+}
+
+/* span {
+    padding-left: 10px;
+    color: #445ba9;
+    font-size: 1.75rem;
+} */
+
 
 /*----------- FOOTER --------------*/
 
@@ -291,7 +361,7 @@ footer {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    border: 4px solid #000; 
+    border: 1px solid #000; 
 	padding: 1rem;
     background-color: #659DBD; 
     text-align: center;
