@@ -78,9 +78,9 @@
             </datalist></label>
 
         <div class="stormseverity">
-            <label class="top" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;
+            <label class="top" for="rating">Storm Severity:<br>(range 1 to 10)
                 <input type="range" name="rating" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span>
+                        <span id="ratingValue">5</span>
                 </label>
                     <datalist id="tickmarks">
                         <option value="0">
@@ -97,13 +97,20 @@
                     </datalist>
         </div>
 
+
+        <!-- <div>Storm Severity (1 to 10)</div>
+        <label class="sbs" for="rating">
+          <input type="range" id="rating" name="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+          <span id="ratingValue">5</span>
+        </label> -->
+
       
         <!-- <div class="stormseverity">
-                <label class="storm" for="rating">Storm Severity Rating:
+                <label class="storm" for="rating">Storm Severity (1 to 10):<br>
                     <input type="range" name="rating" id="rating" value="5" min="1" max="10" step="1"
                         oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                </label>
-                <span id="ratingvalue"></span>
+                <span id="ratingvalue"></span></label>
             </div> -->
 
          <label class="top" for="storm-region">Storm Region: 

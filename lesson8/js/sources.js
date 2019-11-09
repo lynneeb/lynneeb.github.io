@@ -47,11 +47,19 @@ document.getElementById("currentdate").textContent = fulldate;
 // }
 
 // storm severity
-function adjustRating(rating) {
-	var rating = parseInt(document.getElementById("ratingvalue").innerHTML);
-	document.getElementById("ratingvalue").innerHTML = rating;
-}
+// function adjustRating(rating) {
+// 	var output = parseInt(document.getElementById("ratingvalue").innerHTML);
+// 	document.getElementById("ratingvalue").value = output;
+// }
 
+// function adjustRating(rating) {
+// 	var rating = parseInt(document.getElementById("ratingvalue").innerHTML);
+//     document.getElementById("ratingvalue").innerHTML = rating;
+// }
+
+function adjustRating(value) {
+    document.getElementById("ratingValue").innerHTML = value;
+}
 
 // get fonts
 function getfonts() {
@@ -63,6 +71,6 @@ function getfonts() {
 function start() {
     // showbannerad();
 	// doInputOutput();
-	adjustRating(rating);
+	adjustRating(value);
 	getfonts();
 }
