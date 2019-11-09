@@ -60,7 +60,7 @@ function getfonts() {
 // call the functions
 function start() {
     // showbannerad();
-	doInputOutput();
+	// doInputOutput();
 	adjustRating(rating)
 	getfonts();
 }
