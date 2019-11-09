@@ -207,7 +207,7 @@ legend {
     font-size: 1rem;
     font-weight: bold;
 }
-#ratingvalue {
+.ratingvalue {
     justify-content: center;
     color: #9c2c13;
     font-size: 1rem;
