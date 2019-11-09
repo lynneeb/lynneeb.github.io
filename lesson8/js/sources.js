@@ -48,8 +48,10 @@ document.getElementById("currentdate").textContent = fulldate;
 
 // storm severity
 function adjustRating(rating) {
-    document.getElementById("ratingvalue").innerHTML = rating;
+	var rating = parseInt(document.getElementById("ratingvalue").innerHTML);
+	document.getElementById("ratingvalue").innerHTML = rating;
 }
+
 
 // get fonts
 function getfonts() {
