@@ -79,7 +79,6 @@
                 <label class="top" for="rating">Storm Severity Rating:
                     <input type="range" name="rating" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
                         oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                </label>
                 <span id="ratingvalue">5</span>
 
                 <datalist id="tickmarks">
@@ -95,6 +94,7 @@
                         <option value="9">
                         <option value="10">
                     </datalist>
+                </label>
             </div>
 
          <label class="top" for="storm-region">Storm Region: 
@@ -113,10 +113,13 @@
         </div>
         </fieldset>
 
+        
         <fieldset class="comment" name="information">
             <legend>Additional Info</legend>
         <label><textarea class="top" rows="8" cols="50" name="comment" form="report-weather" placeholder="Tell us more about the storm..."></textarea></label>  
         </fieldset>
+        
+
     <label><input type="submit" name="button" value="Report My Weather" class="submit-button"></label>
     </form> 
 
