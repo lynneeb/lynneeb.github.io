@@ -1,0 +1,18 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+    
+    .headings h1 {
+        font-size: 3rem;
+    }
+    .headings .m {
+		font-size: 2rem;
+	}
+
+    .contentbox {
+        font-size: 1.1rem;
+    }
+    
+    footer {
+        font-size: 1.1rem;
+    }
+}

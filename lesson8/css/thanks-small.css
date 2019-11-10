@@ -134,7 +134,9 @@ like this in HTML Line #6.
 }
 
 .received {
-    text-align: center;
+    justify-content: center;
+    display: flex;
+    min-width: 8rem;
     background-color: #659DBD;
     padding: 2rem;
     margin: 2rem;

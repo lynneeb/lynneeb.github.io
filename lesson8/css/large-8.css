@@ -6,12 +6,11 @@
     }
     .headings .m {
 		font-size: 2rem;
-    }
-    /*----------- MAIN --------------*/
-	form label.sbs {
-		padding: .4rem 0;
 	}
 
+    .contentbox {
+        font-size: 1.1rem;
+    }
     
     footer {
         font-size: 1.1rem;

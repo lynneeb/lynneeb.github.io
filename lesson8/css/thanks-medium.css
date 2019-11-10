@@ -1,7 +1,7 @@
 /* Media Query for medium + screens */
 @media only screen and (min-width: 32.5em) {
 
-	.logo {
+	header img {
 		width: 100%;
 	}
 	.headings h1 {
@@ -31,7 +31,10 @@
 	.navigation li a {
 		font-size: 1.2rem;
 		text-align: center;
-  }
+	}
+	.contentbox {
+		font-size: 1rem;
+	}
 
 
 }
