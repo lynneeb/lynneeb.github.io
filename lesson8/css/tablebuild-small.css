@@ -39,13 +39,9 @@ table {
     background-color: #e7ffed;
   }
 
- #spotlight {
+ .highlight {
     background-color: #628ca6;
     color: white
-  }
-  
-  td.italic {
-    font-style: italic;
   }
 
  tfoot {
