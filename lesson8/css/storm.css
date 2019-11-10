@@ -222,12 +222,18 @@ textarea {
 }
 
 /* ---Storm Severity (1 to 10)--- */
-#ratingValue {
+#ratingvalue {
     position: relative;
     padding: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
     border: solid 4px rgb(156, 150, 141);
     border-radius: 4px;
     background-color: rgba(178, 219, 245, 0.356);
+  }
+
+  .stormseverity {
+      padding-bottom: 1rem;
   }
   
 
