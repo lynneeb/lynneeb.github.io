@@ -1,0 +1,19 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+    
+    .headings h1 {
+        font-size: 3rem;
+    }
+    .headings .m {
+		font-size: 2rem;
+    }
+    /*----------- MAIN --------------*/
+	form label.sbs {
+		padding: .4rem 0;
+	}
+
+    
+    footer {
+        font-size: 1.1rem;
+    }
+}
