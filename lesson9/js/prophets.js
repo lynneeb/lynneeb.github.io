@@ -16,12 +16,12 @@ fetch(requestURL)
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
          
-        h2.textContent = prophets[i].name + ' ' + prophets[i].lastname + "Date of Birth: " + prophets[i].birthdate + "Place of Birth: " + prophets[i].birthplace;
-        
+         
+         h2.textContent = prophets[i].name + ' ' + prophets[i].lastname + "Date of Birth: " + prophets[i].birthdate + "Place of Birth: " + prophets[i].birthplace;
         card.appendChild(h2); 
         document.querySelector('div.cards').appendChild(card);
+        // image.setAttribute('src', prophets[i].imageurl)
 
     }
 
   });
-//   image.setAttribute('src', prophets[i].imageurl);
