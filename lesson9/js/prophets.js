@@ -21,13 +21,12 @@ fetch(requestURL)
          h3.textContent = "Date of Birth: " + prophets[i].birthdate;
          p.textContent = "Place of Birth: " + prophets[i].birthplace;
          image.setAttribute('src', prophets[i].imageurl);
-         image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + [i]+1);
+         image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + ([i]+1));
          card.appendChild(h2); 
          card.appendChild(h3); 
          card.appendChild(p); 
          card.appendChild(image); 
         document.querySelector('div.cards').appendChild(card);
-
     }
 
   });
