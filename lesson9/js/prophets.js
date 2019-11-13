@@ -24,4 +24,4 @@ fetch(requestURL)
     }
 
   });
-  image.setAttribute('src', prophets[i].imageurl);
+//   image.setAttribute('src', prophets[i].imageurl);
