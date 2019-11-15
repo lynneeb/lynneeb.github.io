@@ -7,7 +7,8 @@ fetch(requestURL)
   .then(function (jsonObject) {
     const prophets = jsonObject['prophets'];
 
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    // console.table(jsonObject);  
+    // temporary checking for valid response and data parsing
 
     for (let i = 0; i < prophets.length; i++ ) {
 
@@ -17,7 +18,7 @@ fetch(requestURL)
         let p = document.createElement('p');
         let image = document.createElement('img');
         let prnumber = (+ [i] + + 1);  
-        // the + forces the number following it to be an integer instead of a string
+        // the + forces the number following it to be an integer instead of a string. This enables the ability to do math.
 
          h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
          h3.textContent = "Date of Birth: " + prophets[i].birthdate;
