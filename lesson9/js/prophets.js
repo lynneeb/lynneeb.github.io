@@ -16,16 +16,20 @@ fetch(requestURL)
         let h3 = document.createElement('h3');
         let p = document.createElement('p');
         let image = document.createElement('img');
-         
+        let prnumber = (+ [i] + + 1);  
+        // the + forces the number following it to be an integer instead of a string
+
          h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
          h3.textContent = "Date of Birth: " + prophets[i].birthdate;
          p.textContent = "Place of Birth: " + prophets[i].birthplace;
          image.setAttribute('src', prophets[i].imageurl);
-         image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + ([i]+1));
+         image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prnumber);
+
          card.appendChild(h2); 
          card.appendChild(h3); 
          card.appendChild(p); 
          card.appendChild(image); 
+
         document.querySelector('div.cards').appendChild(card);
     }
 
