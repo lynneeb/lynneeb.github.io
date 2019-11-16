@@ -108,6 +108,8 @@ like this in HTML Line #6.
 
 
 .contentbox {
+    display: flex;
+    flex-flow: column;
     max-width: 60rem;
     height: auto;
     margin: auto;
@@ -124,7 +126,7 @@ like this in HTML Line #6.
     max-width: 60rem;
     margin: 10px auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 5px;
     background-color: #BC986A;
     font-family: 'Raleway', sans-serif;

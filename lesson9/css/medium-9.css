@@ -47,16 +47,18 @@
 
 } */
 
-/* .townsites section {
+.townsites section {
+  /* display: block; */
   height: auto;
-  justify-content: center;
-  text-align: center;
-  padding: 5px;
-  padding-bottom: 1rem;
-  align-content: center;
-  background-color: #FBEEC1;
-  border: 1px solid black;
-} */
+  /* justify-content: left; */
+  /* text-align: left; */
+  /* padding: 5px; */
+  /* padding-bottom: 1rem; */
+  /* align-content: center; */
+  /* align-content: right; */
+  /* background-color: #FBEEC1; */
+  /* border: 1px solid black; */
+}
 
 
 /* .townsites h2 {
@@ -83,11 +85,11 @@
   padding-bottom: 16px;
 } */
 
-/* .townsites img {
+.townsites img {
   height: 20rem;
   width: auto;
   box-shadow: 0 0 20px black;
-} */
+}
 
 
 /* ------------------------------------------- */
