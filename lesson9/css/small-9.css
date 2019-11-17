@@ -119,8 +119,67 @@ like this in HTML Line #6.
     color: black;
     font-size: 1rem;
     font-weight: bold;
-    font-style: italic;
 }
+
+/* --------------wireframes--------------------- */
+.wireframes {
+    max-width: 60rem;
+    height: auto;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px;
+    background-color: #BC986A;
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem;
+    border: 1px solid #000; 
+}
+.linkdiv {
+    height: auto;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: #FBEEC1;
+    margin: .5rem;
+    border: 1px solid black;
+}
+.wtitle {
+    text-align: center;
+    background-color: #659DBD; 
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-style: bold;
+}
+.links li a {
+    text-decoration: none;
+    white-space: nowrap;
+    justify-content: left;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-style: bold;
+}
+.weather {
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    width: 300px;
+    margin: 1rem;
+    box-shadow: 0 0 20px black;
+
+}
+.snow {
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    width: 300px;
+    margin: 1rem;
+    box-shadow: 0 0 20px black;
+}
+
+
+
+
+
+/* ------------------------------------------------- */
 
 .townsites {
     max-width: 60rem;
