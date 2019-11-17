@@ -147,15 +147,14 @@ like this in HTML Line #6.
     background-color: #659DBD; 
     padding: 1rem;
     font-size: 1.5rem;
-    font-style: bold;
+    font-weight: bold;
 }
 .links li a {
-    text-decoration: none;
     white-space: nowrap;
     justify-content: left;
     padding: 1rem;
     font-size: 1.5rem;
-    font-style: bold;
+    font-weight: bold;
 }
 .weather {
     justify-content: center;
