@@ -20,6 +20,7 @@ fetch(requestURL)
           let p1 = document.createElement('p');
           let p2 = document.createElement('p');
           let p3 = document.createElement('p');
+          let datadiv = document.createElement('div');
           let image = document.createElement('img');
 
           h2.textContent = towns[i].name;
@@ -31,11 +32,12 @@ fetch(requestURL)
           image.setAttribute('src', "images/" + towns[i].photo);
           image.setAttribute('alt', towns[i].name);
 
-          townsec.appendChild(h2); 
-          townsec.appendChild(h3); 
-          townsec.appendChild(p1); 
-          townsec.appendChild(p2); 
-          townsec.appendChild(p3); 
+          datadiv.appendChild(h2); 
+          datadiv.appendChild(h3); 
+          datadiv.appendChild(p1); 
+          datadiv.appendChild(p2); 
+          datadiv.appendChild(p3); 
+          townsec.appendChild(datadiv); 
           townsec.appendChild(image); 
 
           document.querySelector('div.townsites').appendChild(townsec);

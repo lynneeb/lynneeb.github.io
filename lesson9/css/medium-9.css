@@ -37,78 +37,32 @@
 	}
 
 /* -------------------townsites--------------------- */
-
-
-/* .townsites {
-  grid-template-rows: repeat(3, 1fr);
-} */
-
-/* .townsites section:nth-child(1) {
-
-} */
-
-.townsites section {
-  /* display: block; */
-  height: auto;
-  /* justify-content: left; */
-  /* text-align: left; */
-  /* padding: 5px; */
-  /* padding-bottom: 1rem; */
-  /* align-content: center; */
-  /* align-content: right; */
-  /* background-color: #FBEEC1; */
-  /* border: 1px solid black; */
-}
-
-
-/* .townsites h2 {
-  font-size: 2rem;
-} */
-
-/* h3 {
-  font-size: 16px;
-  height: 32px;
-  font-style: italic;
-} */
-
-/* h3::after {
-  content: "\A" ;
-  white-space: pre;
-} */
-
-/* .townsites p {
-  font-size: 1rem;
-  font-weight: bold;
-} */
-
-/* .p3 {
-  padding-bottom: 16px;
-} */
-
-.townsites img {
-  height: 20rem;
-  width: auto;
-  box-shadow: 0 0 20px black;
-}
-
-
-/* ------------------------------------------- */
-  .article {
-    display: block;
-}
-.articleimg {
-    width: 20rem;
-    height: auto;
-    float: right;
-    margin: 1rem;
-    box-shadow: 5px 5px 5px black;
-}
-
-.map {
+.townsites {
   display: flex;
-	width: 14rem;
-  height: auto;
+  flex-wrap: wrap;
+}
+
+main section {
+display: flex;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+section div {
+  margin: auto;
   padding: 1rem;
+
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  margin: 1rem;
 }
 
 }

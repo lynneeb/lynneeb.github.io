@@ -7,10 +7,102 @@
     .headings .m {
 		font-size: 2rem;
 	}
+ 
+/* ---------townsites----------------- */
+/* .townsites{ */
+    /* display: grid; */
+    /* grid-template-columns: 33.3% 33.3% 33.3%; */
 
-    .contentbox {
-        font-size: 1.1rem;
-    }
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+} */
+
+/* main section {
+    display: block;
+  }
+
+.townstats section div {
+  height: 250px;
+}
+
+section img{
+    width: 80%;
+}
+} */
+
+
+
+
+/* ------------------------------------------ */
+.contentbox {
+    display: flex;
+    flex-flow: column;
+    max-width: 60rem;
+    height: auto;
+    margin: auto;
+    border: 1px solid #000; 
+    padding: 10px;
+	background-color: #BC986A;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.townsites {
+    max-width: 60rem;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px;
+    background-color: #BC986A;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid #000; 
+}
+
+.townsites section {
+    display: grid;
+    margin: .5rem;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    align-content: center;
+    background-color: #FBEEC1;
+    border: 1px solid black;
+}
+
+.townsites h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    width: auto;
+    font-size: 16px;
+    height: 32px;
+    font-style: italic;
+}
+
+
+.townsites p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.p3 {
+    padding-bottom: 16px;
+}
+
+.townsites img {
+    height: 20rem;
+    width: auto;
+    box-shadow: 0 0 20px black;
+}
+
+/* ------------------------------------------- */
+
 
     .contactimg {
         display: block;

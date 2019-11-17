@@ -132,7 +132,6 @@ like this in HTML Line #6.
     font-family: 'Raleway', sans-serif;
     padding: 1rem;
     border: 1px solid #000; 
-    box-shadow: 0 0 20px black;
 }
 
 .townsites section {
@@ -148,7 +147,6 @@ like this in HTML Line #6.
 
 .townsites h2 {
     font-size: 2rem;
-    font-style: bolder;
 }
 
 h3 {
