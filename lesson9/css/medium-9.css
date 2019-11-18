@@ -65,4 +65,17 @@ section img {
   margin: 1rem;
 }
 
+/* -------------- Idaho Weather Article ------------------ */
+
+.article {
+    display: block;
+}
+.articleimg {
+    width: 20rem;
+    height: auto;
+    float: right;
+	margin: 1rem;
+    box-shadow: 0 0 20px black;
+}
+
 }
