@@ -144,12 +144,15 @@ like this in HTML Line #6.
 }
 .wtitle {
     text-align: center;
+    justify-content: center;
     background-color: #659DBD; 
     padding: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
-.links li a {
+.links {
+    justify-content: center;
+    text-align: center;
     white-space: nowrap;
     justify-content: left;
     padding: 1rem;
