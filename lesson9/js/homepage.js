@@ -10,10 +10,9 @@ fetch(requestURL)
     // console.table(jsonObject);  
     // temporary checking for valid response and data parsing
 
-    // JSON data needed - motto, year founded, population, and annual rainfall
+    // JSON data needed - name, motto, year founded, population, and annual rainfall
       for (let i = 0; i < towns.length; i++ ) {
 
-        // if (i == 1 || i == 4 || i == 5) {
           if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs") {
           let townsec = document.createElement('section');
           let h2 = document.createElement('h2');
@@ -28,7 +27,7 @@ fetch(requestURL)
           h3.textContent = towns[i].motto;
           p1.textContent = "Year Founded: " + towns[i].yearFounded;
           p2.textContent = "Population: " + towns[i].currentPopulation;
-          p3.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
+          p3.textContent = "Annual Rainfall: " + towns[i].averageRainfall;
 
           image.setAttribute('src', "images/" + towns[i].photo);
           image.setAttribute('alt', towns[i].name);
