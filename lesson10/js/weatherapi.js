@@ -15,6 +15,6 @@ var temp = f.toFixed(2);
   const desc = jsObject.weather[0].description;  // note how we reference the weather array
   
   document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
-  document.getElementById('weathericon').setAttribute('src', imagesrc); // focus on the setAttribute() method
-  document.getElementById('weathericon').setAttribute('alt', desc);
+  document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
+  document.getElementById('icon').setAttribute('alt', desc);
 });
