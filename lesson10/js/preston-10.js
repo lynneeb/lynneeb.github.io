@@ -5,16 +5,23 @@ fetch(apiURL)
   .then((jsObject) => {
     // console.log(jsObject);
   
-const f = (((jsObject.main.temp - 273.15) * 9) / 5) + 32;
-var temp = f.toFixed(2);
+// const f = (((jsObject.main.temp - 273.15) * 9) / 5) + 32;
+// var temp = f.toFixed(2);
 
 //  Formula to convert Kelvin to Fahrenheit (K − 273.15) × 9/5 + 32 = °F
-  document.getElementById('current-temp').textContent = temp;
+  const description = jsObject.weather[0].description;  // note how we reference the weather array
+  const temp = jsObject.main.temp.imperial;  // note how we reference the weather array
+  const humidity = jsObject.main.humidity;  // note how we reference the weather array
+  const speed = jsObject.wind.speed.imperial;  // note how we reference the weather array
 
-  const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-  const desc = jsObject.weather[0].description;  // note how we reference the weather array
+  var temp = f.toFixed(2);
+
+  document.getElementById('descr').textContent = description;
+  document.getElementById('current-temp').textContent = temp;
+  document.getElementById('humid').textContent = humidity;
+  document.getElementById('windsp').textContent = speed;
   
-  document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
-  document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
-  document.getElementById('icon').setAttribute('alt', desc);
+  // document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
+  // document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
+  // document.getElementById('icon').setAttribute('alt', desc);
 });

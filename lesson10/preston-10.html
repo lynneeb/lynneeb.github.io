@@ -54,17 +54,17 @@
                     <div class="weatherinfo">
                         <div class="c1">
                             Currently:<br>
-                            High:<br>
+                            Current Temp:<br>
                             Wind Chill:<br>
                             Humidity:<br>
                             Wind Speed:<br>
                         </div>
                         <div class="c2">
-                            Rainy<br>
-                            <span id="temp">54</span> &#8457;<br>
+                            <span id="descr"></span><br>
+                            <span id="current-temp"></span> &#8457;<br>
                             <span id="windch"></span> &#8457;<br>
-                            95 %<br>
-                            <span id="windsp">12</span> mph<br>
+                            <span id="humid"></span> &#8457;<br>
+                            <span id="windsp"></span> mph<br>
                         </div>
                     </div>
                 </div>
@@ -138,8 +138,12 @@
             <span class="date">Current Date: <span id="currentdate"></span></span>
         </div>
     </footer>
-        
+    <p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
+    <hr>
+    <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
+    
         </div>
+        <script src="js/preston-10.js"></script>
           <script src="js/sources.js"></script>
           <script src="js/windchill.js"></script>
           <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
