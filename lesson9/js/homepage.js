@@ -13,7 +13,8 @@ fetch(requestURL)
     // JSON data needed - motto, year founded, population, and annual rainfall
       for (let i = 0; i < towns.length; i++ ) {
 
-        if (i == 1 || i == 4 || i == 5) {
+        // if (i == 1 || i == 4 || i == 5) {
+          if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs") {
           let townsec = document.createElement('section');
           let h2 = document.createElement('h2');
           let h3 = document.createElement('h3');
