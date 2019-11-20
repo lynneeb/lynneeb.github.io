@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast For Fun</title>
+    <meta name="author" content="Lynnette Beatty">
+    <meta name="description" 
+    content="Preston Town Page - Preston, Idaho - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Chettan%7cRaleway&display=swap">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-6.css">
+    <link rel="stylesheet" href="css/medium-6.css">
+    <link rel="stylesheet" href="css/large-6.css">
+
+</head>
+<body onload="start()">
+            <div id="bannerad">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+
+
+    <div id="content">
+    <header>
+        <picture>
+            <img src="images/forecast-for-fun-logo.jpg" alt="logo">
+        </picture>
+        <section class="headings">
+            <h1>Forecast For Fun</h1>
+            <div class="m">Be prepared to play outdoors!</div>
+        </section>
+    </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="hambmenu" href="#" onclick="togglemenu()">&#9776; Menu</a></li>
+                <li><a href="../lesson9/index.html">Home</a></li>
+                <li><a href="preston-6.html" class="active">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+	<main>
+            <h2 class="subhead">Preston Idaho</h2>
+            <div class="herodiv">
+                <picture>
+                    <source srcset="images/franklin600-large.jpg" media="(min-width: 800px)">
+                    <source srcset="images/franklin400-medium.jpg" media="(min-width: 500px) and (max-width: 799px)">
+                    <img class="hero-ph" src="images/franklin250-small.jpg" alt="trees-sky-sun">
+                    <!-- <img class="hero-ph" src="images/best-fishing-spots-idaho.jpg" width="970" height="393" alt="man-fishing"> -->
+                </picture>
+                <div class="weathersummary"> 
+                    <div class="weathertitle">Weather Summary</div>
+                    <div class="weatherinfo">
+                        <div class="c1">
+                            Currently:<br>
+                            High:<br>
+                            Wind Chill:<br>
+                            Humidity:<br>
+                            Wind Speed:<br>
+                        </div>
+                        <div class="c2">
+                            Rainy<br>
+                            <span id="temp">54</span> &#8457;<br>
+                            <span id="windch"></span> &#8457;<br>
+                            95 %<br>
+                            <span id="windsp">12</span> mph<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+<!-- *************Start 5 Day Forecast******************************* -->
+<div class="forecastdiv">
+        <h2 class="forecastheading">5 Day Forecast</h2>
+    <table id="forecasttable">
+        <tr>
+          <th>Mon</th>
+          <th>Tues</th>
+          <th>Wed</th>
+          <th>Thurs</th>
+          <th>Fri</th>
+        </tr>
+        <tr>
+            <td><img class="weather-icon" src="images/weather-icons/ps-rain.jpg" alt="rain-icon"><br>69 &#8457;</td>
+          <td><img class="weather-icon" src="images/weather-icons/ps-sun-cloud.jpg" alt="sun-cloud-icon"><br>72 &#8457;</td>
+          <td><img class="weather-icon" src="images/weather-icons/ps-sun.jpg" alt="sun-icon"><br>76 &#8457;</td>
+    <td><img class="weather-icon" src="images/weather-icons/ps-sun.jpg" alt="sun-icon"><br>77 &#8457;</td>
+          <td><img class="weather-icon" src="images/weather-icons/ps-sun-cloud.jpg" alt="sun-cloud-icon"><br>74 &#8457;</td>
+        </tr>
+    </table>
+    </div>
+
+<!-- ******************End 5 Day Forecast*************************** -->
+
+            <div class="article">
+                <img class="articleimg" src="images/ps-preston-rodeo-600.jpg" alt="preston-idaho-rodeo">
+               
+                <h3>The Town of Preston, Idaho</h3>
+                <h4>by Wikipedia</h4>
+                <p>Preston is a city in Franklin County, Idaho, United States. 
+                The population was 5,204 at the 2010 census. 
+                The city is the county seat of Franklin County. 
+                It is part of the Logan, Utah-Idaho Metropolitan Statistical Area.</p> 
+                <p>For several years the city held a "Napoleon Dynamite Festival" in the summer. 
+                Many of the featured festival themes related to events occurring during the film. 
+                For example: Tetherball Tournament, Tater Tot Eating Contest, Moon Boot Dance, Impersonation, Look-A-Like Contest, Football Throwing Contest and more. 
+                In 2004 there was a single day event that drew approximately 300 people. 
+                Although this was not a large crowd, it did help raise $1,500 for the Preston School District Education Foundation. 
+                In 2005 an estimated 6,000 people attended the event, but that number dropped to an estimated 400 people in 2006. 
+                The 2007 and 2008 event was held along with the 'That Famous Preston Night Rodeo' in Preston.</p>
+
+            </div>
+            <div class="contact">
+                
+                <img class="map" src="images/preston-map.JPG" width="478" height="492" alt="map-preston-idaho">
+            
+                <div class="address"><strong>Forecast For Fun</strong><br>
+                    <img class="pin" src="images/pin.jpg" alt="pin"> 45 South 75 West<br>
+                    Preston, Idaho 83263 <br>
+                    &#9742;  (208) 520-5220<br>
+                    &#9993;  forecastforfun@tws.com<br><br>
+                    
+                    <a class="sm" target="_blank" href="https://www.youtube.com"><img src="images/ytube.jpg" alt="youtube"></a>
+                    <a class="sm" target="_blank" href="https://www.facebook.com"><img src="images/facebook.jpg" alt="facebook"></a>
+                    <a class="sm" target="_blank" href="https://www.instagram.com"><img src="images/instagram.jpg" alt="instagram"></a>
+                    <a class="sm" target="_blank" href="https://www.twitter.com"><img src="images/twitter.jpg" alt="twitter"></a>
+                    <a class="sm" target="_blank" href="https://www.pinterest.com"><img src="images/pinterest.jpg" alt="pinterest"></a>
+                </div>
+
+                <img class="contactimg" src="images/ps-picnic600.jpg" width="750" height="500" alt="family-picnic">
+
+            </div>                      
+    </main>
+    <footer> 
+                    <div id="info">&copy; Forecast For Fun | Attributions | <a class="link" target="_blank" href="../index.html">Lynnette Beatty</a><br> 
+            <span class="date">Current Date: <span id="currentdate"></span></span>
+        </div>
+    </footer>
+        
+        </div>
+          <script src="js/sources.js"></script>
+          <script src="js/windchill.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script>WebFont.load({google: {families: ["Baloo Chettan","Raleway"]}});</script>
+</body>
+</html>

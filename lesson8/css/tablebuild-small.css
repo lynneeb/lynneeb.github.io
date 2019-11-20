@@ -39,10 +39,15 @@ table {
     background-color: #e7ffed;
   }
 
- .highlight {
+ #highlight {
     background-color: #628ca6;
     color: white
   }
+
+ .italic {
+   font-style: italic;
+ }
+
 
  tfoot {
   font-size: .8rem;
