@@ -159,7 +159,7 @@ h2 {
     margin: 0 auto;
     top: 1rem;
     left: 1rem;
-    width: 14rem;
+    width: auto;
     height: auto;
     /* background-image: radial-gradient(ellipse, white, transparent 70%); */
     background-color: rgba(10, 36, 169, 0.5);
@@ -175,6 +175,7 @@ h2 {
     border-bottom: 2px solid white;
 }
 .weatherinfo {
+    /* min-width: 340px; */
     display: inline-grid;
     grid-template-columns: auto auto;
     column-gap: .5rem;
@@ -183,6 +184,7 @@ h2 {
 }
 
 .c1 {
+    display: inline-grid;
 	text-align: right;
     color: white;
 }

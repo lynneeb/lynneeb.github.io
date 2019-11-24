@@ -9,12 +9,13 @@
     content="Preston Town Page - Preston, Idaho - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Chettan%7cRaleway&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small-6.css">
-    <link rel="stylesheet" href="css/medium-6.css">
-    <link rel="stylesheet" href="css/large-6.css">
+    <link rel="stylesheet" href="css/small-10.css">
+    <link rel="stylesheet" href="css/medium-10.css">
+    <link rel="stylesheet" href="css/large-10.css">
 
 </head>
 <body onload="start()">
+
             <div id="bannerad">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
 
 
@@ -32,7 +33,7 @@
             <ul class="navigation">
                 <li><a class="hambmenu" href="#" onclick="togglemenu()">&#9776; Menu</a></li>
                 <li><a href="../lesson9/index.html">Home</a></li>
-                <li><a href="preston-6.html" class="active">Preston</a></li>
+                <li><a href="preston-10.html" class="active">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
@@ -44,24 +45,23 @@
             <h2 class="subhead">Preston Idaho</h2>
             <div class="herodiv">
                 <picture>
-                    <source srcset="images/franklin600-large.jpg" media="(min-width: 800px)">
-                    <source srcset="images/franklin400-medium.jpg" media="(min-width: 500px) and (max-width: 799px)">
-                    <img class="hero-ph" src="images/franklin250-small.jpg" alt="trees-sky-sun">
-                    <!-- <img class="hero-ph" src="images/best-fishing-spots-idaho.jpg" width="970" height="393" alt="man-fishing"> -->
+                    <source srcset="images/fishing600-large.jpg" media="(min-width: 800px)">
+                    <source srcset="images/fishing400-medium.jpg" media="(min-width: 500px) and (max-width: 799px)">
+                    <img class="hero-ph" src="images/fishing250-small.jpg" alt="man-fishing">
                 </picture>
                 <div class="weathersummary"> 
                     <div class="weathertitle">Weather Summary</div>
                     <div class="weatherinfo">
                         <div class="c1">
                             Currently:<br>
-                            Current Temp:<br>
+                            Temp:<br>
                             Wind Chill:<br>
                             Humidity:<br>
                             Wind Speed:<br>
                         </div>
                         <div class="c2">
                             <span id="descr"></span><br>
-                            <span id="current-temp"></span> &#8457;<br>
+                            <span id="temp"></span> &#8457;<br>
                             <span id="windch"></span> &#8457;<br>
                             <span id="humid"></span> &#8457;<br>
                             <span id="windsp"></span> mph<br>
@@ -75,20 +75,24 @@
 <div class="forecastdiv">
         <h2 class="forecastheading">5 Day Forecast</h2>
     <table id="forecasttable">
+        <thead>
         <tr>
-          <th>Mon</th>
-          <th>Tues</th>
-          <th>Wed</th>
-          <th>Thurs</th>
-          <th>Fri</th>
+          <th><span id="day1"></span></th>
+          <th><span id="day2"></span></th>
+          <th><span id="day3"></span></th>
+          <th><span id="day4"></span></th>
+          <th><span id="day5"></span></th>
         </tr>
-        <tr>
-            <td><img class="weather-icon" src="images/weather-icons/ps-rain.jpg" alt="rain-icon"><br>69 &#8457;</td>
-          <td><img class="weather-icon" src="images/weather-icons/ps-sun-cloud.jpg" alt="sun-cloud-icon"><br>72 &#8457;</td>
-          <td><img class="weather-icon" src="images/weather-icons/ps-sun.jpg" alt="sun-icon"><br>76 &#8457;</td>
-    <td><img class="weather-icon" src="images/weather-icons/ps-sun.jpg" alt="sun-icon"><br>77 &#8457;</td>
-          <td><img class="weather-icon" src="images/weather-icons/ps-sun-cloud.jpg" alt="sun-cloud-icon"><br>74 &#8457;</td>
+        </thead>
+        <tbody>
+            <tr>
+            <td><img id="icon1" src="#" alt="#"><br><span id="temp1"></span> &#8457;</td>
+            <td><img id="icon2" src="#" alt="#"><br><span id="temp2"></span> &#8457;</td>
+            <td><img id="icon3" src="#" alt="#"><br><span id="temp3"></span> &#8457;</td>
+            <td><img id="icon4" src="#" alt="#"><br><span id="temp4"></span> &#8457;</td>
+            <td><img id="icon5" src="#" alt="#"><br><span id="temp5"></span> &#8457;</td>
         </tr>
+        </tbody>
     </table>
     </div>
 
@@ -134,19 +138,13 @@
             </div>                      
     </main>
     <footer> 
-                    <div id="info">&copy; Forecast For Fun | Attributions | <a class="link" target="_blank" href="../index.html">Lynnette Beatty</a><br> 
+                    <div id="info">&copy; Forecast For Fun | <a class="link" target="_blank" href="https://openweathermap.org/">OpenWeatherMap</a> | <a class="link" target="_blank" href="../index.html">Lynnette Beatty</a><br> 
             <span class="date">Current Date: <span id="currentdate"></span></span>
         </div>
     </footer>
-    <p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
-    <hr>
-    <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
     
         </div>
-        <script src="js/preston-10.js"></script>
-          <script src="js/sources.js"></script>
-          <script src="js/windchill.js"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-          <script>WebFont.load({google: {families: ["Baloo Chettan","Raleway"]}});</script>
+            <script src="js/master.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 </body>
 </html>
