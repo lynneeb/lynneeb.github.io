@@ -1,0 +1,52 @@
+/* Media Query for medium + screens */
+@media only screen and (min-width: 32.5em) {
+
+	.logo {
+		width: 100%;
+	}
+	.headings h1 {
+		font-size: 2.5rem;
+	}
+	.headings .m {
+		letter-spacing: 1.5pt;
+		font-size: 1.6rem;
+		margin-left: 1rem;
+	}
+
+	.navigation li:first-child {
+		text-align: center;
+		display: inline-block;
+	}
+	
+	.navigation {
+		display: flex;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		font-size: 1.2rem;
+		text-align: center;
+  }
+
+  img[data-src] {
+    width: 100%;
+    height: auto;
+}
+
+  img {
+    width: 100%;
+    height: auto;
+}
+.map {
+  display: flex;
+	width: 14rem;
+  height: auto;
+  padding: 1rem;
+}
+
+}

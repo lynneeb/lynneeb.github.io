@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast For Fun | Gallery</title>
+    <meta name="author" content="Lynnette Beatty">
+    <meta name="description" 
+    content="Gallery of Weather Pictures - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Chettan%7cRaleway&display=swap">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-gallery.css">
+    <link rel="stylesheet" href="css/medium-gallery.css">
+    <link rel="stylesheet" href="css/large-gallery.css">
+
+</head>
+<body onload="start()">
+
+    <div id="content">
+    <header>
+        <picture>
+            <img class="logo" src="images/forecast-for-fun-logo.jpg" alt="logo">
+        </picture>
+        <section class="headings">
+            <h1>Forecast For Fun</h1>
+            <div class="m">Be prepared to play outdoors!</div>
+        </section>
+    </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="hambmenu" href="#" onclick="togglemenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+            </ul>
+        </nav>
+
+	<main>
+        <h2 class="gallery-title">Weather Gallery</h2><br>
+    
+        <div class="gridbox">
+        
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/ps-sunshine.jpg' alt='sunshine'>
+            <figcaption>Sunny Day</figcaption>
+        </figure>
+
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/ps-rain-flowers.jpg' alt='rain-flowers'>
+            <figcaption>Rain on Flowers</figcaption>
+        </figure>
+
+        <figure>
+                <img src='images/placeholder.jpg' data-src='images/ps-snowy-bridge.jpg' alt='snowy-bridge'>
+                <figcaption>Snowy Bridge</figcaption>
+        </figure>
+
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/ps-rainbow.jpg' alt='rainbow'>
+            <figcaption>Rainbow</figcaption>
+        </figure>
+    
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/ps-sunset.jpg' alt='sunset'>
+            <figcaption>Sunset Over Water</figcaption>
+        </figure>
+    
+        <figure>
+                <img src='images/placeholder.jpg' data-src='images/ps-storm-clouds.jpg' alt='storm-clouds'>
+                <figcaption>Storm Clouds</figcaption>
+        </figure>
+    
+        <figure>
+                <img src='images/placeholder.jpg' data-src='images/ps-highway.jpg' alt='clear-highway'>
+                <figcaption>Clear Highway</figcaption>
+        </figure>
+    
+        <figure>
+                <img src='images/placeholder.jpg' data-src='images/ps-lake-mountains.jpg' alt='lake-mountains'>
+                <figcaption>Lake and Mountains</figcaption>
+        </figure>
+    
+        <figure>
+                <img src='images/placeholder.jpg' data-src='images/ps-fluffy-clouds.jpg' alt='fluffy-clouds'>
+                <figcaption>Fluffy Clouds</figcaption>
+        </figure>
+    
+        <figure>
+                <img src='images/placeholder.jpg' data-src='images/ps-lightening-storm.jpg' alt='lightening-storm'>
+                <figcaption>Lightening Storm</figcaption>
+        </figure>
+
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/ps-mountain-lake.jpg' alt='mountain-lake'>
+            <figcaption>Mountain Lake</figcaption>
+        </figure>
+    
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/ps-moon-storm.jpg' alt='moon-storm'>
+            <figcaption>Moon in the Storm</figcaption>
+        </figure>
+    
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/ps-forest-fire.jpg' alt='forest-fire'>
+            <figcaption>Forest Fire</figcaption>
+        </figure>
+    
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/ps-flood.jpg' alt='flood'>
+            <figcaption>Flood</figcaption>
+        </figure>
+
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/ps-beach-storm.jpg' alt='hawaii'>
+            <figcaption>Storm on the Beach</figcaption>
+        </figure>
+    </div>
+    
+    </main>
+    <footer> 
+                    <div id="info">&copy; Forecast For Fun | Attributions | <a class="link" target="_blank" href="../index.html">Lynnette Beatty</a><br> 
+            <span class="date">Current Date: <span id="currentdate"></span></span>
+        </div>
+    </footer>
+        
+        </div>
+          <script src="js/proload.js"></script>
+          <script src="js/date&fonts.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>
