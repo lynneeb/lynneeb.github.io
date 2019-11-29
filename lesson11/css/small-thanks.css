@@ -169,7 +169,8 @@ footer {
 }
 
 .link {
-    color: white;
+    /* color: white; */
+    color: black;
   }
 
 .date {
