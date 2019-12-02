@@ -22,7 +22,7 @@
     <div id="content">
     <header>
         <picture>
-            <img src="images/forecast-for-fun-logo.jpg" alt="logo">
+            <a href="index.html"><img src="images/forecast-for-fun-logo.jpg" alt="weather-logo"></a>
         </picture>
         <section class="headings">
             <h1>Forecast For Fun</h1>
@@ -37,7 +37,7 @@
                 <li><a href="soda-springs.html">Soda Springs</a></li>
                 <li><a href="fish-haven.html">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-7.html">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
 
@@ -96,9 +96,18 @@
     </table>
     </div>
 
-<!-- ******************End 5 Day Forecast*************************** -->
+<!-- ****************** JSON Preston Events *************************** -->
+
+<div class="events">
+        <h2 class="event-title">Current Preston Events</h2>
+        <div class="eventlist"></div>
+</div>
+
+<!-- ****************** Article *************************** -->
+
 
             <div class="article">
+                <!-- <section> -->
                 <img class="articleimg" src="images/ps-preston-rodeo-600.jpg" alt="preston-idaho-rodeo">
                
                 <h3>Preston, Idaho</h3>
@@ -106,19 +115,20 @@
                 <p>The city of Preston is located in Franklin County in the state of Idaho.  
                     Preston has a total area of 6.66 square miles. 
                     Close to the city is a popular recreation area called Cub River Canyon. 
-                    It’s climate is warm and humid in the summertime at around 100 deg. F and can get below 0 deg. F in the winter.  
+                    It’s climate is warm and humid in the summertime at around 100 deg. F.
+                    The temperature can get below 0 deg. F in the winter.  
                     According to the 2010 census, there were 5,204 people in Preston.</p>
 
                 <p>In late July, the Franklin County parade and ‘That Famous Preston Night Rodeo’ are held. 
-                    The parade includes advertisements for local businesses and floats. 
-                    The rodeo is held at night and includes barrel racing and bull riding.  
+                    The parade festivities include floats and advertisements for local businesses. 
+                    The rodeo is held at night and features barrel racing and bull riding.  
                     These two events remain a popular tradition for the city.</p>
                 
                 <p>A large portion of the movie, “Napoleon Dynamite”, was filmed in Preston. 
                     The movie’s creators, Jared and Jerusha Hess live in Preston.</p>
 
                     <p>Reference: <a target="_blank" href="https://en.wikipedia.org/wiki/Preston,_Idaho">Wikipedia</a></p>
-
+                <!-- </section> -->
             </div>
             <div class="contact">
                 
@@ -149,6 +159,7 @@
     
         </div>
             <script src="js/master.js"></script>
+            <script src="js/events-p.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 </body>
 </html>

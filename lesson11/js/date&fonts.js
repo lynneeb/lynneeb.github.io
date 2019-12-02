@@ -36,6 +36,11 @@ const year = d.getFullYear();
 const fulldate = dayName + ", " + d.getDate() + " " + monthName + " " + year;
 document.getElementById("currentdate").textContent = fulldate;
 
+//code for storm severtiy rating
+function adjustRating(rating) {
+  document.getElementById("ratingvalue").innerHTML = rating;
+}
+
 // get fonts
 function getfonts() {
 	WebFont.load({google: {families: ["Baloo Chettan","Raleway"]}});
