@@ -133,7 +133,7 @@ like this in HTML Line #6.
     font-size: 2rem;
 }
 
-h3 {
+.townsites h3 {
     font-size: 16px;
     height: 32px;
     font-style: italic;
@@ -184,9 +184,6 @@ article {
 }
 .articleimg {
     order: 2;
-    /* max-width: 50%; */
-    /* height: 2rem; */
-    /* width: auto; */
     margin: 1rem auto;
     box-shadow: 0 0 20px black;
 }

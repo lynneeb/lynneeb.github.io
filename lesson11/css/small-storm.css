@@ -115,7 +115,7 @@ like this in HTML Line #6.
 
 
 /* Storm Center */
-.title {
+.storm-title {
    
     width: 100%;
     text-align: center;
@@ -258,7 +258,7 @@ form label.sbs {
 }
 
 /* ---Label- Are you in danger?--- */
-p {
+.danger {
     color: #9c2c13;
     font-weight: bold;
     font-size: 1.3rem;

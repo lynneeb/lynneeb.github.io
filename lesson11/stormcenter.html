@@ -9,16 +9,16 @@
     content="Gallery of Weather Pictures - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Chettan%7cRaleway&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small-storm.css">
-    <link rel="stylesheet" href="css/medium-storm.css">
-    <link rel="stylesheet" href="css/large-storm.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 
 </head>
 <body onload="start()">
 
     <div id="content">
     <header>
-            <a href="index.html"><img src="images/forecast-for-fun-logo.jpg" alt="weather-logo"></a>
+            <a href="index.html"><img id="logo" src="images/forecast-for-fun-logo.jpg" alt="weather-logo"></a>
         <section class="headings">
             <h1>Forecast For Fun</h1>
             <div class="m">Be prepared to play outdoors!</div>
@@ -37,7 +37,7 @@
         </nav>
 
 	<main>
-    <h2 class="title">Storm Center</h2>
+    <h2 class="storm-title">Storm Center</h2>
     <div class="report">Report the Weather in Your Area</div>
 
     <div class="box">
@@ -102,7 +102,7 @@
             <option value="fish-haven">Fish Haven</option>
         </select></label><br>
 
-        <p>Are you in danger?<p>
+        <p class="danger">Are you in danger?<p>
         <div id="radio">
             <label class="sbs" for="danger1"><input type="radio" id="danger1" name="danger" value="no"> no</label>
             <label class="sbs" for="danger2"><input type="radio" id="danger2" name="danger" value="maybe"> maybe</label>

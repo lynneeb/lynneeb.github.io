@@ -1,7 +1,7 @@
 /* Media Query for medium + screens */
 @media only screen and (min-width: 32.5em) {
 
-	header img {
+	#logo {
 		width: 100%;
 	}
 	.headings h1 {
@@ -116,6 +116,35 @@
 	width: 14rem;
   height: auto;
   padding: 1rem;
+}
+/* ************** Home Page *************************** */
+/* -------------------townsites--------------------- */
+.townsites {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section {
+display: flex;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+section div {
+  margin: auto;
+  padding: 1rem;
+
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  margin: 1rem;
 }
 
 }

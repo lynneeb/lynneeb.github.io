@@ -13,21 +13,13 @@ header {
     justify-content: center;
 }
 
-header img {
-    /* align-items: center; */
-    /* justify-content: center; */
-    width: 10rem;
-    height: auto;
-    border: 1px solid #000; 
-    box-shadow: 5px 5px 5px black;
-}
-
-/* .logo {
+#logo {
+    /* header img { */
     width: 80px;
     height: auto;
     border: 1px solid #000; 
     box-shadow: 5px 5px 5px black;
-} */
+}
 
 .headings {
 	display: flex;

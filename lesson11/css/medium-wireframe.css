@@ -1,11 +1,11 @@
-body {
+.medwire-body {
     background-color: rgb(154, 150, 163);
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
- h1 {
+ .medwire {
     font-size: 1.3rem;
     color: black;
     font-family: 'Baloo Chettan', cursive;

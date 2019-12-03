@@ -11,12 +11,86 @@
     .contentbox {
         font-size: 1.1rem;
     }
-    .contactimg {
+    #contactimg {
         display: block;
         max-width: 22rem;
         height: auto;
         padding: .1rem 0rem .1rem .1rem;
         box-shadow: 5px 5px 5px black;
     }
-    
+
+    footer {
+        font-size: 1.1rem;
+    }
+   /* ******* Home Page ****************************************** */
+.townsites {
+    max-width: 60rem;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px;
+    background-color: #BC986A;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid #000; 
 }
+
+.townsites section {
+    display: grid;
+    margin: .5rem;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    align-content: center;
+    background-color: #FBEEC1;
+    border: 1px solid black;
+}
+
+.townsites h2 {
+    font-size: 2rem;
+}
+
+.townsites h3 {
+    width: auto;
+    font-size: 16px;
+    height: 32px;
+    font-style: italic;
+}
+
+.townsites p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.p3 {
+    padding-bottom: 16px;
+}
+
+.townsites img {
+    height: 20rem;
+    width: auto;
+    box-shadow: 0 0 20px black;
+}
+
+/* **************** Gallery Page *********************************** */
+
+img[data-src] {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+figure:hover {
+    /* box-shadow: 0 0 50px #333; */
+    box-shadow: 5px 5px 5px black;
+}
+/* ------------------------------------ */ 
+
+}
+

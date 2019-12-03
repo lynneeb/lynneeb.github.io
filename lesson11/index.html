@@ -9,16 +9,16 @@
     content="Forecast For Fun | Home Page - Preston, Idaho - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Chettan%7cRaleway&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small-home.css">
-    <link rel="stylesheet" href="css/medium-home.css">
-    <link rel="stylesheet" href="css/large-home.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 
 </head>
 <body onload="start()">
 
     <div id="content">
     <header>
-                <a href="index.html"><img src="images/forecast-for-fun-logo.jpg" alt="weather-logo"></a>
+                <a href="#"><img id="logo" src="images/forecast-for-fun-logo.jpg" alt="weather-logo"></a>
         <section class="headings">
             <h1>Forecast For Fun</h1>
             <div class="m">Be prepared to play outdoors!</div>
@@ -75,22 +75,25 @@
     <!-- ****************** Wireframe Links ****************************************** -->
 
 
-        <section class="wireframes">
-            <img class="weather" src="images/ps-weather-pic.jpg" alt="weather-picture">  
+        <section id="wireframes">
+            <div class="weather-div">
+                <img class="weather-pic" src="images/ps-weather-pic.jpg" alt="weather-picture">  
+            </div>
 
-            <div class="linkdiv">
+            <div id="linkdiv" class="weather-div">
 
                     <br>
                     <br>
                     <br>
                     <h2 class="wtitle">Wireframe links for Weather Site</h2>
 
-                    <p><a class="links" target="_blank" href="smallwireframe.html">Small Wireframe</a></p>
-                    <p><a class="links" target="_blank" href="mediumwireframe.html">Medium Wireframe</a></p>
-                    <p><a class="links" target="_blank" href="largewireframe.html">Large Wireframe</a></p>
+                    <p><a class="wlinks" target="_blank" href="smallwireframe.html">Small Wireframe</a></p>
+                    <p><a class="wlinks" target="_blank" href="mediumwireframe.html">Medium Wireframe</a></p>
+                    <p><a class="wlinks" target="_blank" href="largewireframe.html">Large Wireframe</a></p>
             </div>
-
-            <img class="snow" src="images/ps-snowy-winter-road.jpg" alt="winter-road">  
+            <div class="weather-div">
+                <img class="snow-pic" src="images/ps-snowy-winter-road.jpg" alt="winter-road">  
+            </div>
 
         </section>
 
@@ -106,14 +109,14 @@
                     &#9742;  (208) 520-5220<br>
                     &#9993;  forecastforfun@tws.com<br><br>
                     
-                    <a class="sm" target="_blank" href="https://www.youtube.com"><img src="images/ytube.jpg" alt="youtube"></a>
-                    <a class="sm" target="_blank" href="https://www.facebook.com"><img src="images/facebook.jpg" alt="facebook"></a>
-                    <a class="sm" target="_blank" href="https://www.instagram.com"><img src="images/instagram.jpg" alt="instagram"></a>
-                    <a class="sm" target="_blank" href="https://www.twitter.com"><img src="images/twitter.jpg" alt="twitter"></a>
-                    <a class="sm" target="_blank" href="https://www.pinterest.com"><img src="images/pinterest.jpg" alt="pinterest"></a>
+                    <a class="sm" target="_blank" href="https://www.youtube.com"><img class="media" src="images/ytube.jpg" alt="youtube"></a>
+                    <a class="sm" target="_blank" href="https://www.facebook.com"><img class="media" src="images/facebook.jpg" alt="facebook"></a>
+                    <a class="sm" target="_blank" href="https://www.instagram.com"><img class="media" src="images/instagram.jpg" alt="instagram"></a>
+                    <a class="sm" target="_blank" href="https://www.twitter.com"><img class="media" src="images/twitter.jpg" alt="twitter"></a>
+                    <a class="sm" target="_blank" href="https://www.pinterest.com"><img class="media" src="images/pinterest.jpg" alt="pinterest"></a>
                 </div>
 
-                <img class="contactimg" src="images/ps-picnic600.jpg" width="750" height="500" alt="family-picnic">
+                <img id="contactimg" src="images/ps-picnic600.jpg" width="750" height="500" alt="family-picnic">
 
             </div>                      
     </main>

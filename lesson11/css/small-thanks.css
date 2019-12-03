@@ -114,7 +114,7 @@ like this in HTML Line #6.
 /*----------- MAIN --------------*/
 
 
-.box {
+.thanks-box {
     max-width: 60rem;
     padding: 1rem;
     height: auto;
@@ -126,7 +126,7 @@ like this in HTML Line #6.
 }
 
 
-.title {
+.thanks-title {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
