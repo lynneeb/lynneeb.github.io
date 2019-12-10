@@ -529,7 +529,6 @@ main article {
   padding: 0 1rem;
   background-color: #c8daab;
   border-radius: 20px;
-  box-shadow: 20px 20px 20px #403E49;
   right: 30px;
   top: 30px; }
 
@@ -586,14 +585,13 @@ footer {
   background-color: #6f9777;
   text-align: center;
   line-height: 1.2rem;
-  font-weight: 400;
-  box-shadow: 20px 20px 20px #403E49;
+  font-family: 'Josefin Sans', sans-serif;
   right: 30px;
   top: 30px; }
 
 #info {
   font-size: 1.2rem;
-  font-weight: 900; }
+  font-weight: 700; }
 
 .link {
   color: black; }
@@ -652,7 +650,6 @@ footer {
 .homelink {
   font-size: 1.5rem; }
 
-/* body rules */
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
