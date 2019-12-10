@@ -1,0 +1,79 @@
+//   ---------------------------------------------------------  
+    
+
+/* 2 columns for medium sized screens (600px is 37.5em)*/
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	/* Horizontal Menu */
+	/* Flex *********************/
+	// 	nav ul { display: flex; }
+	// 		nav ul li { flex: 1 1 100%; }
+	
+	// nav a {
+	// 	font-size: 1rem;
+    // }
+    
+    .navigation li:first-child {
+		text-align: center;
+		display: inline-block;
+	}
+	
+	.navigation {
+		display: flex;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		font-size: 1.3rem;
+		text-align: center;
+    }
+    // ---------- main ------------------
+
+
+
+	main {
+        grid-template-columns: 1fr 1fr;
+	}
+	article:nth-child(3) {
+		grid-column: span 2;
+    }
+    
+	main picture {
+        display: block;
+		margin: 0.5rem;
+        border-radius: 20px;
+        border: 4px solid rgb(73, 71, 71);
+        box-shadow: 20px 20px 20px #403E49;
+        right: 30px;
+        top: 30px;
+	}
+	main picture img {
+        width: 100%;
+		height: auto;
+        border-radius: 16px;
+	}
+}
+    
+    // --------------------------------------------------
+    // nav li {width: 25%; float: left;}
+    
+    
+    // main figure {
+    //     float: right; 
+    //     width: 48%; 
+    //     margin-left: 2%;
+    //     padding-bottom: .5rem;
+    // }
+    
+    // div.news {
+    //     clear: both;
+    //     column-count: 2;
+    //     column-rule: 1px solid #ddd;
+    // }
+    

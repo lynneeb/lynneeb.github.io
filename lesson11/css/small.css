@@ -784,4 +784,9 @@ img {
     margin: 2rem;
     border: 1px solid black;
 }
-/* --------------------------- */
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
