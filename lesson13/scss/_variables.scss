@@ -1,0 +1,24 @@
+$primaryColor: rgb(200, 218, 171);
+
+// $font-family: 'Josefin Slab', serif;
+// $regularWeight: 400;
+// $heavyWeight: 700;
+
+$fontHead: 'Parisienne', cursive;
+$fontSubhead: 'Bad Script', cursive;
+$fontBody: 'Montserrat', sans-serif;
+
+
+$gutter: 2%;
+
+
+// ----------- slider -----------------------
+// Reference: https://codepen.io/eltonkamami/pen/hjBrE
+/* //how many images we have */
+ $slides: 5;
+
+/* // how much we want each slide to show */
+$time_per_slide: 4;
+
+/* // total time needed for full animation */
+$total_animation_time: $time_per_slide * $slides;

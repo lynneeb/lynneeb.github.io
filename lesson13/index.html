@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites</title>
+    <meta name="author" content="Lynnette Beatty">
+    <meta name="description" 
+    content="Temple Inn & Suites | Home Page - Preston, Idaho - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Chettan%7cRaleway&display=swap"> -->
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script%7cMontserrat%7cParisienne&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css"> -->
+
+</head>
+<body onload="start()">
+
+    <div id="content">
+    <header>
+                <a href="#"><img id="logo" src="temple-images/ps-temple-logo-w-text.png" alt="temple-logo"></a>
+        <section class="headings">
+            <h1>Temple Inn & Suites</h1>
+            <div class="m">Relax and enjoy the Temple</div>
+        </section>
+    </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="hambmenu" href="#" onclick="togglemenu()">&#9776; Menu</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="preston.html">Temple</a></li>
+                <li><a href="soda-springs.html">Reservation</a></li>
+                <!-- <li><a href="soda-springs.html">Services</a> -->
+                    <li>
+                        <div class="dropdown">
+                            <a href="soda-springs.html" class="dropbtn">Services</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Reception</a>
+                                    <a href="#">Full-time<br>Temple Missionary</a>
+                                </div>
+                        </div>
+                    </li>
+                <li><a href="stormcenter.html">Contact</a></li>
+                <!-- <li><a href="gallery.html">Gallery</a></li> -->
+            </ul>
+        </nav>
+
+
+	<main>
+            <!-- <div class="homeHeroContainer"><img src="#" alt="#"></div> -->
+        <!-- *********** image slider ************************************************ -->
+        <!-- <div class="container">
+                <img class='photo'  src="http://farm9.staticflickr.com/8320/8035372009_7075c719d9.jpg" alt="" />
+                <img class='photo'  src="http://farm9.staticflickr.com/8517/8562729616_35b1384aa1.jpg" alt="" />
+                <img class='photo'  src="http://farm9.staticflickr.com/8465/8113424031_72048dd887.jpg" alt="" />
+                <img class='photo'  src="http://farm9.staticflickr.com/8241/8562523343_9bb49b7b7b.jpg" alt="" />
+              
+              </div> -->
+
+   <!-- Reference: https://codepen.io/eltonkamami/pen/hjBrE -->
+              <div class="container">
+                    <img class='photo'  src="temple-images/ps-rome-italy-temple.jpg" alt="" />
+                    <img class='photo'  src="temple-images/ps-salt-lake-temple.jpg" alt="" />
+                    <img class='photo'  src="temple-images/ps-madrid-spain-temple.jpg" alt="" />
+                    <img class='photo'  src="temple-images/ps-london-england-temple.jpg" alt="" />
+                    <img class='photo'  src="temple-images/ps-paris-france-temple.jpg" alt="" />
+                  
+                  </div>
+
+
+
+<!-- 
+        <div id="slider">
+        <figure>
+        <img src="temple-images/ps-rome-italy-temple.jpg" alt>
+        <img src="temple-images/ps-salt-lake-temple.jpg" alt>
+        <img src="temple-images/ps-madrid-spain-temple.jpg" alt>
+        <img src="temple-images/ps-london-england-temple.jpg" alt>
+        <img src="temple-images/ps-paris-france-temple.jpg" alt>
+        </figure>
+        </div> -->
+
+        <!-- *********************************************************************************** -->
+
+            <h2 class="subhead">The Temple Inn & Suites</h2>
+        
+  <!-- ********* JSON Townsites *****************************************************          -->
+           
+
+        <div class="townsites"></div>
+
+
+<!-- *********************************** Idaho Weather Article *********************************************** -->
+
+    <article class="articlebox">
+        <div class="article">
+                <img class="articleimg" src="images/ps-article-image.jpg" alt="snowy-road">
+            
+                <h2>Freezing Temperatures Across Idaho</h2>
+
+                <p>By Lynnette Beatty</p>
+                        
+                <p>Brace yourself for a cold winter! 
+                    According to the Idaho Farm Bureau Federation, the current cold spell could hurt local crops. 
+                    Sweet corn, potatoes, dry beans, and onions are at risk of freezing. 
+                    The National Weather Service reports that the Northern Panhandle and Central Idaho received some light snowfall already this month. 
+                    Eastern Idaho got several inches of snow. 
+                    Record-low temperatures are expected across the state.</p>
+
+                <p>A National Weather Service meteorologist said the high winds, low temperatures and snow are caused by a low pressure system from Canada. 
+                    Most regions across Idaho are going to experience record low temperatures.  
+                    The record low in Boise, set back in 1985, was 26 degrees in October. 
+                    The weather forecast expects to break that record by Thursday morning.</p> 
+                        
+                <p>Reference: <a target="_blank" href="https://www.ktvb.com/article/news/local/weather-record-low-temperatures-idaho-october-snow-early-cold-spell-affects-roads-crops/277-8bc7da01-da92-4f79-b7e9-1537aca50fb7">
+                                KTVB Local Weather</a></p>
+        </div>
+    </article>
+
+    <!-- ****************** Wireframe Links ****************************************** -->
+
+
+        <section id="wireframes">
+            <div class="weather-div">
+                <img class="weather-pic" src="images/ps-weather-pic.jpg" alt="weather-picture">  
+            </div>
+
+            <div id="linkdiv" class="weather-div">
+
+                    <br>
+                    <br>
+                    <br>
+                    <h2 class="wtitle">Wireframe links for Weather Site</h2>
+
+                    <p><a class="wlinks" target="_blank" href="smallwireframe.html">Small Wireframe</a></p>
+                    <p><a class="wlinks" target="_blank" href="mediumwireframe.html">Medium Wireframe</a></p>
+                    <p><a class="wlinks" target="_blank" href="largewireframe.html">Large Wireframe</a></p>
+            </div>
+            <div class="weather-div">
+                <img class="snow-pic" src="images/ps-snowy-winter-road.jpg" alt="winter-road">  
+            </div>
+
+        </section>
+
+        <!-- ***********************Contact************************************************ -->
+
+            <div class="contact">
+                
+                <img class="map" src="images/preston-map.JPG" width="478" height="492" alt="map-preston-idaho">
+            
+                <div class="address"><strong>Temple Inn & Suites</strong><br>
+                    <img class="pin" src="images/pin.jpg" alt="pin"> 2440 S. Wilson Rd.<br>
+                    Bethesda, MD 20810 <br>
+                    &#9742;  (240) 520-5220<br>
+                    &#9993;  templeinnandsuites@tws.com<br><br>
+                    
+                    <a class="sm" target="_blank" href="https://www.youtube.com"><img class="media" src="images/ytube.jpg" alt="youtube"></a>
+                    <a class="sm" target="_blank" href="https://www.facebook.com"><img class="media" src="images/facebook.jpg" alt="facebook"></a>
+                    <a class="sm" target="_blank" href="https://www.instagram.com"><img class="media" src="images/instagram.jpg" alt="instagram"></a>
+                    <a class="sm" target="_blank" href="https://www.twitter.com"><img class="media" src="images/twitter.jpg" alt="twitter"></a>
+                    <a class="sm" target="_blank" href="https://www.pinterest.com"><img class="media" src="images/pinterest.jpg" alt="pinterest"></a>
+                </div>
+
+                <img id="contactimg" src="temple-images/ps-snowflake-temple.jpg".jpg" width="750" height="500" alt="snowflake-temple">
+
+            </div>                      
+    </main>
+
+    <!-- **************************** Footer ********************************************************************** -->
+    <footer> 
+                    <div id="info">&copy; Temple Inn & Suites | <a class="link" target="_blank" href="references.html">References</a> | <a class="link" target="_blank" href="../index.html">Lynnette Beatty</a><br> 
+            <span class="date">Current Date: <span id="currentdate"></span></span>
+        </div>
+    </footer>
+        
+        </div>
+          <script src="js/homepage.js"></script>
+          <script src="js/date&fonts.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+</body>
+</html>

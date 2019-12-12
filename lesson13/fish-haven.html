@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast For Fun | Fish Haven</title>
+    <meta name="author" content="Lynnette Beatty">
+    <meta name="description" 
+    content="Fish Haven Town Page - Fish Haven, Idaho - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Chettan%7cRaleway&display=swap">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+<body onload="start()">
+
+            <div id="bannerad">Saturday = Fish Haven BBQ in the Park!  5:00 p.m. Saturday at the city park pavilion.</div>
+
+
+    <div id="content">
+    <header>
+            <a href="index.html"><img id="logo" src="images/forecast-for-fun-logo.jpg" alt="weather-logo"></a>
+        <section class="headings">
+            <h1>Forecast For Fun</h1>
+            <div class="m">Be prepared to play outdoors!</div>
+        </section>
+    </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="hambmenu" href="#" onclick="togglemenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html" class="active">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+	<main>
+            <h2 class="subhead">Fish Haven, Idaho</h2>
+            <div class="herodiv">
+                <picture>
+                    <source srcset="images/ps-fish-haven-fishing-600-large.jpg" media="(min-width: 800px)">
+                    <source srcset="images/ps-fish-haven-fishing-400-medium.jpg" media="(min-width: 500px) and (max-width: 799px)">
+                    <img class="hero-ph" src="images/ps-fish-haven-fishing-250-small.jpg" alt="man-fishing">
+                </picture>
+                <div class="weathersummary"> 
+                    <div class="weathertitle">Weather Summary</div>
+                    <div class="weatherinfo">
+                        <div class="c1">
+                            Currently:<br>
+                            Temp:<br>
+                            Wind Chill:<br>
+                            Humidity:<br>
+                            Wind Speed:<br>
+                        </div>
+                        <div class="c2">
+                            <span id="descr"></span><br>
+                            <span id="temp"></span> &#8457;<br>
+                            <span id="windch"></span> &#8457;<br>
+                            <span id="humid"></span> &#8457;<br>
+                            <span id="windsp"></span> mph<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+<!-- *************Start 5 Day Forecast******************************* -->
+<div class="forecastdiv">
+        <h2 class="forecastheading">5 Day Forecast</h2>
+    <table id="forecasttable">
+        <thead>
+        <tr>
+          <th><span id="day1"></span></th>
+          <th><span id="day2"></span></th>
+          <th><span id="day3"></span></th>
+          <th><span id="day4"></span></th>
+          <th><span id="day5"></span></th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td><img id="icon1" src="#" alt="#"><br><span id="temp1"></span> &#8457;</td>
+            <td><img id="icon2" src="#" alt="#"><br><span id="temp2"></span> &#8457;</td>
+            <td><img id="icon3" src="#" alt="#"><br><span id="temp3"></span> &#8457;</td>
+            <td><img id="icon4" src="#" alt="#"><br><span id="temp4"></span> &#8457;</td>
+            <td><img id="icon5" src="#" alt="#"><br><span id="temp5"></span> &#8457;</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+
+<!-- ****************** JSON Preston Events *************************** -->
+
+<div class="events">
+        <h2 class="event-title">Current Fish Haven Events</h2>
+        <div class="eventlist"></div>
+</div>
+
+<!-- *********************** Article ******************************************************** -->
+            <div class="article">
+                <img class="articleimg" src="images/ps-fish-haven-image.jpg" alt="fish-haven-idaho-big-fish">
+               
+                <h3>Fish Haven, Idaho</h3>
+                <h4>by Lynnette Beatty</h4>
+                <p>Fish Haven is located in Bear Lake County of Idaho.
+                    It has an elevation of 5,924 ft. 
+                    A Fish Haven post office was established in 1867 and was operated until 1962. 
+                    It is an unincorporated community that resides along the shores of Bear Lake, 2.5 miles north of the Utah border. 
+                    Fish Haven was first settled in 1864.
+                    It received its name due to the fact that Bear Lake is a popular fishing spot.</p> 
+                
+                    <p>A bike trail exists around Bear Lake that offers a spectacular view of the lake and surrounding area.
+                    The mountain forest is particularly beautiful in autumn. 
+                    The Bear Lake National Wildlife Preserve has been established at the north end of the lake. 
+                    It is a popular tourist attraction for bird watching.</p>
+
+                    <p>References: <a target="_blank" href="https://en.wikipedia.org/wiki/Fish_Haven,_Idaho">Wikipedia</a> | <a target="_blank" href="https://bearlake.org/item/trail-around-bear-lake-road-bike-route/">bearlake.org</a></p>
+
+            </div>
+            <div class="contact">
+                
+                <!-- <img class="map" src="images/ps-fish-haven-map.JPG" width="478" height="492" alt="map-fish-haven-idaho"> -->
+                <img class="map" src="images/ps-fish-haven-map.jpg" alt="map-fish-haven-idaho">
+            
+                <div class="address"><strong>Forecast For Fun</strong><br>
+                    <img class="pin" src="images/pin.jpg" alt="pin"> 45 South 75 West<br>
+                    Preston, Idaho 83263 <br>
+                    &#9742;  (208) 520-5220<br>
+                    &#9993;  forecastforfun@tws.com<br><br>
+                    
+                    <a class="sm" target="_blank" href="https://www.youtube.com"><img class="media" src="images/ytube.jpg" alt="youtube"></a>
+                    <a class="sm" target="_blank" href="https://www.facebook.com"><img class="media" src="images/facebook.jpg" alt="facebook"></a>
+                    <a class="sm" target="_blank" href="https://www.instagram.com"><img class="media" src="images/instagram.jpg" alt="instagram"></a>
+                    <a class="sm" target="_blank" href="https://www.twitter.com"><img class="media" src="images/twitter.jpg" alt="twitter"></a>
+                    <a class="sm" target="_blank" href="https://www.pinterest.com"><img class="media" src="images/pinterest.jpg" alt="pinterest"></a>
+                </div>
+
+                <img id="contactimg" src="images/ps-fish-haven-jet-ski.jpg" alt="bear-lake-jet-ski">
+
+            </div>                      
+    </main>
+    <footer> 
+                    <div id="info">&copy; Forecast For Fun | <a class="link" target="_blank" href="https://openweathermap.org/">OpenWeatherMap</a> | <a class="link" target="_blank" href="../index.html">Lynnette Beatty</a><br> 
+            <span class="date">Current Date: <span id="currentdate"></span></span>
+        </div>
+    </footer>
+    
+        </div>
+            <script src="js/master-fh.js"></script>
+            <script src="js/events-fh.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

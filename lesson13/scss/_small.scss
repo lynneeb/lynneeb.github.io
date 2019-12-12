@@ -1,0 +1,948 @@
+ body {
+    /* background-color: #D1E8E2; */
+    background-color: #2c3531;
+    padding: 0;
+    margin: 0;
+}
+header {
+    max-width: 100%;
+	margin: 0 auto;
+    /* background-color: #659DBD;  */
+    background-color: #116466; 
+  /* background: linear-gradient(300deg, #537895 0%, #2C3531 55%, #537895 75%); */
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    min-width: 40%;
+    height: auto;
+    border: 1px solid #000; 
+    box-shadow: 5px 5px 5px black;
+}
+
+.headings {
+	display: flex;
+    flex-direction: column;
+    margin: 0 0 0 17px;
+    padding-left: 2rem;
+}
+
+.headings h1 {
+	font-size: 1.8rem;
+    color: white;
+    /* font-family: 'Baloo Chettan', cursive; */
+    font-family: 'Parisienne', cursive;
+	letter-spacing: 1pt;
+    text-shadow: 5px 5px 5px black;
+}
+
+.headings .m {
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+	letter-spacing: 1pt;
+    /* color: black; */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    /* text-shadow: 5px 5px 5px #FBEEC1; */
+    text-shadow: 5px 5px 5px black;
+    padding: 0 0 2rem;
+}
+#content {
+     min-height: 100%;
+}
+
+.subhead {
+    text-align: center;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Bad Script', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    /* background: #8D8741; */
+    background: #D9B08C;
+    border-top: 4px solid #000; 
+    border-bottom: 4px solid #000; 
+    padding: .4rem;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+.navigation {
+    max-width: 100%;
+    margin: 0 auto;
+	/* background-color: #BC986A; */
+	background-color: #D9B08C;
+	list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+	display: inline-block;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+	display: block;
+    color: black;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+	text-align: left;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.navigation a:hover {
+	/* color:#BC986A; */
+	color:#D9B08C;
+	/* background-color: #fff; */
+	background-color: #D1E8E2;
+	font-weight: 700;
+}
+.active {
+    /* background-color: #8D8741; */
+    background-color: #FFCB9A;
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) 
+to display block because the repsonsive class is added to the end of the class list 
+like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
+}
+/* -------------- subnav ---------------- */
+.dropbtn {
+    /* background-color: #4CAF50; */
+	background-color: #D9B08C;
+    /* color: white; */
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* .dropdown-content a:hover {background-color: #ddd;} */
+    .dropdown-content a:hover {background-color: #D1E8E2;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+	
+  .dropdown:hover .dropbtn {background-color: #D1E8E2;}
+
+/* **************** banner image slider ************************* */
+
+.container{
+  margin:2rem auto;
+//   width:500px;
+//   width:1000px;
+  width:50%;
+//   height:300px;
+//   height:600px;
+  height: 400px;
+  overflow:hidden;
+  border:10px solid;
+  border-top-color:#856036;
+  border-left-color:#5d4426;
+  border-bottom-color:#856036;
+  border-right-color:#5d4426;
+  position:relative;
+}
+
+.photo{
+  position:absolute;
+  animation:round #{$total_animation_time}s infinite;
+  opacity:0;
+  
+}
+@keyframes round{   
+  25%{
+    opacity:1;
+  }
+  40%{
+    opacity:0;
+  }
+} 
+
+@for $index from 1 to $slides + 1{
+  img:nth-child(#{$index}){
+    animation-delay:#{$total_animation_time - $time_per_slide * $index}s
+  }
+}
+   
+
+
+
+
+
+
+/* @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    body { margin: 0; } 
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s slidy infinite; 
+    } */
+    
+
+
+/* ******************** bannerad ********************************************** */
+
+#bannerad {
+    width: 100vw;
+    margin: 0 auto;
+    display: none;
+    /* visibility: hidden; */
+    text-align: center; 
+    border: 1px solid #000; 
+    padding: .8rem;
+	background-color: rgba(255, 20, 145, 0.4);
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: fixed;
+    z-index: 1;
+}
+
+.contentbox {
+    display: block;
+    max-width: 60rem;
+    height: auto;
+    margin: auto;
+    border: 1px solid #000; 
+    padding: 10px;
+	/* background-color: #BC986A; */
+	background-color: #2C3531;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+h2 {
+    text-align: center;
+}
+.herodiv {
+    position: relative;
+    display: block;
+    max-width: 60rem;
+    margin: 10px auto;
+    border: 1px solid #000; 
+    padding: 1rem;
+	/* background-color: #BC986A; */
+	background-color: #FFCB9A;
+}
+
+.hero-ph {
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-shadow: 5px 5px 5px black;
+}
+.weathersummary {
+    position: absolute;
+    margin: 0 auto;
+    top: 1rem;
+    left: 1rem;
+    width: auto;
+    height: auto;
+    /* background-image: radial-gradient(ellipse, white, transparent 70%); */
+    background-color: rgba(10, 36, 169, 0.5);
+    padding: 1rem;
+    box-shadow: 5px 5px 5px black;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.weathertitle {
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+.weatherinfo {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: .5rem;
+    padding: .5rem .5rem .5rem .5rem;
+    font-size: 1.2rem;
+}
+
+.c1 {
+    display: inline-grid;
+	text-align: right;
+    color: white;
+}
+.c2 {
+	text-align: left;
+    color: yellow;
+}
+
+/*******************************************************
+*********5-Day Forecast Table ************************
+****************Start********************************* */
+.forecastdiv {
+    display: none;
+}
+
+/* ****************** Local Events ********************************* */
+.events {
+    display: flex;
+	flex-direction: column;
+    max-width: 60rem;
+    margin: 10px auto;
+    border: 1px solid #000; 
+    padding: 1rem;
+    /* background-color: #BC986A; */
+    background-color: #116466;
+}
+
+.event-title {
+    align-content: center;
+    font-size: 2.2rem;
+    text-align: center;
+    /* background-color: rgb(96, 137, 161);  */
+    background-color: #2C3531; 
+    border: 4px solid #000; 
+    padding: .4rem;
+    color: white;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 3px 3px 5px black;
+}
+.events li{
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.eventlist {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-right: 2rem;
+    width: auto;
+    height: auto;
+    /* background-color: #FBEEC1; */
+    background-color: #FFCB9A;
+    box-shadow: 0 0 20px black;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: 4px solid #000; 
+}
+
+/* *********************************************************************** */
+
+.article {
+    display: flex;
+	justify-items: flex-start;
+	flex-direction: column;
+    max-width: 60rem;
+    margin: 10px auto;
+    border: 1px solid #000; 
+    padding: 1rem;
+    /* background-color: #BC986A; */
+    background-color: #FFCB9A;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8rem;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.articleimg {
+    order: 2;
+    max-width: 80%;
+    margin: 1rem auto;
+    box-shadow: 5px 5px 5px black;
+}
+/* ---------------------- Contact ----------------------------------- */
+
+.contact  {
+    display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    max-width: 60rem;
+    height: auto;
+    margin: 10px auto;
+    padding: 1rem;
+    /* background-color: #BC986A; */
+    background-color: #FFCB9A;
+    border: 1px solid #000; 
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#contactimg {
+    display: none;
+}
+
+.address {
+    align-content: center;
+    justify-content: left;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    white-space: nowrap;
+}
+
+.media {
+    width: 2rem;
+    height: auto;
+    justify-content: left;
+    padding: .2rem .2rem .2rem 0rem;
+}
+
+.pin {
+    width: .7rem;
+    height: auto;
+    background-color: transparent;
+}
+
+.map {
+    display: none;
+}
+
+/* ----------------- Footer ----------------------------- */
+
+footer {
+    max-width: 60rem;
+	margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000; 
+	padding: 1rem;
+    /* background-color: #659DBD;  */
+    background-color: #116466; 
+    text-align: center;
+    line-height: 1.2rem;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 900;
+}
+
+.link {
+    color: black;
+  }
+
+/* ************* Home Page ************************************** */
+/* ------------- JSON Townsites ------------------------------------ */
+
+.townsites {
+    max-width: 60rem;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px;
+    /* background-color: #BC986A; */
+    background-color: #FFCB9A;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    border: 1px solid #000; 
+}
+
+.townsites section {
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 1rem;
+    align-content: center;
+    /* background-color: #FBEEC1; */
+    background-color: #116466;
+    border: 1px solid black;
+}
+
+.townsites h2 {
+    font-size: 2rem;
+}
+
+.townsites h3 {
+    font-size: 16px;
+    height: 32px;
+    font-style: italic;
+}
+
+.townsites p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.p3 {
+    padding-bottom: 16px;
+}
+
+.townsites img {
+    height: 20rem;
+    width: auto;
+    box-shadow: 0 0 20px black;
+}
+
+/* ----------- Town wireframes--------------------- */
+
+#wireframes {
+    max-width: 60rem;
+    height: auto;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px;
+    /* background-color: #BC986A; */
+    background-color: #D9B08C;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    border: 1px solid #000; 
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+#linkdiv {
+    display: grid;
+    max-width: 20rem;
+    height: auto;
+    justify-content: center;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #FBEEC1; */
+    background-color: #116466;
+    margin: .5rem;
+    border: 1px solid black;
+}
+.wtitle {
+    text-align: center;
+    justify-content: center;
+    /* background-color: #659DBD;  */
+    background-color: #FFCB9A; 
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.wlinks {
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: left;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.weather-pic {
+    height: 20rem;
+    width: auto;
+    box-shadow: 0 0 20px black;
+}
+.snow-pic {
+    height: 20rem;
+    width: auto;
+    box-shadow: 0 0 20px black;
+}
+
+/* ********** Small Wireframe Page ********************************************* */
+.smwire-body {
+    background-color: rgb(154, 150, 163);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+ .smwire {
+    font-size: 1.3rem;
+    color: black;
+    /* font-family: 'Baloo Chettan', cursive; */
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1pt;
+ }
+
+ #wireimg {
+     height: 100%;
+     width: auto;
+ }
+/* **************** Medium Wireframe Page ****************************************** */
+.medwire-body {
+    background-color: rgb(154, 150, 163);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+ .medwire {
+    font-size: 1.3rem;
+    color: black;
+    /* font-family: 'Baloo Chettan', cursive; */
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1pt;
+ }
+ /* ******************** Large Wireframe Page *************************************** */
+.lgwire-body {
+    background-color: rgb(154, 150, 163);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+ .lgwire {
+    font-size: 1.3rem;
+    color: black;
+    /* font-family: 'Baloo Chettan', cursive; */
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1pt;
+ }
+
+/* ************* Storm Center ************************************************ */
+/*----------- MAIN --------------*/
+
+.storm-title {
+    width: 100%;
+    text-align: center;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    background: #8D8741;
+    border-top: 4px solid #000; 
+    border-bottom: 4px solid #000; 
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/*----------Weather Form------------------------*/
+
+/* ---Subhead - Report the Weather in Your Area */
+.report {
+    display: flex;
+    max-width: 60rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    background-color: #659DBD;
+    border: 4px solid #000; 
+    text-shadow: 3px 3px 5px black;
+    padding-top: .5rem;
+    padding-bottom: .5rem; 
+}
+
+/* ---dark brown box--- */
+.box {
+    display: flex;
+    max-width: 60rem;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: auto;
+    margin: auto;
+    border-right: 4px solid #000; 
+    border-left: 4px solid #000; 
+    background-color: #BC986A;
+}
+/* -----------tan form box -------- */
+#stormform {
+    display: flex; 
+    width: 50%;
+    min-width: 20rem;
+    height: auto;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: #FBEEC1;
+    border-collapse: collapse;
+    justify-content: center;
+}
+
+/* ----blue fieldset boxes---- */
+form fieldset {
+    display: flex;
+    margin: 1rem;
+    border: 4px solid #445ba9;
+    border-collapse: collapse;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+/* -----blue form title----- */
+form legend {
+    color: #445ba9;
+    font-size: 1.5rem;
+    font-weight: bold; 
+    margin-left: .5rem;
+}
+
+.top, .storm, .radio, .comment {
+    display: block;
+    border-collapse: collapse;
+    padding: .5rem;
+    color: #9c2c13;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* -----------------focus------------------- */
+
+.top:focus, .comment:focus {
+    box-shadow: 0 0 15px rgb(151, 148, 148);
+}
+
+/* --inside the input box---- */
+.top input,
+.top select,
+.comment input,
+textarea {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: solid 4px rgb(156, 150, 141);
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 92%;
+    border-collapse: collapse;
+    background-color: rgba(178, 219, 245, 0.356);
+}
+
+/* ---Storm Severity (1 to 10)--- */
+#ratingvalue {
+    position: relative;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: solid 4px rgb(156, 150, 141);
+    border-radius: 4px;
+    background-color: rgba(178, 219, 245, 0.356);
+  }
+
+  .stormseverity {
+      padding-bottom: 1rem;
+  }
+
+/* ---Storm Region input box--- */
+.top select {
+    width: 100%;
+}
+
+/* -----no, maybe, yes----- */
+form label.sbs {
+    display: block;
+    padding: .3rem;
+    color: #9c2c13;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* ---Label- Are you in danger?--- */
+.danger {
+    color: #9c2c13;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+/* ---inside comment box--- */
+textarea {
+    height: 5rem;
+    width: 88%;
+}
+
+/* ---red/blue submit button--- */
+.submit-button {
+    border: 4px solid black;
+    background-color: #9c2c13;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 100%;
+    max-width: 15rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 10px 10px 10px black;
+}
+.submit-button:hover { background-color: #8D8741; color: white; }
+
+form label.top input:required {
+    border: #9c2c13 solid 4px;
+}
+
+form label.top input:required:valid {
+    border: #8D8741 solid 4px;
+    background-color: rgb(204, 241, 204);
+}
+
+input:hover,
+form label.top select {
+    cursor: pointer;
+}
+/* *********** Gallery Page ************************************************* */
+
+.gridbox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 60rem;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    height: auto;
+    margin: auto;
+    border-top: 1px solid #000; 
+    border-right: 1px solid #000; 
+    border-left: 1px solid #000; 
+	background-color: #BC986A;
+}
+
+/* ----------------------------------------- */
+.gallery-title {
+    text-align: center;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    background: #8D8741;
+    border-top: 4px solid #000; 
+    border-bottom: 4px solid #000; 
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    padding: .5rem;
+}
+
+figure{
+    display: grid;
+    background-color: #659DBD;
+    padding: 1rem;
+    margin: 2rem auto;
+    display: grid;
+}
+
+img[data-src] {
+    filter: blur(0.5em);
+    width: 100%;
+    height: auto;
+}
+
+img {
+	grid-column: 1 / 1;
+	filter: blur(0em);
+    transition: filter 3s;
+    width: 100%;
+    height: auto;
+}
+
+ figcaption {
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: #8D8741;
+    padding: .8rem;
+    text-shadow: 3px 3px 5px black;
+ }
+ /* *********** Thank You Page ************************************************ */
+ 
+.thanks-box {
+    max-width: 60rem;
+    padding: 1rem;
+    height: auto;
+    margin: auto;
+    border-top: 1px solid #000; 
+    border-right: 1px solid #000; 
+    border-left: 1px solid #000; 
+	background-color: #BC986A;
+}
+
+.thanks-title {
+    text-align: center;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    background: #8D8741;
+    border-top: 4px solid #000; 
+    border-bottom: 4px solid #000; 
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.received {
+    justify-content: center;
+    display: flex;
+    min-width: 8rem;
+    background-color: #659DBD;
+    padding: 2rem;
+    margin: 2rem;
+    border: 1px solid black;
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
