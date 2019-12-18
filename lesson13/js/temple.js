@@ -1,7 +1,4 @@
-// *********** JSON templedata ****************************************************************
-
-const requestURL = 'data/templedata.json';
-// const requestURL = 'https://D:/BYU%20Idaho/CIT230/lynneeb.github.io/lesson13/data/templedata.json';
+const requestURL = 'https://D:/BYU%20Idaho/CIT230/lynneeb.github.io/lesson13/data/templedata.json';
 
 fetch(requestURL)
   .then(function (response) {
