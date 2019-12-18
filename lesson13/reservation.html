@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites | Reservation</title>
+    <meta name="author" content="Lynnette Beatty">
+    <meta name="description" 
+    content="Temple Inn & Suites | Reservation - Final Project - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script%7cMontserrat%7cParisienne&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body onload="start()">
+
+    <div id="bannerad">Call now for a reservation!! (240) 520-5220</div>
+
+    <div id="content">
+    <header>
+                <a href="index.html"><img id="logo" src="temple-images/ps-temple-logo-w-text.png" alt="temple-logo"></a>
+        <section class="headings">
+            <h1>Temple Inn & Suites</h1>
+            <div class="m">Relax in Luxury</div>
+        </section>
+    </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="hambmenu" href="#" onclick="togglemenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="reservation.html" id="active">Reservation</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="services.html" class="dropbtn">Services</a>
+                                <div class="dropdown-content">
+                                    <a href="reception.html">Reception</a>
+                                    <a href="missionary.html">Full-time<br>Temple Missionary</a>
+                                </div>
+                        </div>
+                    </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+	<main>
+<!-- ********************** Hotel Images Animation ************************************************************************ -->
+<div class="animation-box">
+    <img class='tphoto'  src="hotel-images/px-lobby-w600-h300.jpg" alt="hotel-lobby" />
+    <img class='tphoto'  src="hotel-images/px-bridal-suite-w600-h300.jpg" alt="bridal-suite" />
+    <img class='tphoto'  src="hotel-images/px-family-search-w600-h300.jpg" alt="family-search" />
+    <img class='tphoto'  src="hotel-images/px-pool4-w600-h300.jpg" alt="pool4" />
+    <img class='tphoto'  src="hotel-images/px-bridal2-w600-h300.jpg" alt="bridal-suite2" />
+    <img class='tphoto'  src="hotel-images/px-lobby3-w600-h300.jpg" alt="hotel-lobby3" />
+</div>
+<!-- ********* Hote Suites *************************************************************************************** -->
+<h2 class="tsubhead">Welocme to the Temple Inn & Suites!</h2>
+
+<article class="servicesbox">
+    <div class="services">
+        <img class="servicesimg" src="hotel-images/px-small-suite-w545-h300.jpg" alt="small-suite">
+        <h2 class="services-title">Small Suite</h2>
+        <div class="sdiv">
+            <div>
+                <ul class="square">
+                    <li>Queen-sized Bed</li>
+                    <li>Deluxe Shower & Bathtub</li>
+                    <li>Large screen TV</li>
+                    <li>Desk area</li>
+                    <li>Large closet</li>
+                    <li>Small Microwave & Refrigerator</li>
+                    <li>$120/night</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+
+<article class="servicesbox">
+    <div class="services">
+        <img class="servicesimg" src="hotel-images/px-medium-suite2-w600-h300.jpg" alt="medium-suite">
+        <h2 class="services-title">Medium Suite</h2>
+        <div class="sdiv">
+            <div>
+                <ul class="square">
+                    <li>2 Queen-sized Beds</li>
+                    <li>Deluxe Shower & Bathtub</li>
+                    <li>Large screen TV</li>
+                    <li>Desk area</li>
+                    <li>Couch with pull-out bed</li>
+                    <li>Large closet</li>
+                    <li>Small Microwave & Refrigerator</li>
+                    <li>$140/night</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+
+<article class="servicesbox">
+    <div class="services">
+        <img class="servicesimg" src="hotel-images/px-hotel2-w600-h300.jpg" alt="large-suite">
+        <h2 class="services-title">Large Suite</h2>
+        <div class="sdiv">
+            <div>
+                <ul class="square">
+                    <li>King-sized Bed</li>
+                    <li>Deluxe Shower & Jetted Bathtub for 2</li>
+                    <li>Large screen TV</li>
+                    <li>Fireplace</li>
+                    <li>Veranda</li>
+                    <li>Desk area</li>
+                    <li>Deluxe Couches</li>
+                    <li>Large closet</li>
+                    <li>Kitchenette with Sink, Microwave & Refrigerator</li>
+                    <li>$190/night</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+  <!-- **************** Reservation Form ******************************************************* -->
+<article class="reservationbox">
+    <h2 class="services-title">Please fill out this Reservation Form</h2>
+
+<div class="formbox">
+
+    <div id="resform">
+
+<form id="report-weather" name="weather" method="get" action="thanks.html">  
+    <fieldset class="fieldset" name="personal-info">
+        <legend>Personal Info</legend>
+        <label class="top" for="name">*Full Name: <input class="top" type="text" id="name" size="30" name="fname" placeholder="your name" required pattern="[A-Za-z]{5,}" title="Five or more characters"></label>
+        <label class="top">Email: <input class="top" type="email" size="30" name="email" placeholder="someone@gmail.com"></label>
+        <label class="top" for="p">*Phone number: <input class="top" type="tel" id="p" name="phone" placeholder="123-444-5678" required></label>
+        <label class="top" for="num">*Zip Code: <input class="top" type="number" id="num" name="zipcode" placeholder="12345" required></label>
+
+
+        <label class="top" for="country">Home Country: <input class="top" list="countrylist" id="country" placeholder="select one..." name="country">
+            <datalist id="countrylist">
+                    <option value="USA">USA</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Nigeria">Nigeria</option>
+            </datalist></label>
+
+    </fieldset>
+
+    <fieldset class="fieldset" name="registration-info">
+        <legend>Registration</legend>
+        <label class="top">Date From: <input class="top" type="date" name="fromdate"></label>
+        <label class="top">Date To: <input class="top" type="date" name="todate"></label>
+
+         <label class="top" for="location">Destination Location: <input class="top" list="locationlist" id="location" placeholder="select one..." name="location">
+        <datalist id="locationlist">
+            <option value="Aba, Nigeria">Aba, Nigeria</option>
+            <option value="Accra, Ghana">Accra, Ghana</option>
+            <option value="Adelaide, Australia">Adelaide, Australia</option>
+            <option value="Albuquerque, New Mexico">Albuquerque, New Mexico</option>
+            <option value="Gilbert, Arizona">Gilbert, Arizona</option>
+            <option value="Kona, Hawaii">Kona, Hawaii</option>
+            <option value="Manti, Utah">Manti, Utah</option>
+            <option value="Mesa, Arizona">Mesa, Arizona</option>
+            <option value="Rome, Italy">Rome, Italy</option>
+            <option value="Salt Lake, Utah">Salt Lake, Utah</option>
+            <option value="Seattle, Washington">Seattle, Washington</option>
+            <option value="Snowflake, Arizona">Snowflake, Arizona</option>
+            <option value="St. George, Utah">St. George, Utah</option>
+        </datalist></label>
+
+
+        <label class="top" for="temple">Destination Temple: <input class="top" list="templelist" id="temple" placeholder="select one..." name="temple-location">
+        <datalist id="templelist">
+            <option value="Aba Nigeria Temple">Aba Nigeria Temple</option>
+            <option value="Accra Ghana Temple">Accra Ghana Temple</option>
+            <option value="Adelaide Australia Temple">Adelaide Australia Temple</option>
+            <option value="Albuquerque New Mexico Temple">Albuquerque New Mexico Temple</option>
+            <option value="Gilbert Arizona Temple">Gilbert Arizona Temple</option>
+            <option value="Kona Hawaii Temple">Kona Hawaii Temple</option>
+            <option value="Manti Utah Temple">Manti Utah Temple</option>
+            <option value="Mesa Arizona Temple">Mesa Arizona Temple</option>
+            <option value="Rome Italy Temple">Rome Italy Temple</option>
+            <option value="Salt Lake Temple">Salt Lake Temple</option>
+            <option value="Seattle Washington Temple">Seattle Washington Temple</option>
+            <option value="Snowflake Arizona Temple">Snowflake Arizona Temple</option>
+            <option value="St. George Utah Temple">St. George Utah Temple</option>
+        </datalist></label>
+
+    
+
+     <label class="top" for="storm-region">Room Type: 
+    <select class="top" name="location" id="storm-region">
+        <option value="">Select Room...</option>
+        <option value="Large Suite">Large Suite</option>
+        <option value="Medium Suite">Medium Suite</option>
+        <option value="Small Suite">Small Suite</option>
+    </select></label><br>
+
+    <div class="stormseverity">
+        <label class="top" for="rating">Number of Rooms:
+            <input type="range" name="rating" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+        <span id="ratingvalue">5</span>
+
+        <datalist id="tickmarks">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist>
+        </label>
+    </div>
+
+    <p class="danger">Will you need special accommodations?<p>
+    <div id="radio">
+        <label class="sbs" for="danger1"><input type="radio" id="danger1" name="danger" value="no"> no</label>
+        <label class="sbs" for="danger2"><input type="radio" id="danger2" name="danger" value="maybe"> maybe</label>
+        <label class="sbs" for="danger3"><input type="radio" id="danger3" name="danger" value="yes"> yes</label>
+    </div>
+    <!-- <label for="commentbox">Special Accommodations<textarea class="top" id="commentbox" rows="8" cols="50" name="comment" form="report-weather" placeholder="Please list accommodations needed..."></textarea></label>   -->
+
+    </fieldset>
+
+    
+    <fieldset class="comment" name="information">
+        <legend>Accommodations</legend>
+        
+    <label for="commentbox">Comments<textarea class="top" id="commentbox" rows="8" cols="50" name="comment" form="report-weather" placeholder="Accommodations needed..."></textarea></label>  
+    
+    <!-- <label for="commentbox">Comments<textarea class="top" id="commentbox" rows="8" cols="50" name="comment" form="report-weather" placeholder="Tell us more about the storm..."></textarea></label>   -->
+     </fieldset>
+    
+
+    <input type="submit" name="button" value="Reserve My Suite" class="submit-button">
+</form> 
+
+</div>
+</div>
+</article>
+
+        <!-- *********************** Contact ************************************************ -->
+        <article class="contactbox">
+            <h2 class="contact-title">Contact Information</h2>
+            <div class="contact">
+                <div class="peach">
+                    <img class="contactimg" src="temple-images/px-mesa-temple-w300-h300.jpg" alt="mesa-temple">
+            
+                <div class="address">
+                    <strong>Temple Inn & Suites</strong><br>
+                            <img class="pin" src="images/pin.jpg" alt="pin"> 4800 Montgomery Ln<br>
+                            Suite #300<br>
+                            Bethesda, MD 20814<br>
+                            &#9742; (240) 520-5220<br>
+                            &#9993; templeinn@tws.com<br><br>
+                    
+                    <a class="sm" target="_blank" href="https://www.youtube.com"><img class="media" src="images/ytube.jpg" alt="youtube"></a>
+                    <a class="sm" target="_blank" href="https://www.facebook.com"><img class="media" src="images/facebook.jpg" alt="facebook"></a>
+                    <a class="sm" target="_blank" href="https://www.instagram.com"><img class="media" src="images/instagram.jpg" alt="instagram"></a>
+                    <a class="sm" target="_blank" href="https://www.twitter.com"><img class="media" src="images/twitter.jpg" alt="twitter"></a>
+                    <a class="sm" target="_blank" href="https://www.pinterest.com"><img class="media" src="images/pinterest.jpg" alt="pinterest"></a>
+                    
+                </div>
+                    <img class="contactimg" id="sf-temple" src="temple-images/px-snowflake-temple-w300-h300.jpg" alt="snowflake-temple">
+                </div>
+
+            </div>  
+        </article>                    
+    </main>
+
+    <!-- **************************** Footer ********************************************************************** -->
+    <footer> 
+                    <div id="info">&copy; Temple Inn & Suites | <a class="link" target="_blank" href="references.html">References</a> | <a class="link" target="_blank" href="../index.html">Lynnette Beatty</a><br> 
+            <span class="date">Current Date: <span id="currentdate"></span></span>
+        </div>
+    </footer>
+        
+        </div>
+          <script src="js/date&fonts.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+</body>
+</html>

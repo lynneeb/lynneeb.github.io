@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Inn & Suites</title>
+    <title>Temple Inn & Suites | Temple</title>
     <meta name="author" content="Lynnette Beatty">
     <meta name="description" 
-    content="Temple Inn & Suites | Home - Final Project - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    content="Temple Inn & Suites | Temple - Final Project - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
     <link href="https://fonts.googleapis.com/css?family=Bad+Script%7cMontserrat%7cParisienne&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
@@ -17,7 +17,7 @@
 
     <div id="content">
     <header>
-                <a href="#"><img id="logo" src="temple-images/ps-temple-logo-w-text.png" alt="temple-logo"></a>
+                <a href="index.html"><img id="logo" src="temple-images/ps-temple-logo-w-text.png" alt="temple-logo"></a>
         <section class="headings">
             <h1>Temple Inn & Suites</h1>
             <div class="m">Relax in Luxury</div>
@@ -26,12 +26,12 @@
         <nav>
             <ul class="navigation">
                 <li><a class="hambmenu" href="#" onclick="togglemenu()">&#9776; Menu</a></li>
-                <li><a href="index.html" id="active">Home</a></li>
-                <li><a href="temple.html">Temple</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html" id="active">Temple</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
                     <li>
                         <div class="dropdown">
-                            <a href="services.html" class="dropbtn">Services</a>
+                            <a href="soda-springs.html" class="dropbtn">Services</a>
                                 <div class="dropdown-content">
                                     <a href="reception.html">Reception</a>
                                     <a href="missionary.html">Full-time<br>Temple Missionary</a>
@@ -43,92 +43,41 @@
         </nav>
 
 	<main>
-        <!-- ****************************** image animation *************************************************************** -->
-              <div class="animation-box">
-                    <img class='tphoto'  src="temple-images/px-aba-nigeria-temple-w600-h300.jpg" alt="aba-nigeria-temple" />
-                    <img class='tphoto'  src="temple-images/px-accra-ghana-temple-w600-h300.jpg" alt="accra-ghana-temple" />
-                    <img class='tphoto'  src="temple-images/px-adelaide-australia-temple-w600-h300.jpg" alt="adelaide-austrailia-temple" />
-                    <img class='tphoto'  src="temple-images/px-albuquerque-temple-w600-h300.jpg" alt="albuquerque-new-mexico-temple" />
-                    <img class='tphoto'  src="temple-images/px-bern-switzerland-temple-w600-h300.jpg" alt="bern-switzerland-temple" />
-                    <img class='tphoto'  src="temple-images/px-colonia-juarez-mexico-temple-w600-h300.jpg" alt="colonia-juarez-mexico-temple" />
-              </div>
-
+      
         <!-- *********************************************************************************** -->
 
-            <h2 class="tsubhead">Welcome to Temple Inn & Suites</h2>
+            <h2 class="subhead">Temple Inn & Suites</h2>
 
-  <!-- **************************** image slider ******************************************************* -->
+<!-- ************** JSON Temple Data ****************************************************     -->
+<article class="articlebox1">
+    <!-- <h2 class="contact-title">Temple1</h2> -->
+    <div class="tarticle">
+    <div class="temple1" id="tdiv1"></div>
+    </div>
+</article>      
+
+<article class="articlebox1">
+    <!-- <h2 class="contact-title">Temple2</h2> -->
+    <div class="tarticle">
+    <div class="temple2" id="tdiv2"></div>
+    </div>
+</article>  
+
+<article class="articlebox1">
+    <!-- <h2 class="contact-title">Temple3</h2> -->
+    <div class="tarticle">
+    <div class="temple3" id="tdiv3"></div>
+    </div>
+</article>  
+
+<article class="articlebox1">
+    <!-- <h2 class="contact-title">Temple4</h2> -->
+    <div class="tarticle">
+    <div class="temple4" id="tdiv4"></div>
+    </div>
+</article>         
         
-  <div class="slider-box">
-
-    <div class="ease">
-        <!-- <div class="wrap"> -->
-
-        <div class="slide">
-            <img class="magnify" src="wedding-images/px-gunderson-wedding-w600-h300.jpg" alt="wedding-picture-1">
-        </div>
-
-        <div class="slide">
-            <img class="magnify" src="wedding-images/px-nielsen-wedding-w600-h300.jpg" alt="wedding-picture-2">
-        </div>
-
-        <div class="slide">
-            <img class="magnify" src="wedding-images/px-rbeatty-wedding-w600-h300.jpg" alt="wedding-picture-3">
-        </div>
-
-        <div class="slide">
-            <img class="magnify" src="wedding-images/px-cbeatty-wedding-w600-h300.jpg" alt="wedding-picture-4">
-        </div>
-
-        <div class="slide">
-            <img class="magnify" src="wedding-images/px-kerr-wedding-w600-h300.jpg" alt="wedding-picture-5">
-        </div>
-
-        <div class="slide">
-            <img class="magnify" src="wedding-images/px-nielsen-blessing-w600-h300.jpg" alt="blessing-picture-6">
-        </div>
-
-    </div>
-</div>
-
-            <!-- *********************************** Hotel Article 1 *********************************************** -->
-
-    <article class="articlebox1">
-            <div class="article1">
-                    <img class="articleimg1" src="hotel-images/px-hotel9-w600-h300.jpg" alt="hotel-9">
-                <div class="words">
-                    <h2 class="article-title">Temple Inn & Suites</h2>
-
-                    <h2>Luxury Hotels Located near Temples</h2>
-    
-                    <p>The Temple Inn & Suites hotels are located all around the world near Temples owned by The Church of Jesus-Christ of Latter-day Saints.
-                        It is our goal to provide luxury accommodations for you and your loved ones while you are attending the temple.
-                        Relax with us and enjoy our comfortable suites and supurb dining.
-                        Enjoy a refreshing dip in our gorgeous swimming pool, or just unwind in our jacuzzi.
-                    </p>
-                </div>
-            </div>
-        </article>
-      
-  <!-- *********************************** Hotel Article 2 *********************************************** -->
-
-  <article class="articlebox1">
-    <div class="article1">
-            <img class="articleimg1" src="hotel-images/px-hotel2-w600-h300.jpg" alt="hotel-9">
-        <div class="words">
-            <h2 class="article-title">Temple Inn & Suites</h2>
-
-            <h2>Relax in our Comfortable Suites</h2>
-
-            <p>The Temple Inn & Suites will provide clean and comfortable rooms where you can rest from your travels and rejuvinate yourself.
-            You will feel pampered in our luxurious suites as you stretch out on our king sized beds and watch your favorite movie on the big screen T.V.
-            Then take a bubble bath in our extra-large jetted tub. 
-            You may order room service or come to our hotel restaurant and allow our chefs to impress you with delectable cuisine.
-            </p>
-        </div>
-    </div>
-</article>
- <!-- *********************************** Temple Article *********************************************** -->
+  <!-- *********************************** Temple Article *********************************************** -->
 
  <article class="articlebox1">
     <div class="tarticle">
@@ -245,7 +194,7 @@
             </div>
         </div>
     </div>
-</article>
+</article>      
 
         <!-- *********************** Contact ************************************************ -->
         <article class="contactbox">
@@ -278,13 +227,13 @@
 
     <!-- **************************** Footer ********************************************************************** -->
     <footer> 
-                    <div id="info">&copy; Temple Inn & Suites | <a class="link" target="_blank" href="references.html">References</a> | <a class="link" target="_blank" href="../index.html">Lynnette Beatty</a><br> 
+        <div id="info">&copy; Temple Inn & Suites | <a class="link" target="_blank" href="references.html">References</a> | <a class="link" target="_blank" href="../index.html">Lynnette Beatty</a><br> 
             <span class="date">Current Date: <span id="currentdate"></span></span>
         </div>
     </footer>
         
         </div>
-        <script src="js/temple.js"></script>
+          <script src="js/temple.js"></script>
           <script src="js/date&fonts.js"></script>
           <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 

@@ -11,68 +11,72 @@
     .contentbox {
         font-size: 1.1rem;
     }
-    #contactimg {
-        display: block;
-        max-width: 22rem;
-        height: auto;
-        padding: .1rem 0rem .1rem .1rem;
-        box-shadow: 5px 5px 5px black;
+    .contactimg {
+        display: flex;
+        //   height: 100%;
+        //   width: auto;
+          padding: 1rem;
+        }
+
+    #sf-temple {
+        display: flex;
+        padding-left: 1rem;
     }
 
     footer {
         font-size: 1.1rem;
     }
    /* ******* Home Page ****************************************** */
-.townsites {
-    max-width: 60rem;
-    margin: 10px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 5px;
-    background-color: #BC986A;
-    font-family: 'Raleway', sans-serif;
-    border: 1px solid #000; 
-}
+// .townsites {
+//     max-width: 60rem;
+//     margin: 10px auto;
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//     gap: 5px;
+//     background-color: #BC986A;
+//     font-family: 'Raleway', sans-serif;
+//     border: 1px solid #000; 
+// }
 
-.townsites section {
-    display: grid;
-    margin: .5rem;
-    width: auto;
-    height: auto;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
-    padding-bottom: 1rem;
-    align-content: center;
-    background-color: #FBEEC1;
-    border: 1px solid black;
-}
+// .townsites section {
+//     display: grid;
+//     margin: .5rem;
+//     width: auto;
+//     height: auto;
+//     justify-content: center;
+//     text-align: center;
+//     padding: 2rem;
+//     padding-bottom: 1rem;
+//     align-content: center;
+//     background-color: #FBEEC1;
+//     border: 1px solid black;
+// }
 
-.townsites h2 {
-    font-size: 2rem;
-}
+// .townsites h2 {
+//     font-size: 2rem;
+// }
 
-.townsites h3 {
-    width: auto;
-    font-size: 16px;
-    height: 32px;
-    font-style: italic;
-}
+// .townsites h3 {
+//     width: auto;
+//     font-size: 16px;
+//     height: 32px;
+//     font-style: italic;
+// }
 
-.townsites p {
-    font-size: 1rem;
-    font-weight: bold;
-}
+// .townsites p {
+//     font-size: 1rem;
+//     font-weight: bold;
+// }
 
-.p3 {
-    padding-bottom: 16px;
-}
+// .p3 {
+//     padding-bottom: 16px;
+// }
 
-.townsites img {
-    height: 20rem;
-    width: auto;
-    box-shadow: 0 0 20px black;
-}
+// .townsites img {
+//     height: 20rem;
+//     width: auto;
+//     box-shadow: 0 0 20px black;
+// }
 
 /* **************** Gallery Page *********************************** */
 

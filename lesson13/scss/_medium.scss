@@ -103,20 +103,25 @@
   .article {
     display: block;
 }
-.articleimg {
-    width: 20rem;
-    height: auto;
-    float: right;
-    margin: 1rem;
-    box-shadow: 5px 5px 5px black;
-}
+// .articleimg {
+//     width: 20rem;
+//     height: auto;
+//     float: right;
+//     margin: 1rem;
+//     box-shadow: 5px 5px 5px black;
+// }
 
-.map {
-  display: flex;
-	width: 14rem;
-  height: auto;
-  padding: 1rem;
-}
+
+.contactimg {
+    display: flex;
+      height: 20%;
+      width: auto;
+      padding: 1rem;
+    }
+    #sf-temple {
+      display: none;
+    }
+
 /* ************** Home Page *************************** */
 /* -------------------townsites--------------------- */
 .townsites {

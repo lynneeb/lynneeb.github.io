@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites | Services</title>
+    <meta name="author" content="Lynnette Beatty">
+    <meta name="description"
+        content="Temple Inn & Suites | Services - Final Project - Lynnette Beatty in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script%7cMontserrat%7cParisienne&display=swap"
+        rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body onload="start()">
+
+    <div id="bannerad">Call now for a reservation!! (240) 520-5220</div>
+
+    <div id="content">
+        <header>
+            <a href="index.html"><img id="logo" src="temple-images/ps-temple-logo-w-text.png" alt="temple-logo"></a>
+            <section class="headings">
+                <h1>Temple Inn & Suites</h1>
+                <div class="m">Relax in Luxury</div>
+            </section>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="hambmenu" href="#" onclick="togglemenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="services.html" class="dropbtn" id="active">Services</a>
+                        <div class="dropdown-content">
+                            <a href="reception.html">Reception</a>
+                            <a href="missionary.html">Full-time<br>Temple Missionary</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <!-- *********************************************************************************** -->
+
+            <h2 class="subhead">Services & Amenities</h2>
+
+            <!-- *********************************** Temple Article *********************************************** -->
+
+            <article class="servicesbox">
+
+                <div class="services">
+                    <img class="servicesimg" src="hotel-images/px-pool1-w600-h300.jpg" alt="indoor-pool">
+
+                    <h2 class="services-title">Free Amenities</h2>
+                    <div class="sdiv">
+                        <div>
+                            <ul class="square">
+                                <li>Parking</li>
+
+                                <li>Breakfast</li>
+                                <li>Indoor Pool</li>
+                                <li>Shuttle to the Temple</li>
+                                <li>Workout rooms with exercise equipment</li>
+
+                                <li>Smart TVs and WiFi high-speed internet </li>
+                                <li>Family history consultant and printing of family ordinance cards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="servicesbox">
+                <div class="services">
+
+                    <img class="servicesimg" src="hotel-images/px-reception1-w600-h300.jpg" alt="indoor-pool">
+
+                    <h2 class="services-title">Specialized Services</h2>
+
+                    <div class="sdiv">
+                        <div>
+                            <ul class="square">
+                                <li>Elegant wedding reception hall with catering services<br>
+                                    Kitchen access for food preparation is also available
+                                <li>Free access to bathrooms and changing rooms for temple patrons</li>
+                                <li>Playroom and short-term, low-cost babysitting services for children of temple
+                                    patrons</li>
+                                <li>Long-term stay, kitchenette suites for full-time temple missionaries</li>
+                                <li>Reception and sitting area with temple history theme</li>
+                                <li>Family search center for genealogy and ordinance work</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- *********************** Contact ************************************************ -->
+            <article class="contactbox">
+                <h2 class="contact-title">Contact Information</h2>
+                <div class="contact">
+                    <div class="peach">
+                        <img class="contactimg" src="temple-images/px-mesa-temple-w300-h300.jpg" alt="mesa-temple">
+
+                        <div class="address">
+                            <strong>Temple Inn & Suites</strong><br>
+                            <img class="pin" src="images/pin.jpg" alt="pin"> 4800 Montgomery Ln<br>
+                            Suite #300<br>
+                            Bethesda, MD 20814<br>
+                            &#9742; (240) 520-5220<br>
+                            &#9993; templeinn@tws.com<br><br>
+
+                            <a class="sm" target="_blank" href="https://www.youtube.com"><img class="media"
+                                    src="images/ytube.jpg" alt="youtube"></a>
+                            <a class="sm" target="_blank" href="https://www.facebook.com"><img class="media"
+                                    src="images/facebook.jpg" alt="facebook"></a>
+                            <a class="sm" target="_blank" href="https://www.instagram.com"><img class="media"
+                                    src="images/instagram.jpg" alt="instagram"></a>
+                            <a class="sm" target="_blank" href="https://www.twitter.com"><img class="media"
+                                    src="images/twitter.jpg" alt="twitter"></a>
+                            <a class="sm" target="_blank" href="https://www.pinterest.com"><img class="media"
+                                    src="images/pinterest.jpg" alt="pinterest"></a>
+
+                        </div>
+                        <img class="contactimg" id="sf-temple" src="temple-images/px-snowflake-temple-w300-h300.jpg"
+                            alt="snowflake-temple">
+                    </div>
+
+                </div>
+            </article>
+        </main>
+
+        <!-- **************************** Footer ********************************************************************** -->
+        <footer>
+            <div id="info">&copy; Temple Inn & Suites | <a class="link" target="_blank"
+                    href="references.html">References</a> | <a class="link" target="_blank"
+                    href="../index.html">Lynnette Beatty</a><br>
+                <span class="date">Current Date: <span id="currentdate"></span></span>
+            </div>
+        </footer>
+
+    </div>
+    <script src="js/temple.js"></script>
+    <script src="js/date&fonts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+</body>
+
+</html>
