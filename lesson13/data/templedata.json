@@ -1,97 +1,281 @@
+﻿{
+   "temples":[
+   {
+      "name": "Aba Nigeria Temple",
+      "photo": "px-aba-nigeria-temple-w600-h300-jpg",
+      "location": "Aba, Abia, Nigeria",
+      "history": "Dedicated on 7 August 2005",
+      "address":[
+         "72-80 Okpu-Umuobo Rd",
+         "Aba",
+         "Abia State, Nigeria"
+      ],
+      "telephone": "(243) 80-3903-4804",
+      "email": "Log in to Church website to send email to temple",
+      "services":[
+         "No clothing rental available",
+         "No cafeteria available",
+         "Patron housing available",
+         "Distribution center nearby" 
+      ],
+      "ordinanceSchedule":[
+         {
+            "baptism":[
+            "Sunday: Temple closed",
+            "Monday: Temple closed",
+            "Tuesday: 9:00 AM - 3:00 PM",
+            "Wednesday: 9:00 AM - 3:00 PM",
+            "Thursday: 9:00 AM - 2:00 PM and 3:00 PM - 5:00 PM",
+            "Friday: 9:00 AM - 3:00 PM",
+            "Saturday: 8:00 AM - 12:00 PM"
+            ],
+            "initiatory":[
+               "Sunday: Temple closed",
+               "Monday: Temple closed",
+               "Tuesday: 7:30 AM - 7:00 PM",
+               "Wednesday: 7:30 AM - 7:00 PM",
+               "Thursday: 7:30 AM - 7:00 PM",
+               "Friday: 7:30 AM - 7:00 PM",
+               "Saturday: 7:30 AM - 7:00 PM"
+            ],
+            "endowment":[
+               "Sunday: Temple closed",
+               "Monday: Temple closed",
+               "Tuesday: 8:30 AM, 10:30 AM, 12:30 PM, 2:30 PM, 4:30 PM, 6:30 PM",
+               "Wednesday: 8:30 AM, 10:30 AM, 12:30 PM, 2:30 PM, 4:30 PM, 6:30 PM",
+               "Thursday: 8:30 AM, 10:30 AM, 12:30 PM, 2:30 PM, 4:30 PM, 6:30 PM",
+               "Friday: 8:30 AM, 10:30 AM, 12:30 PM, 2:30 PM, 4:30 PM, 6:30 PM",
+               "Saturday: 8:30 AM, 10:30 AM, 12:30 PM, 2:30 PM, 3:30 PM, 4:30 PM"
+            ],
+            "sealing":[
+               "Sunday: Temple closed",
+               "Monday: Temple closed",
+               "Tuesday: 7:00 AM - 6:00 PM",
+               "Wednesday: 7:00 AM - 6:00 PM",
+               "Thursday: 7:00 AM - 6:00 PM and 3:00 PM - 5:00 PM",
+               "Friday: 7:00 AM - 6:00 PM",
+               "Saturday: 7:00 AM - 6:00 PM"
+            ]
+         }
+      ],
+      "templeClosures":[
+         "Tuesday, 24 December 2019 - Thursday, 26 December 2019",
+         "Wednesday, 1 January 2020",
+         "Monday, 2 March 2020 - Monday,16 April 2020",
+         "Saturday, 15 August 2020",
+         "Monday, 7 September 2020 - Monday, 21 September 2020",
+         "Thursday, 24 December 2020 - Saturday, 26 December 2020"
+      ]
+   },
 {
-  "towns" : [
-  {
-    "name": "Franklin",
-    "photo": "franklin.jpg",
-    "motto": "Where you will grow!",
-    "yearFounded": 1788,
-    "currentPopulation": 30458,
-    "averageRainfall": 21,
-    "events" : [
-      "March 4: March to the Drum of Donuts",
-      "September 5 - 11: Founder Days",
-      "December 1 - 26: Christmas in the Heart"
-    ]
-  },
-  {
-    "name": "Fish Haven",
-    "photo": "fishhaven.jpg",
-    "motto": "This is Fish Heaven.",
-    "yearFounded": 1864,
-    "currentPopulation": 501,
-    "averageRainfall": 14.20,
-    "events" : [
-      "April 1: How Big Was That Fish Day",
-      "May 15-30: Rush the Creek Days",
-      "July 24: Bear Lake Blunder Run",
-      "December 12: Light the Tree"
-    ]
-  },
-  {
-    "name": "Greenville",
-    "photo": "greenville.jpg",
-    "motto": "Green is our way of life.",
-    "yearFounded": 1805,
-    "currentPopulation": 33458,
-    "averageRainfall": 25,
-    "events" : [
-      "February 10-12: Greenbration",
-      "May 8 - 18: Greenville Founder Days",
-      "June 20: Verde and Valiant Day",
-      "November 15-16: Greensome Gathering"
-    ]
-  },
-  {
-    "name": "Placerton",
-    "photo": "placerton.jpg",
-    "motto": "Positive Placement in Placerton.",
-    "yearFounded": 1946,
-    "currentPopulation": 512,
-    "averageRainfall": 39,
-    "events" : [
-      "July 4: A Blaze of Glory",
-      "October 20: Fall through Fall"
-    ]
-  },
-  {
-    "name": "Preston",
-    "photo": "preston.jpg",
-    "motto": "Home of Napoleon Dynamite.",
-    "yearFounded": 1866,
-    "currentPopulation": 5204,
-    "averageRainfall": 16.65,
-    "events" : [
-      "March 29: Work Creek Revival",
-      "July 8-12: Napoleon Dynamite Festival",
-      "November 2-4: Freedom Days"
-    ]
-  },
-  {
-    "name": "Soda Springs",
-    "photo": "sodasprings.jpg",
-    "motto": "Historic Oregon Trail Oasis. The Soda is on Us.",
-    "yearFounded": 1858,
-    "currentPopulation": 2985,
-    "averageRainfall": 15.75,
-    "events" : [
-      "February 29: Geyser Song Day",
-      "May 1-6: Days of May Celebration",
-      "October 15-16: Octoberfest"
-    ]
-  },
-  {
-    "name": "Springfield",
-    "photo": "springfield.jpg",
-    "motto": "Where everyone is lifted.",
-    "yearFounded": 1826,
-    "currentPopulation": 17852,
-    "averageRainfall": 17,
-    "events" : [
-      "January 8: Spring into Winter",
-      "April 10-20: Celebration of Life",
-      "July 31-Aug 15: Dog Days of Summer Festival"
-    ]
-  }
- ]
+         "name": "Accra Ghana Temple",
+         "photo": "px-accra-ghana-temple-w600-h300.jpg",
+         "location": "Accra, Ashanti, Ghana",
+         "history": "Dedicated on 11 January 2004",
+         "address": [
+            "Accra Ghana Temple Complex",
+            "57 Independence Ave, North Ridge",
+            "P.M.B. CT 209, Cantonments, Accra",
+            "Ghana"
+         ],
+         "telephone": "(233) 302-650-123",
+         "email": "Log in to Church website to send email to temple",
+         "services":[
+            "No clothing rental available",
+            "No cafeteria available",
+            "Patron housing available",
+            "Distribution center nearby"
+         ],
+         "ordinanceSchedule":[
+            {
+               "baptism":[
+                  "Sunday: Temple closed",
+                  "Monday: Temple closed",
+                  "Tuesday: 8:00 AM - 8:00 PM",
+                  "Wednesday: 8:00 AM - 8:00 PM",
+                  "Thursday: 8:00 AM - 8:00 PM",
+                  "Friday: 8:00 AM - 8:00 PM",
+                  "Saturday: 8:00 AM - 2:00 PM"
+               ],
+               "initiatory":[
+                  "Sunday: Temple closed",
+                  "Monday: Temple closed",
+                  "Tuesday: 8:30 AM - 8:00 PM",
+                  "Wednesday: 8:30 AM - 8:00 PM",
+                  "Thursday: 8:30 AM - 8:00 PM",
+                  "Friday: 8:30 AM - 8:00 PM",
+                  "Saturday: 8:00 AM - 12:00 PM"
+               ],
+               "endowment":[
+                  "Sunday: Temple closed",
+                  "Monday: Temple closed",
+                  "Tuesday: 7:00 AM, 8:30 AM, 10:30 AM, 12:30 PM, 2:30 PM, 4:30 PM, 6:30 PM",
+                  "Wednesday: 7:00 AM, 8:30 AM, 10:30 AM, 12:30 PM, 2:30 PM, 4:30 PM, 6:30 PM",
+                  "Thursday: 7:00 AM, 8:30 AM, 10:30 AM, 12:30 PM, 2:30 PM, 4:30 PM, 6:30 PM",
+                  "Friday: 7:00 AM, 8:30 AM, 10:30 AM, 12:30 PM, 2:30 PM, 4:30 PM, 6:30 PM",
+                  "Saturday: 7:00 AM, 8:30 AM, 10:30 AM, 12:30 PM"
+               ],
+               "sealing":[
+                  "Sunday: Temple closed",
+                  "Monday: Temple closed",
+                  "Tuesday: 8:30 AM - 8:00 PM",
+                  "Wednesday: 8:30 AM - 8:00 PM",
+                  "Thursday: 8:30 AM - 8:00 PM",
+                  "Friday: 8:30 AM - 8:00 PM",
+                  "Saturday: 8:30 AM - 2:00 PM"
+               ]
+            }
+         ],
+            "templeClosures":[
+               "Wednesday, 1 January 2020",
+               "Monday, 17 February 2020 - Monday, 2 March 2020",
+               "Friday, 6 March 2020",
+               "Wednesday, 1 July 2020",
+               "Monday, 7 September 2020 - Monday, 9 November 2020",
+               "Friday, 25 December 2020 - Saturday, 26 December 2020"
+            ]
+         },
+      {
+      "name": "Adelaide Australia Temple",
+      "photo": "px-adelaide-australia-temple-w600-h300.jpg",
+      "location": "Marden, South Australia, Australia",
+      "history": "Dedicated on 15 June 2000",
+      "address":[
+         "53-59 Lower Portrush Rd",
+         "Marden SA 5070",
+         "Australia"
+      ],
+      "telephone": "(61) 8-8363-8000",
+      "email": "Log in to Church website to Church website to send email to temple",
+      "services":[
+         "No clothing rental available",
+         "No cafeteria available",
+         "Patron housing available",
+         "No distribution center nearby"
+      ],
+      "ordinanceSchedule":[
+         {
+            "baptism":[
+               "Sunday: Temple closed",
+               "Monday: Temple closed",
+               "Tuesday: Temple closed",
+               "Wednesday: 6:00 PM - 8:00 PM",
+               "Thursday: 9:00 AM - 12:00 PM",
+               "Friday: 6:00 PM - 8:00 PM",
+               "Saturday: 9:30 AM - 10:30 AM"
+            ],
+            "initiatory":[
+               "Sunday: Temple closed",
+               "Monday: Temple closed",
+               "Tuesday: Temple closed",
+               "Wednesday: 6:00 PM - 8:00 PM",
+               "Thursday: 9:00 AM - 12:30 PM",
+               "Friday: 5:30 PM - 8:30 PM",
+               "Saturday: 9:00 AM - 10:30 PM"
+            ],
+            "endowment":[
+               "Sunday: Temple closed",
+               "Monday: Temple closed",
+               "Tuesday: Temple closed",
+               "Wednesday: 7:00 PM",
+               "Thursday: 9:30 AM, 11:30 AM",
+               "Friday: 6:00 PM, 7:30 PM",
+               "Saturday: 7:30 AM, 9:30 AM"
+            ],
+            "sealing":[
+               "Sunday: Temple closed",
+               "Monday: Temple closed",
+               "Tuesday: Temple closed",
+               "Wednesday: 7:00 PM - 8:00 PM",
+               "Thursday: 9:30 AM - 10:30 AM and 11:30 AM - 12:30 PM",
+               "Friday: 6:00 PM - 7:00 PM and 8:00 PM - 9:00 PM",
+               "Saturday: 9:30 AM - 10:30 AM"
+            ]
+         }
+      ],
+         "templeClosures":[
+            "Wednesday, 25 December 2019 - Thursday, 26 December 2019",
+            "Wednesday, 1 January 2020",
+            "Friday, 10 April 2020 (Limited Hours)",
+            "Saturday, 11 April 2020",
+            "Saturday, 25 April 2020",
+            "Monday, 27 April 2020 - Tuesday, 12 May 2020",
+            "Monday, 12 October 2020 - Tuesday, 27 October 2020",
+            "Thursday, 24 December 2020 - Saturday, 26 December 2020"
+         ]
+      },
+   {
+      "name": "Albuquerque New Mexico Temple",
+      "photo": "px-albuquerque-temple-w600-h300.jpg",
+      "location": "Albuquerque, New Mexico, United States",
+      "history": "Dedicated on 5 March 2000",
+      "address":[
+         "1031 San Francisco Rd NE",
+         "Albuquerque NM 87122-3437",
+         "United States"
+      ],
+      "telephone": "(1) 505-822-5110",
+      "email": "Log in to Church website to send email to temple",
+      "services":[
+         "Clothing rental available",
+         "No cafeteria available",
+         "No patron housing available",
+         "Distribution center nearby"
+      ],
+      "ordinanceSchedule":[
+         {
+            "baptism":[
+               "Sunday: Temple closed",
+               "Monday: Temple closed",
+               "Tuesday: 8:00 AM - 6:00 PM and 6:00 PM - 8:00 PM",
+               "Wednesday: 8:00 AM - 6:00 PM and 6:00 PM - 8:00 PM",
+               "Thursday: 8:00 AM - 6:00 PM and 6:00 PM - 8:00 PM",
+               "Friday: 8:00 AM - 4:00 PM and 4:00 PM - 7:00 PM",
+               "Saturday: 7:00 AM - 4:00 PM and 4:00 PM - 7:00 PM"
+            ],
+            "initiatory":[
+               "Sunday: Temple closed",
+               "Monday: Temple closed",
+               "Tuesday: 8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM",
+               "Wednesday:  8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM",
+               "Thursday:  8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM",
+               "Friday:  8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM",
+               "Saturday:  8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM"
+            ],
+            "endowment":[
+               "Sunday: Temple closed",
+               "Monday: Temple closed",
+               "Tuesday: 8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM",
+               "Wednesday:  8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM",
+               "Thursday:  8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM",
+               "Friday:  8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM",
+               "Saturday:  8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM"
+            ],
+            "sealing":[
+               "Sunday: Temple closed",
+               "Monday: Temple closed",
+               "Tuesday: 8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM",
+               "Wednesday:  8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM",
+               "Thursday:  8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM",
+               "Friday:  8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM",
+               "Saturday:  8:00 AM - 9:15 AM, 9:45 AM - 11:15 AM, 11:45 AM - 1:15 PM, 1:45 PM - 3:15 PM, 3:45 PM - 5:15 PM, 5:45 PM - 8:00 PM"
+            ]
+         }
+      ],
+         "templeClosures":[
+            "Tuesday, 24 December 2019 - Thursday, 26 December 2019",
+            "Tuesday, 31 December 2019 (Limited Hours)",
+            "Wednesday, 1 January 2020",
+            "Saturday, 4 April 2020",
+            "Saturday, 6 April 2020 - Monday, 20 April 2020",
+            "Saturday, 4 July 2020",
+            "Saturday, 3 October 2020",
+            "Monday, 5 October 2020 - Monday, 19 October 2020",
+            "Wednesday, 25 November 2020 (Limited Hours)",
+            "Thursday, 26 November 2020",
+            "Thursday, 24 December 2020 - Saturday, 26 December 2020",
+            "Thursday, 31 December 2020 (Limited Hours)"
+         ]
+      }
+   ]
 }
-
