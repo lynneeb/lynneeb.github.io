@@ -124,32 +124,57 @@
 
 /* ************** Home Page *************************** */
 /* -------------------townsites--------------------- */
-.townsites {
-  display: flex;
-  flex-wrap: wrap;
-}
+// .townsites {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
-main section {
-display: flex;
-  width: 100%;
-  margin: auto;
-  margin-bottom: 20px;
-}
+// main section {
+// display: flex;
+//   width: 100%;
+//   margin: auto;
+//   margin-bottom: 20px;
+// }
 
-section:nth-child(odd) {
-  flex-direction: row-reverse;
-}
+// section:nth-child(odd) {
+//   flex-direction: row-reverse;
+// }
 
-section div {
-  margin: auto;
+// section div {
+//   margin: auto;
+//   padding: 1rem;
+
+// }
+
+// section img {
+//   width: 100%;
+//   height: auto;
+//   margin: 1rem;
+// }
+.temple-title {
+  background-color: #D9B08C;
+  font-family: 'Parisienne', cursive;
+letter-spacing: 1pt;
   padding: 1rem;
-
+  font-size: 3rem;
+  font-weight: bold;
+  border: 6px solid black; 
 }
-
-section img {
-  width: 100%;
-  height: auto;
-  margin: 1rem;
+#temdiv h2 {
+  background-color: #116466; 
+  font-family: 'Parisienne', cursive;
+letter-spacing: 1pt;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  border: 6px solid black; 
+  line-height: 3rem;
 }
-
+.services-title {
+letter-spacing: 1pt;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  border: 6px solid black; 
+}
 }

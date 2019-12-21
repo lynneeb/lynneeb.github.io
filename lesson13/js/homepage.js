@@ -43,40 +43,6 @@ fetch(requestURL)
           document.querySelector('div.townsites').appendChild(townsec);
         }
     }
-// -----------------------------------------------------------------------------
-//jQuery Slider
-// $(function () {
-
-//   var galleryImage = $(".homeHeroContainer").find("img").first();
-//   var altText = [
-//     "bern-switzerland-temple",
-//     "hong-kong-china-temple"];
-
-//   var images = [
-//     "temple-images/ps-bern-switzerland-temple.jpg",
-//     "temple-images/ps-hong-kong-china.jpg"];
-
-//   var i = 0;
-  
-//   var t = 0;
-
-
-//   setInterval(function() {
-
-//     i = (i + 1) % images.length; 
-//     t = (t + 1) % altText.length;
-
-//     galleryImage.fadeOut(function() {
-//       $(this).attr("src", images[i],);
-//       $(this).attr("alt", altText[t],);
-//       $(this).fadeIn();
-//     });
-//     console.log(galleryImage.attr("src"));
-//   }, 4000);
-
- 
-// });
-// ---------------------------------------------------------------
 
   });
 

@@ -584,52 +584,6 @@ img:nth-child(5) {
 h2 {
   text-align: center; }
 
-/*******************************************************
-*********5-Day Forecast Table ************************
-****************Start********************************* */
-.forecastdiv {
-  display: none; }
-
-/* ****************** Local Events ********************************* */
-.events {
-  display: flex;
-  flex-direction: column;
-  max-width: 60rem;
-  margin: 10px auto;
-  border: 1px solid #000;
-  padding: 1rem;
-  background-color: #116466; }
-
-.event-title {
-  align-content: center;
-  font-size: 2.2rem;
-  text-align: center;
-  background-color: #2C3531;
-  border: 4px solid #000;
-  padding: .4rem;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  text-shadow: 3px 3px 5px black; }
-
-.events li {
-  font-size: 1.4rem;
-  list-style: none; }
-
-.eventlist {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  padding-right: 2rem;
-  width: auto;
-  height: auto;
-  background-color: #FFCB9A;
-  box-shadow: 0 0 20px black;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  border: 4px solid #000; }
-
 /* *********************************************************************** */
 /* -----------peach box -------- */
 .articlebox1 {
@@ -688,7 +642,7 @@ h2 {
   font-family: 'Parisienne', cursive;
   letter-spacing: 1pt;
   padding: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   border: 6px solid black; }
 
@@ -712,6 +666,7 @@ h2 {
 
 .weathersummary {
   position: absolute;
+  z-index: 1;
   margin: 0 auto;
   top: 0rem;
   left: 0rem;
@@ -831,49 +786,6 @@ footer {
 
 .link {
   color: black; }
-
-/* ************* Home Page ************************************** */
-/* ------------- JSON Townsites ------------------------------------ */
-.townsites {
-  max-width: 60rem;
-  margin: 10px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 5px;
-  background-color: #FFCB9A;
-  font-family: 'Montserrat', sans-serif;
-  padding: 1rem;
-  border: 1px solid #000; }
-
-.townsites section {
-  height: auto;
-  justify-content: center;
-  text-align: center;
-  padding: 5px;
-  padding-bottom: 1rem;
-  align-content: center;
-  background-color: #116466;
-  border: 1px solid black; }
-
-.townsites h2 {
-  font-size: 2rem; }
-
-.townsites h3 {
-  font-size: 16px;
-  height: 32px;
-  font-style: italic; }
-
-.townsites p {
-  font-size: 1rem;
-  font-weight: bold; }
-
-.p3 {
-  padding-bottom: 16px; }
-
-.townsites img {
-  height: 20rem;
-  width: auto;
-  box-shadow: 0 0 20px black; }
 
 /* ************* Storm Center ************************************************ */
 /*----------- MAIN --------------*/
@@ -1128,38 +1040,91 @@ figcaption {
   margin: 2rem;
   border: 4px solid black; }
 
-.tdiv {
-  max-width: 60rem;
-  margin: 10px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 5px;
-  background-color: #FFCB9A;
-  font-family: 'Montserrat', sans-serif;
+.temarticle {
   padding: 1rem;
-  border: 1px solid #000; }
+  background-color: #116466; }
 
-.tdiv section {
+.herodiv {
+  position: relative; }
+
+#temdiv {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 60rem;
+  height: auto;
+  background-color: #116466;
+  border: 1px solid #000;
+  padding: 1rem;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+#temdiv section {
+  position: relative;
   height: auto;
   justify-content: center;
   text-align: center;
-  padding: 5px;
+  padding: 1rem;
   padding-bottom: 1rem;
   align-content: center;
-  background-color: #116466;
+  background-color: #D9B08C;
+  margin-bottom: 2rem;
   border: 1px solid black; }
 
-.tdiv h2 {
-  font-size: 2rem; }
+#temdiv h2 {
+  background-color: #116466;
+  font-family: 'Parisienne', cursive;
+  letter-spacing: 1pt;
+  padding: 1rem;
+  font-size: 1.9rem;
+  font-weight: bold;
+  border: 6px solid black;
+  line-height: 2rem; }
 
-.tdiv p {
-  font-size: 1rem;
+#temdiv p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
   font-weight: bold; }
 
-.tdiv img {
-  height: 20rem;
+#temdiv img {
+  position: relative; }
+
+.tweathersummary {
+  position: absolute;
+  z-index: 1;
+  margin: 0 auto;
+  top: 0rem;
+  left: 0rem;
   width: auto;
-  box-shadow: 0 0 20px black; }
+  height: auto;
+  background-color: rgba(10, 36, 169, 0.5);
+  padding: 1rem;
+  box-shadow: 5px 5px 5px black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold; }
+
+.tweathertitle {
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid white; }
+
+.tweatherinfo {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  column-gap: .5rem;
+  padding: .5rem .5rem .5rem .5rem;
+  font-size: 1.2rem; }
+
+.tc1 {
+  display: inline-grid;
+  text-align: right;
+  color: white; }
+
+.tc2 {
+  text-align: left;
+  color: yellow; }
 
 /* -----------peach box -------- */
 .servicesbox {
@@ -1181,7 +1146,7 @@ figcaption {
   font-family: 'Parisienne', cursive;
   letter-spacing: 1pt;
   padding: 1rem;
-  font-size: 3rem;
+  font-size: 1.9rem;
   font-weight: bold;
   border: 6px solid black; }
 
@@ -1204,6 +1169,11 @@ ul.square {
 
 .servicesimg {
   align-content: center; }
+
+.references-box {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: bold; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -1317,27 +1287,31 @@ ul.square {
 
   /* ************** Home Page *************************** */
   /* -------------------townsites--------------------- */
-  .townsites {
-    display: flex;
-    flex-wrap: wrap; }
+  .temple-title {
+    background-color: #D9B08C;
+    font-family: 'Parisienne', cursive;
+    letter-spacing: 1pt;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 6px solid black; }
 
-  main section {
-    display: flex;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 20px; }
+  #temdiv h2 {
+    background-color: #116466;
+    font-family: 'Parisienne', cursive;
+    letter-spacing: 1pt;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 6px solid black;
+    line-height: 3rem; }
 
-  section:nth-child(odd) {
-    flex-direction: row-reverse; }
-
-  section div {
-    margin: auto;
-    padding: 1rem; }
-
-  section img {
-    width: 100%;
-    height: auto;
-    margin: 1rem; } }
+  .services-title {
+    letter-spacing: 1pt;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 6px solid black; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   /* Desktop Views ****************************/ }
@@ -1364,17 +1338,6 @@ ul.square {
 
   /* ******* Home Page ****************************************** */
   /* **************** Gallery Page *********************************** */
-  img[data-src] {
-    width: 100%;
-    height: auto; }
-
-  img {
-    width: 100%;
-    height: auto; }
-
-  figure:hover {
-    /* box-shadow: 0 0 50px #333; */
-    box-shadow: 5px 5px 5px black; }
-
+  /* box-shadow: 0 0 50px #333; */
   /* ------------------------------------ */ }
 /* end of media query */
