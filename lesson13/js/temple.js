@@ -6,8 +6,7 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const temples = jsonObject['temples'];
-    // const ordinances = jsonObject['temples'['ordinanceSchedule']];
-    // const ordinances = jsonObject['temples.ordinanceSchedule'];
+    
     // const ordinances = temples.ordinanceSchedule;
     // const baptism = temples.ordinanceSchedule.baptism;
 
