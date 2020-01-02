@@ -54,7 +54,7 @@ fetch("https://api.openweathermap.org/data/2.5/weather?id=" + temples.weatherId 
             .then((response) => response.json())
             .then((jsObject) => {
                 console.log(jsObject);
-                let weatherDiv = document.getElementById(temple.weatherDivId);
+                let weatherDiv = document.getElementById(temples.weatherDivId);
                 let currentCondition = document.createElement("p");
                 // let currentTemp = document.createElement("p");
                 currentCondition.textContent = jsObject.main.temp.toFixed(0) + " °F " + jsObject.weather[0].description;
