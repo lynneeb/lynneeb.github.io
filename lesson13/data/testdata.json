@@ -4,7 +4,8 @@
       "name": "Aba Nigeria Temple",
       "photo": "px-aba-nigeria-temple-w600-h300.jpg",
       "weatherId": "2353151",
-      "weatherDivId": "nigeriaweather",
+      "weatherDivId": "tweathersummary",
+      // "weatherDivId": "nigeriaweather",
       "location": "Aba, Abia, Nigeria",
       "history": "Dedicated on 7 August 2005",
       "address":[
@@ -73,7 +74,8 @@
          "name": "Accra Ghana Temple",
          "photo": "px-accra-ghana-temple-w600-h300.jpg",
          "weatherId": "2306104",
-         "weatherDivId": "ghanaweather",
+         "weatherDivId": "tweathersummary",
+         // "weatherDivId": "ghanaweather",
          "location": "Accra, Ashanti, Ghana",
          "history": "Dedicated on 11 January 2004",
          "address": [
@@ -143,7 +145,8 @@
       "name": "Adelaide Australia Temple",
       "photo": "px-adelaide-australia-temple-w600-h300.jpg",
       "weatherId": "2078025",
-      "weatherDivId": "astraliaweather",
+      "weatherDivId": "tweathersummary",
+      // "weatherDivId": "astraliaweather",
       "location": "Marden, South Australia, Australia",
       "history": "Dedicated on 15 June 2000",
       "address":[
@@ -214,7 +217,8 @@
       "name": "Albuquerque New Mexico Temple",
       "photo": "px-albuquerque-temple-w600-h300.jpg",
       "weatherId": "5454711",
-      "weatherDivId": "newmexicoweather",
+      "weatherDivId": "tweathersummary",
+      // "weatherDivId": "newmexicoweather",
       "location": "Albuquerque, New Mexico, United States",
       "history": "Dedicated on 5 March 2000",
       "address":[
