@@ -39,6 +39,10 @@ h1 {
   margin: 0.15rem;
 } 
 
+h2 {
+  padding-bottom: 0.8rem;
+}
+
 .assign {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
@@ -48,9 +52,6 @@ h1 {
   padding-left: 1rem;
 }
 
-h2 {
-  padding-bottom: 0.8rem;
-}
 p {
   font-size: 1.5rem;
   line-height: 1.5rem;
