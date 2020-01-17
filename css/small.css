@@ -45,9 +45,9 @@ h2 {
 
 .assign {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
-  background: gray;
-  color: blue;
+  font-size: 1.6rem;
+  background: rgb(88, 81, 81);
+  color: white;
   text-align: left;
   padding: 1rem;
 }
