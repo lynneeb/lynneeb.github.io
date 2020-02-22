@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Multiply Numbers</title>
+<!-- Lynnette Beatty -->
+<!-- CIS 160
+	July 17, 2019 -->
+
+<script>
+/* Defining Table
+ 	 Input: no input
+ 	 Processing: multiply each element in an array by some value
+ 	 Output:  an array with the product
+ */
+ 	function makeArray() {
+	 	var data = [17, 8, 9, 5, 20]; 
+	 	
+	 	var products = multiply(data, 3);
+	 	document.getElementById('outputDiv').innerHTML = products; 
+	}
+		
+
+		function multiply(list, x) {
+		
+			for (var i = 0; i < list.length; i++) {
+					list[i] = x * list[i];
+			}
+			
+			return list;
+		}
+ 
+</script>
+</head>
+<body>  
+	<h1>Multiply Numbers</h1>
+	<button type = "button" onclick="makeArray()">Start</button>                  
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

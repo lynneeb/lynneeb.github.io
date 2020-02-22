@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Volume of a Tetrahedron</title>
+
+<!-- Program to Calculate the volume of a tetrahedron -->
+<!-- CIS160 Introduction to Programming -->
+<!-- Lynnette Beatty, Author -->
+<!-- May 25, 2019 -->
+
+<script>
+/* Defining Table
+ * Input: length of one edge of a tetrahedron
+ * Processing: cube of edge length / (6 * square root of 2)
+ * Output: volume
+ */
+
+function tetrahedronVolume() {
+
+//get the length of one edge input from user
+var edgeLengthText = document.getElementById("edgeLengthInput").value;
+
+//convert what the user typed as text into a number
+var e = parseFloat(edgeLengthText);
+
+
+//calculate volume of tetrahedron
+var v = Math.pow(e,3) / (6 * Math.SQRT2);
+
+//display volume of tetrahedron
+document.getElementById("vTetDiv").innerHTML = v ; 
+}
+
+</script>
+</head>
+
+<body>
+    <h1>Volume of a Tetrahedron</h1>
+    Side Length <input type="text" id="edgeLengthInput"><br>
+    <button type="button" onclick="tetrahedronVolume()">Volume</button><br>
+    <div id="vTetDiv"></div>
+</body>
+</html>

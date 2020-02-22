@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Array Numbers</title>
+<!-- Lynnette Beatty -->
+<!-- CIS 160
+	July 10, 2019 -->
+
+<script>
+/* Defining Table
+ 	 Input: no input
+ 	 Processing: find value of the middle element in an array.
+ 	 Output:  middle elebment in array or average of two middle elements.
+ */
+ 	function makeArray() {
+	 	var data = [14, 9, 21, 42, 33, 0, 40, 2, 12, 3, 67]; 
+	 	
+	 	var output = getMiddle(data);
+	 	document.getElementById('outputDiv').innerHTML = output; 
+	}
+		
+
+		function getMiddle(list) {
+
+			if (list.length % 2 != 0) {
+
+				var middle = list[Math.floor(list.length / 2)];
+
+				return middle;
+			}
+
+			else {
+				var mid1 = list[Math.floor((list.length - 1) / 2)];
+				var mid2 = list[Math.floor(list.length / 2)];
+				var average = (mid1 + mid2) / 2; 
+				return average; 
+			}
+
+		}
+
+</script>
+</head>
+<body>  
+	<h1>Array Program</h1>
+	<button type = "button" onclick="makeArray()">Calculate Middle Number</button>                  
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

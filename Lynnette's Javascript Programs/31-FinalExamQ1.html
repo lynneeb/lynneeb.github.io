@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Template HTML</title>
+<!-- Lynnette Beatty -->
+<!-- DATE -->
+<script>
+/* Defining Table
+ 	 Input: 
+ 	 Processing: 
+ 	 Output:  
+ */
+
+// function TemplateFunction() {
+
+	//	input
+	// var inputValue = document.getElementById("userInput").value;
+	//	convert userInput text to a number
+	// var inputNumber = parseFloat(inputValue);
+	//	processing
+	// var mileage = (endingOdometer - beginningOdometer) / gallonsUsed;
+	//	round number to two decimal plaaces
+	// mileage = Math.round(100 * mileage) / 100 ;
+	//	output
+	// document.getElementById('mileageDiv').innerHTML = mileage ; 
+// }
+
+	// testTriangle();
+
+	function testTriangle() {
+	    var r = triangleArea(4, 2, 5);
+	    // output = Math.round(10 * r) / 10 ;
+	    document.getElementById('outputDiv').innerHTML = r;
+	}
+
+	// Computes and returns the area of a
+	// triangle with side lengths a, b, and c.
+	function triangleArea(a, b, c) {
+	    var s = (a + b + c) / 2;
+	    var area = Math.sqrt(s * (s-a) * (s-b) * (s-c));
+	    return area;
+	}
+
+
+</script>
+</head>
+<body>  
+	<!-- <h4>Enter beginning odometer reading: -->
+	<!-- <input type ="text" id="userInput"></h4> -->
+	<button type ="button" onclick="testTriangle()">Execute Function</button>
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

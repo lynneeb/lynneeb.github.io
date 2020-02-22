@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Odd Integers</title>
+<!-- Lynnette Beatty -->
+<!-- June 12, 2019 -->
+<!-- Write a defining table and a program that asks the user for -->
+<!-- an integer n and then outputs the sum of all the odd integers between 1 and n, inclusive. -->
+
+<script>
+/* Defining Table
+ 	 Input: integer
+ 	 Processing: find all odd integers between 1 and n, inclusive
+ 	 		  	use while loop
+ 	 				use if statement to get odd values
+ 	 				add the odd values to the variable
+ 	 Output: sum of odd integers
+	 */
+
+function findSumOfOddIntegers() {
+
+	//	input
+	var n = parseInt(document.getElementById("userInteger").value);
+
+	//	processing
+	var i = 1;
+	var addN = 0;
+
+	//	find each integers between 1 and n, inclusive
+	//	determine if integer is odd
+	//	add odd numbers together
+	while (i <= n) {
+
+		if (i % 2 !== 0) {
+			addN += i;
+			i++;
+		}
+
+		else if (i % 2 == 0) {
+			i++;
+		}
+		
+	}
+
+	//	output
+	document.getElementById('outputDiv').innerHTML = addN; 
+}
+
+</script>
+</head>
+<body>  
+	<h4>Please enter an integer:
+	<input type ="text" id="userInteger"></h4>
+	<button type ="button" onclick="findSumOfOddIntegers()">Submit</button>
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

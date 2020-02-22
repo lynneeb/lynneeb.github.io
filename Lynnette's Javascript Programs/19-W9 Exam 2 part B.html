@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Template HTML</title>
+<!-- Lynnette Beatty -->
+<!-- DATE -->
+<script>
+/* Defining Table
+ 	 Input: 
+ 	 Processing: 
+ 	 Output:  
+ */
+
+function TemplateFunction() {
+
+	var subtotal = parseFloat(prompt("Please enter the subtotal."));
+var rate;
+if (subtotal < 300) {
+    rate = 0;
+}
+else if (subtotal < 600) {
+    rate = 0.02;
+}
+else if (subtotal < 1000) {
+    rate = 0.025;
+}
+else {
+     rate = 0.03;
+}
+var discount = subtotal * rate;
+var total = subtotal - discount;
+var tax = total * 0.06;
+total += tax;
+
+	//	output
+	document.getElementById('outputDiv').innerHTML = total ; 
+}
+</script>
+</head>
+<body>  
+	<!-- <h4>Enter beginning odometer reading:
+	<input type ="text" id="userInput"></h4> -->
+	<button type ="button" onclick="TemplateFunction()">Execute Function</button>
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

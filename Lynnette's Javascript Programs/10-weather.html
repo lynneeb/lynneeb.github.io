@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Which shoes?</title>
+<!-- CIS 160 Introduction to Programming -->
+<!-- Lynnette Beatty -->
+<!-- 5/29/2019 -->
+<script>
+/* Defining Table
+ 	 Input: weather
+ 	 Processing: if hot - sandals, else if rain - galoshes, else if snow - boots, else - shoes
+ 	 Output:  which shoes to wear
+ */
+
+function decideShoes() {
+
+	//	input
+	var weather = document.getElementById("weatherInput").value;
+	var message
+	if (weather == "hot") {
+		message = "sandals";
+	}
+	else if (weather == "rain") {
+		message = "galoshes";
+	}
+	else if (weather == "snow") {
+		message = "boots";
+	}
+	else {
+		message = "shoes";
+	}
+	//	output
+	document.getElementById("outputDiv").innerHTML = message ; 
+}
+</script>
+</head>
+<body>  
+	What is the weather like today?
+	<input type ="text" id="weatherInput"><br><br>
+	<button type ="button" onclick="decideShoes()">Which shoes should I wear?</button>
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

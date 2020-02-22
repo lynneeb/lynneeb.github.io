@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Count Even Numbers</title>
+<!-- Lynnette Beatty -->
+<!-- CIS 160
+	July 17, 2019 -->
+
+<script>
+/* Defining Table
+ 	 Input: no input
+ 	 Processing: count and return the number of even integers in an array
+ 	 Output:  number of even integers
+ */
+ 	function makeArray() {
+	 	var data = [14, 9, 21, 42, 33, 0, 40, 2, 12, 3, 67]; 
+	 	
+	 	var output = countEvens(data);
+	 	document.getElementById('outputDiv').innerHTML = output; 
+	}
+		
+
+		function countEvens(list) {
+			var count = 0;
+			for (var i = 0; i < list.length; i++) {
+				if (list[i] % 2 == 0) {
+					count ++;
+				}
+			}
+			
+    		return count;
+
+		}
+ 
+</script>
+</head>
+<body>  
+	<h1>Count Even Integers</h1>
+	<button type = "button" onclick="makeArray()">Start</button>                  
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Investment Calculator</title>
+<!-- Lynnette Beatty
+		July 2, 2019
+		CIT 160 Introduction to Programming -->
+<script>
+/* Defining Table
+ 	 Input: amount invested
+ 	 		annual rate
+ 	 		number of years
+ 	 		periods per year
+ 	 Processing: 	function doFV()
+ 	 				function computeFutureValue(principal, annualRate, years, periodsPerYear)
+ 	 			f = a * Math.pow((1 + r ), n)	
+ 	 Output: future value 
+ */
+function doFV() {
+	var inAmount = parseFloat(document.getElementById('principal').value);
+	var inRate = parseFloat(document.getElementById('annualRate').value);
+	var inYears = parseFloat(document.getElementById('years').value);
+	var inPeriods = parseFloat(document.getElementById('periodsPerYear').value);
+	var futureValue = computeFutureValue(inAmount, inRate, inYears, inPeriods);
+	//	round number to two decimal plaaces
+		output = Math.round(100 * futureValue) / 100 ;
+	//	output
+	document.getElementById('outputDiv').innerHTML = "$" + output;
+}
+function computeFutureValue(principal, annualRate, years, periodsPerYear) {
+	// f is the future value
+	// a is the investment amount (principal)
+	// r is the growth rate per peiod
+	// n is the total number of periods throughout the life of the investment.
+	
+	var a = principal;
+	var aR = annualRate;
+	var y = years;
+	var p = periodsPerYear;
+	var n = y * p ;
+	var r = aR / p ;
+	var f = a * Math.pow((1 + r), n);
+	
+	return f;
+}
+</script>
+</head>
+
+<body>
+	<h1>Investment Calculator</h1>
+	<table style='width:30%'>
+		<tr>
+			<td>Amount invested (principal)</td>
+			<td><input type='text' id='principal'></td>
+		</tr>
+		<tr>
+			<td>Annual rate (example: .08)</td>
+			<td><input type='text' id='annualRate'></td>
+		</tr>
+		<tr>
+			<td>Number of years</td>
+			<td><input type='text' id='years'></td>
+		</tr>
+		<tr>
+			<td>Periods per year</td>
+			<td><input type='text' id='periodsPerYear'></td>
+		</tr>
+		<tr>
+		<td><button onclick='doFV()'>Compute future value</button></td>
+		<td><div id ='outputDiv'></div></td>
+		</tr>   
+	</table>                 
+</body>            
+</html>

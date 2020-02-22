@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Wind Chill</title>
+	<!-- Lynnette Beatty -->
+	<!-- June 24, 2019 -->
+	<!-- CIT 160 Introduction to Programming  -->
+	
+
+	<script>
+	/* Defining Table
+	 	 Input: temperature & wind chill
+	 	 Processing: get input from the user
+	 	 	call the  windChill function and enter values into that function
+	 	 	compute wind chill
+	 	 	return windChill
+	 	 Output:  display windchill in div from windChill function
+	 */
+
+	function doInputOutput() {
+
+		//	input
+		var inTemp = parseFloat(document.getElementById("temperature").value);
+		var inWind = parseFloat(document.getElementById("windSpeed").value);
+
+		windChill(inTemp, inWind);
+
+		var windChillFactor = windChill(inTemp, inWind);
+
+		//	round number to two decimal plaaces
+		output = Math.round(100 * windChillFactor) / 100 ;
+
+		document.getElementById('outputDiv').innerHTML = output;
+
+	}
+
+	function windChill(tempF, speed) {
+		// processing to get WindChill factor
+		// f is wind chill factor in Fahrenheit
+		// t is air temperature in Fahrenheit
+		// s is wind speed in mph at 5 feet above the ground
+
+		var t = tempF;
+		var s = speed;
+		var f = (35.74 + 0.6215 * t) - (35.75 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s, 0.16));
+
+		return f;
+
+	}
+	</script>
+</head>
+<body>  
+	Temperature<input type ="text" id="temperature">
+	Wind Speed<input type ="text" id="windSpeed">
+	<br>
+	<button type ="button" onclick="doInputOutput()">Wind Chill</button>
+	<br>
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

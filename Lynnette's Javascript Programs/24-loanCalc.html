@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Loan Calculator</title>
+<!-- Lynnette Beatty
+		July 3, 2019
+		CIT 160 Introduction to Programming -->
+<script>
+/* Defining Table
+Input: 
+	amount borrowed (principal)
+ 	annual interest rate
+ 	number of years
+ 	payments per year
+ 	number of payments paid to date
+Processing: 	
+  	doPayment()
+ 	doBalance()
+ 	computePayment(principal, annualRate, years, periodsPerYear)
+ 	p = (a * r) / (1 - Math.pow((1 + r), -n))
+ 	computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentsPaidToDate)
+ 	b = (a * Math.pow((1 + r), d)) - ((p * (Math.pow((1 + r), d) - 1)) / r)	
+Output:  payment, payoff amount
+*/
+
+function doPayment() {
+	var inAmount = parseFloat(document.getElementById('principal').value);
+	var inRate = parseFloat(document.getElementById('annualRate').value);
+	var inYears = parseFloat(document.getElementById('years').value);
+	var inPeriods = parseFloat(document.getElementById('periodsPerYear').value);
+	var payment = computePayment(inAmount, inRate, inYears, inPeriods);
+	//	round number to two decimal plaaces
+		output = Math.round(100 * payment) / 100 ;
+	//	output
+	document.getElementById('paymentDiv').innerHTML = "$" + output;
+	//another way to round to 2 decimal places...
+	//document.getElementById('paymentDiv').innerHTML = "$" + output.toFixed(2);
+}
+
+function doBalance() {
+	var inAmount = parseFloat(document.getElementById('principal').value);
+	var inRate = parseFloat(document.getElementById('annualRate').value);
+	var inYears = parseFloat(document.getElementById('years').value);
+	var inPeriods = parseFloat(document.getElementById('periodsPerYear').value);
+	var inPayments = parseFloat(document.getElementById('numberOfPaymentsPaidToDate').value);
+	var balance = computeBalance(inAmount, inRate, inYears, inPeriods, inPayments);
+	//	round number to two decimal plaaces
+		output = Math.round(100 * balance) / 100 ;
+	//	output
+	document.getElementById('balanceDiv').innerHTML = "$" + output;
+}
+
+function computePayment(principal, annualRate, years, periodsPerYear) {
+	// p is the payment per period
+	// a is the loan amount (principal)
+	// r is the interest rate per period
+	// n is the total number of periods throughout the life of the loan
+	
+	var a = principal;
+	var aR = annualRate;
+	var y = years;
+	var per = periodsPerYear;
+	var n = y * per ;
+	var r = aR / per ;
+	var p = (a * r) / (1 - Math.pow((1 + r), -n));
+	
+	return p;
+}
+
+function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentsPaidToDate) {
+	// b is the balance
+	// a is the loan amount (principal)
+	// r is the interest rate per period
+	// p is the payment per period
+	// d is the number of payments paid to date
+
+	var a = principal;
+	var aR = annualRate;
+	var y = years;
+	var per = periodsPerYear;
+	var d = numberOfPaymentsPaidToDate;
+	var p = computePayment(a, aR, y, per);
+	var r = aR / per ;
+	var b = (a * Math.pow((1 + r), d)) - ((p * (Math.pow((1 + r), d) - 1)) / r) ;
+	
+	return b;
+}
+
+</script>
+</head>
+
+<body>
+	<h1>Loan Calculator</h1>
+	<table style='width:32%'>
+		<tr>
+			<td>Amount borrowed (principal)</td>
+			<td><input type='text' id='principal'></td>
+		</tr>
+		<tr>
+			<td>Annual interest rate (example: .065)</td>
+			<td><input type='text' id='annualRate'></td>
+		</tr>
+		<tr>
+			<td>Number of years</td>
+			<td><input type='text' id='years'></td>
+		</tr>
+		<tr>
+			<td>Payments per year</td>
+			<td><input type='text' id='periodsPerYear'></td>
+		</tr>
+		<tr>
+			<td><button type = 'button' onclick='doPayment()'>Compute payment</button></td>
+			<td><div id ='paymentDiv'></div></td>
+		</tr>
+		<tr>
+			<td>Number of payments paid to date</td>
+			<td><input type='text' id='numberOfPaymentsPaidToDate'></td>
+		</tr>
+
+			<td><button type = 'button' onclick='doBalance()'>Compute payoff amount</button></td>
+			<td><div id ='balanceDiv'></div></td> 
+	</table>
+
+</body>            
+</html>

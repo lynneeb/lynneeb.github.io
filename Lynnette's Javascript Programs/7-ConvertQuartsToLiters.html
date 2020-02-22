@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Convert Quarts to Liters</title>
+
+<!-- Program to Conver Quarts to Liters -->
+<!-- CIS160 Introduction to Programming -->
+<!-- Lynnette Beatty, Author -->
+<!-- May 23, 2019 -->
+
+<!-- ************** The following is JavaScript code ******************* -->
+<script>
+/* Defining Table
+ * Input: quarts
+ * Processing: convert quarts to liters
+ * Output: liters
+ */
+function quartsToLiters() {
+    // Read the quarts from user.
+    var text = document.getElementById('quartsInputBox').value;
+
+    // Convert what the user typed from text into a number.
+    var q = parseFloat(text);
+
+    // Convert the quarts into liters.
+    var l = q / 1.05668821;
+
+    //Round the liters to two decimal places.
+    l = Math.round(100 * l) / 100;
+
+    // Display the liters to the user.
+    document.getElementById('literDiv').innerHTML = l;
+}
+</script>
+</head>
+
+<body>  
+<h4>                             
+Enter the number of quarts: <input type="text" id="quartsInputBox">
+</h4>
+<br>
+<button type="button" onclick="quartsToLiters()">Convert</button>
+<div id="literDiv"></div>                     
+</body>            
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Math Skills</title>
+<!-- CIS 160 Introduction to Programming -->
+<!-- Lynnette Beatty -->
+<!-- 5/29/2019 -->
+<script>
+/* Defining Table
+ 	 Input: first number, operator, second number, child's answer
+ 	 Processing: if operator, compute math, check child's answer
+ 	 Output:  "Correct! Good job." or "Incorrect. Try again!"
+ */
+
+function computeMath() {
+
+	//	input & float
+	var fNum = parseFloat(document.getElementById("firstNumberInputBox").value);
+	var op = document.getElementById("operatorInputBox").value;
+	var sNum = parseFloat(document.getElementById("secondNumberInputBox").value);
+	var childAn = (document.getElementById("childAnswerInputBox").value);
+	var correctAn ;
+
+	//	compute math
+
+	var message ;
+	
+	if (op == "+") {
+		correctAn = fNum + sNum ;
+	}
+	else if (op == "-") {
+		correctAn = fNum - sNum ;
+	}
+	else if (op == "*") {
+		correctAn = fNum * sNum ;
+	}
+	else if (op == "/") {
+		correctAn = fNum / sNum ;
+	}
+
+	if (correctAn == childAn) {
+		message = "Correct! Good job.";
+	}
+	else {
+		message = "Incorrect. Try again!";
+	}
+
+	//	output
+	document.getElementById("outputDiv").innerHTML = message ; 
+}
+</script>
+</head>
+<body>  
+	<h1>Test your math skills!</h1><br>
+	<input type ="text" id="firstNumberInputBox">
+	<input type ="text" id="operatorInputBox">
+	<input type ="text" id="secondNumberInputBox">
+	=
+	<input type ="text" id="childAnswerInputBox">
+	<br>
+	<button type = "button" onclick="computeMath()">Check</button>
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

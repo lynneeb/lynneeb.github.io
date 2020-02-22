@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Template HTML</title>
+<!-- Lynnette Beatty -->
+<!-- DATE -->
+<script>
+/* Defining Table
+ 	 Input: 
+ 	 Processing: 
+ 	 Output:  
+ */
+
+// function TemplateFunction() {
+
+	//	input
+	// var inputValue = document.getElementById("userInput").value;
+	//	convert userInput text to a number
+	// var inputNumber = parseFloat(inputValue);
+	//	processing
+	// var mileage = (endingOdometer - beginningOdometer) / gallonsUsed;
+	//	round number to two decimal plaaces
+	// mileage = Math.round(100 * mileage) / 100 ;
+	//	output
+	// document.getElementById('mileageDiv').innerHTML = mileage ; 
+// }
+
+// Write a simple JavaScript function named makeLocation with three parameters named city, state, and zipcode. The function should return a String that contains the city, a comma and a space, the state, a space, and the zipcode. For example, if the function were called like this:
+
+// var region = makeLocation("Rexburg", "Idaho", "83440");
+// it would return "Rexburg, Idaho 83440" without the double quotes.
+
+	function callLocation(){
+		var region = makeLocation("Rexburg", "Idaho", "83440");
+		document.getElementById('outputDiv').innerHTML = region ; 
+	}
+	
+	function makeLocation(city, state, zipcode){
+		var string = city + ", " + state + " " + zipcode;
+		return string;
+	}
+
+
+</script>
+</head>
+<body>  
+	<!-- <h4>Enter beginning odometer reading: -->
+	<!-- <input type ="text" id="userInput"></h4> -->
+	<button type ="button" onclick="callLocation()">Execute Function</button>
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

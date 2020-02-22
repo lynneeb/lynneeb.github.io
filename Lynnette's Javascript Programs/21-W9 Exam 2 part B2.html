@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Template HTML</title>
+<!-- Lynnette Beatty -->
+<!-- DATE -->
+<script>
+/* Defining Table
+ 	 Input: 
+ 	 Processing: 
+ 	 Output:  
+ */
+
+function TemplateFunction() {
+
+	var balance = parseFloat(prompt("Enter your account balance"));
+var annualRate = parseFloat(prompt("Enter the annual interest rate"));
+var numMonths = parseInt(prompt("Enter the number of months"));
+var monthlyRate = annualRate / 12;
+
+for (var month = 1;  month <= numMonths;  month++) {
+    var interest = Math.round(balance * monthlyRate * 100) / 100;
+    balance += interest;
+}
+alert("Your balance after " + numMonths + " months will be $" + balance);
+
+	//	output
+	// document.getElementById('outputDiv').innerHTML = sum ; 
+}
+</script>
+</head>
+<body>  
+	
+
+	<button type ="button" onclick="TemplateFunction()">Execute Function</button>
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Cone Volume</title>
+<!-- Lynnette Beatty -->
+<!-- CIS 160
+	July 18, 2019 -->
+	<!-- Write a JavaScript function to compute and return the volume of a cone. Your function must have this header
+
+function coneVolume(radius, height) {
+The formula for computing the volume of a cone is
+
+v = πr2h
+3
+where v is the volume, r is the radius, and h is the height of the cone. Hint: in JavaScript there is a constant named Math.PI -->
+<script>
+/* Defining Table
+ 	 Input: no input
+ 	 Processing: find the volume of a cone
+ 	 Output:  volume of a cone
+ */
+ 	function findVolume() {
+		var output = coneVolume(3, 20);
+	 	document.getElementById('outputDiv').innerHTML = output; 
+	}
+
+	function coneVolume(radius, height) {
+		var r = radius;
+		var h = height;
+		var volume = (Math.PI * (Math.pow(r, 2) * h)) / 3;
+		return volume;	
+		}
+		
+</script>
+</head>
+<body>  
+	<h1>Find the Volume of a Cone</h1>
+	<button type = "button" onclick="findVolume()">Start</button>                  
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

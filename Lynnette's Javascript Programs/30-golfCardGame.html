@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Golf Card Game</title>
+<!-- Lynnette Beatty -->
+<!-- CIS 160
+	July 18, 2019 -->
+	<!-- Ch 10 Ex 8 Extra Credit: In the card game named golf, each player tries to collect cards with the lowest value. The game is usually played with a deck of cards that has four suits: spades, hearts, diamonds, and clubs. Each suit has 13 cards: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, and King. At the end of the game, each player calculates his score by adding the value of the cards that he holds in his hand. The value of the numbered cards is the same as their number. However, the value of a Jack, Queen, or King is 10. In some versions of the game, each player has four cards in his hand. In other versions each player has six or eight cards in his hand.
+
+Write a function named golfScore that takes one parameter: an array named hand. This function must compute and return the score for the cards by adding the values of all the cards in hand. For example, if hand were this array: [5, 2, "King", 3, 1, "Queen"], the golfScore function would return 31. -->
+
+<script>
+/* Defining Table
+ 	 Input: no input
+ 	 Processing: add the value of each card
+ 	 Output:  the score of the cards
+ */
+ 	function makeArray() {
+	 	var data = ["Jack", 1, 5, 8, "Queen", 3];
+	 	// var values = [10, 1, 5, 8, 10, 3];
+	 	
+	 	
+	 	var output = golfScore(data);
+	 	document.getElementById('outputDiv').innerHTML = output; 
+	}
+		
+
+		function golfScore(hand) {
+			var score = 0;
+
+			for (var i = 0; i < hand.length; i++) {
+
+				if (hand[i] == "Jack") {
+					hand[i] = 10;
+				}
+				else if (hand[i] == "Queen") {
+					hand[i] = 10;
+				}
+				else if (hand[i] == "King") {
+					hand[i] = 10;
+				}
+				score += hand[i];
+			}
+    		
+    		return score;
+		}
+		
+</script>
+</head>
+<body>  
+	<h1>Let's play golf!</h1>
+	<button type = "button" onclick="makeArray()">Start</button>                  
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

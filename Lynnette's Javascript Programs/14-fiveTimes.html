@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Five Times</title>
+<!-- Lynnette Beatty -->
+<!-- June 14, 2019 -->
+<!-- W9 Ch8 Write a defining table and a program to print -->
+<!-- the five times table from 1 to 12 in this format: -->
+<!--   5 x 1 = 5 -->
+<!--   5 x 2 = 10 -->
+
+<script>
+/* Defining Table
+ 	 Input: 
+ 	 Processing:
+ 	 		  	use while loop
+ 	 				Multiply 5 * i
+ 	 				concatinate the string
+ 	 				increment the variable i
+ 	 Output: five times table 
+	 */
+
+function fiveTimesTable() {
+
+	//	processing
+	var i = 1;
+	var answer; 
+	var output = "";
+
+
+	while (i <= 12) {
+		answer = 5 * i;
+		output += "5 x " + i + " = " + answer + "<br>";
+		i++;
+		}
+
+
+	//	output
+	document.getElementById("outputDiv").innerHTML = output;
+
+}
+
+</script>
+</head>
+<body>  
+	<h4>Print the Five Times Table:
+	<br>
+	<br>
+	<button type ="button" onclick="fiveTimesTable()">Submit</button>
+	<br>
+	<br>
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

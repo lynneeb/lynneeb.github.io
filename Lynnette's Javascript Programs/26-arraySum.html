@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Array Sum</title>
+<!-- Lynnette Beatty -->
+<!-- CIS 160
+	July 10, 2019 -->
+
+<script>
+/* Defining Table
+ 	 Input: no input
+ 	 Processing1: find first and last value of array
+ 	 Output1:  sum of first and last value
+ */
+ 	function makeArray() {
+	 	var data = [14, 9, 21, 42, 33, 0, 40, 2, 12, 3, 67];
+
+	 	var output = addEnds(data);
+	 	document.getElementById('outputDiv').innerHTML = output; 
+	 	
+	}
+
+
+		function addEnds(list) {
+			var first = list[0];
+			var last = list[list.length - 1];
+			var sum = first + last;
+			return sum;  
+		}
+
+</script>
+</head>
+<body>  
+	<h1>Array Program</h1>
+	<button type = "button" onclick="makeArray()">Calculate Array Sum</button>
+	<div id ="outputDiv"></div>                    
+	                   
+</body>            
+</html>

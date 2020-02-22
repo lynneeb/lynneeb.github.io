@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Template HTML</title>
+<!-- Lynnette Beatty -->
+<!-- DATE -->
+<script>
+/* Defining Table
+ 	 Input: 
+ 	 Processing: 
+ 	 Output:  
+ */
+
+// function TemplateFunction() {
+
+	//	input
+	// var inputValue = document.getElementById("userInput").value;
+	//	convert userInput text to a number
+	// var inputNumber = parseFloat(inputValue);
+	//	processing
+	// var mileage = (endingOdometer - beginningOdometer) / gallonsUsed;
+	//	round number to two decimal plaaces
+	// mileage = Math.round(100 * mileage) / 100 ;
+	//	output
+	// document.getElementById('mileageDiv').innerHTML = mileage ; 
+// }
+
+// Write a JavaScript function named getLast that takes one parameter: an array named list and returns the value of the last element in list.
+
+	function makeArray(){
+		var data = [4, 7, 12, 0, 22, 34];
+		var output = getLast(data);
+		document.getElementById('outputDiv').innerHTML = output; 
+	}
+	
+	function getLast(list){
+		var last = list[list.length-1];
+		return last;
+	}
+
+
+</script>
+</head>
+<body>  
+	<!-- <h4>Enter beginning odometer reading: -->
+	<!-- <input type ="text" id="userInput"></h4> -->
+	<button type ="button" onclick="makeArray()">Execute Function</button>
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

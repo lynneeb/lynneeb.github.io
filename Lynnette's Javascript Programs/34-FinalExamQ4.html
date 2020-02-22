@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>21 Card Game</title>
+<!-- Lynnette Beatty -->
+<!-- CIS 160
+	July 18, 2019 -->
+	<!-- Write a JavaScript function to compute and return a person’s score in the game of 21. Your function must have this header
+
+function twentyOne(hand) {
+The parameter hand is an array that contains integers between 1 and 10, inclusive. The length of the hand array will vary. Your function must add all the integers in the array. If the sum is greater than 21, your function must return the string "bust", otherwise your function must return the sum. For example, if your function were called like this:
+
+var cards = [8, 3, 6];
+var score = twentyOne(cards);
+your function would return the number 17. If your function were called like this:
+
+var cards = [10, 4, 2, 7];
+var score = twentyOne(cards);
+your function would return the string "bust".
+ -->
+<script>
+/* Defining Table
+ 	 Input: no input
+ 	 Processing: add the value of each card
+ 	 Output:  the score of the cards if <= 21
+ 	 			or "bust" if > 21
+ */
+ 	function makeArray() {
+	 	var cards = [8, 3, 6];
+	 	var score = twentyOne(cards);
+	 	
+	 	document.getElementById('outputDiv').innerHTML = score; 
+	}
+		
+
+		function twentyOne(hand) {
+			var sum = 0;
+			for (var i = 0; i < hand.length; i++) {
+
+				if (hand[i] <= 10) {
+					sum += hand[i];
+				}
+			}
+
+			if (sum <= 21){
+				return sum;
+					}
+
+			else {
+				var string = "bust"
+				return string;
+					}
+		}
+		
+</script>
+</head>
+<body>  
+	<h1>Let's play a card game of 21!</h1>
+	<button type = "button" onclick="makeArray()">Start</button>                  
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

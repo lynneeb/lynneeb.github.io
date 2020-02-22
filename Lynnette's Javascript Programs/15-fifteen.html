@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Fifteen</title>
+<!-- Write a JavaScript program with a function named fifteen that reads two numbers from two text fields and then outputs to a div "True" if both of the numbers are greater than 15 or if their sum is greater than 15. Otherwise your function should output "False" to the div. If you wish, you may use the following HTML code to begin your program. -->
+
+<script>
+/* Input: two numbers
+ * Processing:  if statement
+ 				sum of one + two
+ * Output: true if (one >15 && two > 15) || (one + two > 15)
+ 			false if anything else
+ */
+function fifteen() {
+	//	input
+	var one = parseInt(document.getElementById("one").value);
+	var two = parseInt(document.getElementById("two").value);
+	var output;
+
+	if ((one > 15 && two > 15) || (one + two > 15)) {
+	output = true;
+	}
+
+	else {
+	output = false;
+	}
+
+	//	output
+	document.getElementById("outputDiv").innerHTML = output;
+}
+</script>
+</head>
+
+<body>
+Please enter two numbers:
+<input type="text" id="one" size="5">
+<input type="text" id="two" size="5">
+<button type="button" onclick="fifteen()">Click</button>
+<div id="outputDiv"></div>
+</body>
+</html>

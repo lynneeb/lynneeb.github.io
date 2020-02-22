@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Mileage Calculator</title>
+
+<!-- Program to Calculate Gas Mileage -->
+<!-- CIS160 Introduction to Programming -->
+<!-- Lynnette Beatty, Author -->
+<!-- May 23, 2019 -->
+
+<!-- ************** The following is JavaScript code ******************* -->
+<script>
+/* Defining Table
+ * Input: beginning and ending odometer readings, number of gallons of gasoline used.
+ * Processing: calculate gas mileage based on input
+ * Output: Gas Mileage */
+
+function gasMileage() {
+
+//+++++++ get the beginning odometer input from user +++++++++++++++++++++++++
+var beginningText = document.getElementById('beginningInput').value;
+
+//+++++++ get the ending odometer input from user ++++++++++++++++++++++++++++
+var endingText = document.getElementById('endingInput').value;
+
+//+++++++ get the "gallons used" input from user +++++++++++++++++++++++++++++
+var gallonsText = document.getElementById('gallonsInput').value;
+
+//+++++++ convert what the user typed as text into a number ++++++++++++++++++
+var beginningOdometer = parseFloat(beginningText);
+
+var endingOdometer = parseFloat(endingText);
+
+var gallonsUsed = parseFloat(gallonsText);
+
+//++++++++ calculate mileage +++++++++++++++++++++++++++++++++++++++++++++++++
+var mileage = (endingOdometer - beginningOdometer) / gallonsUsed;
+
+//++++++++ round the mileage to two decimal places +++++++++++++++++++++++++++
+mileage = Math.round(100 * mileage) / 100 ;
+
+//++++++++ display mileage +++++++++++++++++++++++++++++++++++++++++++++++++++
+document.getElementById('mileageDiv').innerHTML = mileage ; 
+}
+</script>
+</head>
+
+<!-- ********** the following is HTML code ********************************** -->
+<body>  
+<!-- ++++++++++ prompt user for input in text field +++++++++++++++++++++++++ -->
+<h4>Enter beginning odometer reading:
+<input type="text" id="beginningInput"></h4>
+
+<h4>Enter ending odometer reading:
+<input type="text" id="endingInput"></h4>
+
+<h4>Enter gallons of gas used:
+<input type="text" id="gallonsInput"></h4>
+
+<br>
+
+<!-- +++++++++++ button +++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<button type="button" onclick="gasMileage()">Gas Mileage</button>
+
+<!-- +++++++++++ output div +++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="mileageDiv" style=margin:20px></div>                    
+</body>            
+</html>

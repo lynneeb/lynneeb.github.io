@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>My Loops</title>
+<!-- Lynnette Beatty -->
+<!-- 6/11/19 -->
+<script>
+/* Defining Table
+   Input: 
+   Processing: 
+   Output:  
+ */
+
+    function lynnette() {
+        var output = "";
+        var i = 0;
+        while (i <= 10) {
+            output += ", " + i ;
+            i ++;
+        }
+        document.getElementById('displayDiv').innerHTML = output;
+    }
+</script>
+</head>
+<body> 
+ <button onclick="lynnette()">push me</button>
+ <div id ="displayDiv"></div>     
+</body>            
+</html>

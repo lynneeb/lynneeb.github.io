@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Powers of Two</title>
+<!-- Lynnette Beatty -->
+<!-- June 14, 2019 -->
+<!-- W9 Ch8 Write a defining table and a program to print -->
+<!-- all powers of 2 from 2^0 power up to 2^31 power, inclusive. -->
+<!-- In other words, your program should output this series: -->
+<!-- 1, 2, 4, 8, … 2147483648 -->
+
+<script>
+/* Defining Table
+ 	 Input: 
+ 	 Processing:
+ 	 		  	use while loop
+ 	 				Multiply y by the power of x
+ 	 				concatinate the string
+ 	 				increment the variable x
+ 	 Output: the powers of two 
+	 */
+
+function powersOfTwo() {
+
+	//	processing
+	var y = 2;
+	var x = 0;
+	var answer; 
+	var output = "";
+
+
+	while (x <= 31) {
+		answer = Math.pow(y, x);
+		output += answer + ", ";
+		x++;
+		}
+
+
+	//	output
+	output = output.slice(0, output.length-2); //remove the last comma from the string
+	document.getElementById("outputDiv").innerHTML = output;
+
+}
+
+</script>
+</head>
+<body>  
+	<h4>Print the Powers of Two:
+	<br>
+	<br>
+	<button type ="button" onclick="powersOfTwo()">Submit</button>
+	<br>
+	<br>
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>

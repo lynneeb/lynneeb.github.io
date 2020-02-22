@@ -1,0 +1,51 @@
+       <!DOCTYPE HTML>
+       <html lang="en-us">
+       <head>
+       <meta charset="utf-8">
+       <title>How Many Acres?</title>
+
+<!-- Program to Calculate the size of a parcel -->
+<!-- CIS160 Introduction to Programming -->
+<!-- Lynnette Beatty, Author -->
+<!-- May 25, 2019 -->
+
+       <script>
+       /*Defining Table
+       *Input: width and length of a parcel in feet
+       *Processing: multiply the width and length of the parcel then divide by 43560
+       *Output: number of acres in a parcel of land
+       */
+       
+       function computeSize () {
+
+	// get width and length of a parcel from user
+       var widthText = document.getElementById("widthInput").value;
+       var lengthText = document.getElementById("lengthInput").value;
+	
+	//convert text into a number
+	var w = parseFloat(widthText);
+	var l = parseFloat(lengthText);
+
+	//compute acres: multiply width by length and divide by 43560
+	var acres = (w * l) / 43560 ;
+	
+	//display acres
+	document.getElementById("acresDiv").innerHTML = acres ;
+	}
+	
+       </script>
+       </head>
+       
+       <body>
+	<!-- prompt user for width and length of parcel -->
+           <h1>How Many Acres?</h1>
+           Width (feet) <input type="text" id="widthInput"><br>
+           Length (feet) <input type="text" id="lengthInput"><br>
+       
+       <!-- button -->
+           <button type="button" onclick="computeSize()">Acres</button><br>
+	
+	<!-- output div -->
+           <div id="acresDiv"></div>
+       </body>
+       </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Sleep in?</title>
+<!-- CIS 160 Introduction to Programming -->
+<!-- Lynnette Beatty -->
+<!-- June 5, 2019 -->
+<script>
+/* Defining Table
+ 	 Input: 		get date from computer's clock
+ 	 Processing: 	is date on weekend or holiday 1/1, 7/4, or 12/25?
+ 	 Output: 		message = "Sleep in." or "Get up!" 
+ */
+
+function sleepIn() {
+
+	// input date from computer
+	var now = new Date();
+
+	// January = 0  thru December = 11
+    var month = now.getMonth();
+
+    // days of month 1 thru 31
+    var dayOfMonth = now.getDate();
+
+    // days of week. Sunday = 0 thru Saturday = 6
+    var dayOfWeek = now.getDay();
+    var message ;
+
+    if ((month == 0) && (dayOfMonth == 1)) {
+    	message = "Sleep in." ;
+    }
+
+    else if ((month == 6) && (dayOfMonth == 4)) {
+    	message = "Sleep in." ; 
+    }
+
+    else if ((month == 11) && (dayOfMonth == 25)) {
+    	message = "Sleep in." ;
+    }
+
+    else if (dayOfWeek == 0 || dayOfWeek == 6) {
+    	message = "Sleep in." ;
+    }
+
+    else {
+    	message = "Get up!" ;
+    }
+
+//	output
+	document.getElementById("outputDiv").innerHTML = message ; 
+}
+
+</script>
+</head>
+<body>  
+	<h4>Should I get up today?</h4>
+	<button type ="button" onclick="sleepIn()">Answer</button>
+	<div id ="outputDiv"></div>                    
+</body>            
+</html>
