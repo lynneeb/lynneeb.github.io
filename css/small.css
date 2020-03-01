@@ -1,28 +1,28 @@
-  .nav {
-    padding-top: 6rem;
-  }
-  .navbar {
+
+.navbar {
+  display: inline-block;
   list-style: none;
   margin: 0 auto;
-  padding: 0;
   background-color: #5a1744;
+  padding: .0;
 }
 .navbar li {
   display: inline-block;
+  padding: .75rem;
+
 }
 .navbar a {
-  display: block;
   color: white;
   text-align: left;
-  padding: 0.75rem;
+  padding: .5;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   white-space: nowrap;
 }
 .navbar li a:hover {
-  background: rgb(53, 46, 46);
+  background: rgb(85, 78, 78);
 }
-/* --------------------------------- */
+/* ******************************* */
 body {
   background-color: grey;
   background-size: 250%;
@@ -32,13 +32,10 @@ body {
   margin: 0 auto;
   background-color: #d8d8d8;
   border: 2px black solid;
-  box-shadow: 20px 20px 20px #403E49;
-  right: 30px;
-  top: 30px;
 }
 .header {
  background-color: #403E49; 
-  background: linear-gradient(300deg, #537895 0%, #09203f 55%, #537895 75%);
+ background: linear-gradient(300deg, #537895 0%, #09203f 55%, #537895 75%);
  text-align: center;
  font-family: 'Roboto', sans-serif;
     font-size: 3em;
@@ -46,21 +43,19 @@ body {
     border-bottom: 2px black solid;
     padding-top: 1rem;
     padding-bottom: 1rem;
-  box-shadow: 20px 20px 20px #403E49;
-  right: 30px;
-  top: 30px;
   }
 
 #profile-pic {
-  width: 200px;
+  width: 202.7px;
   height: auto;
+  margin-top: -20px;
+  border: 2px solid black;
 }
 
 h1 {
  font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   margin: 0.15rem;
-  padding-bottom: 1rem;
 } 
 
 h2 {
@@ -91,14 +86,14 @@ p {
 .code {
   text-align: left;
   padding-left: 1rem;
-  color: rgb(207, 8, 8);
+  color: white;
+  background-color: #5a1744;
 }
 
 nav ul li {
   padding-bottom: 1rem;
   font-size: 1.4rem;
   margin-left: 3rem;
-
 }
 
 footer {
