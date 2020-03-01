@@ -1,17 +1,18 @@
 nav ul {padding: 0;}
 
-nav ul li {
+/* nav ul li { */
+.navbar {
     float: left;
     list-style-type: none;
-    text-decoration: none;  
 }
-nav ul li a {
+.navbar a {
     display: block;
     padding: .5rem 1rem;
-    background-color:#433c50;
+    background-color:#21462d;
     color: #ffffff;
+    text-decoration: none;  
 }
-nav a:hover {
+.navbar a:hover {
   background-color:#370f83;
 }
 
