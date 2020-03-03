@@ -31,3 +31,58 @@ img {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+// ************************************
+* {
+  font-family: 'BYUI Open Sans';
+}
+.site-banner {
+  margin: 0 0;
+  width: 100%;
+  height: 4rem;
+  background-color: $byui-blue;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+}
+/* Match any class name that starts with icon */
+[class^="icon"] {
+  font-size: 2rem;
+  color: white;
+  // ***** position icon *************
+  position: relative;
+  top: 15px;
+  left: 0px;
+}
+h1 {
+  display:  none;
+}
+h2 {
+  font-weight: 300;
+  color: $dark-gray;
+  text-align: center;
+}
+.icon-byui-logo {
+  padding: 1rem;
+  background-color: black;
+}
+// *************************************
+
+// *** remove link underline from anchor ****
+.site-banner__right a {
+  text-decoration: none;
+}
+
+// *** form ****************************** 
+form {
+  display: none;
+}
+// **************************************
+.interest-box__content {
+  color: $byui-blue;
+  font-weight: 400;
+}
+body {
+background-color: $light-gray;
+color: $body-font;
+}

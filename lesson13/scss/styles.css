@@ -1,0 +1,1345 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/* //how many images we have */
+/* // how much we want each slide to show */
+/* // total time needed for full animation */
+body {
+  background-color: #2c3531;
+  padding: 0;
+  margin: 0; }
+
+header {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #116466;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#logo {
+  min-width: 40%;
+  height: auto;
+  border: 1px solid #000;
+  box-shadow: 5px 5px 5px black; }
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 17px;
+  padding-left: 2rem; }
+
+.headings h1 {
+  font-size: 1.8rem;
+  color: white;
+  font-family: 'Parisienne', cursive;
+  letter-spacing: 1pt;
+  text-shadow: 5px 5px 5px black; }
+
+.headings .m {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  letter-spacing: 1pt;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-shadow: 5px 5px 5px black;
+  padding: 0 0 2rem; }
+
+#content {
+  min-height: 100%; }
+
+.subhead {
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: #116466;
+  border-top: 6px solid white;
+  border-bottom: 6px solid white;
+  padding: .2rem;
+  color: white;
+  text-shadow: 5px 5px 5px black; }
+
+.navigation {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #D9B08C;
+  list-style: none;
+  padding: 0; }
+
+.navigation li:first-child {
+  display: inline-block; }
+
+.navigation li {
+  display: none; }
+
+.navigation a {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none;
+  white-space: nowrap; }
+
+.navigation a:hover {
+  color: white;
+  background-color: #746e6e;
+  font-weight: 700; }
+
+#active {
+  background-color: #a08185; }
+
+.active {
+  background-color: #a08185; }
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) 
+to display block because the repsonsive class is added to the end of the class list 
+like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+  display: block; }
+
+/* -------------- subnav ---------------- */
+.dropbtn {
+  position: relative;
+  display: inline-block;
+  background-color: #D9B08C;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fae4d0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+.dropdown-content a:hover {
+  background-color: #746e6e; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.dropdown:hover .dropbtn {
+  background-color: #746e6e; }
+
+/* ******************** bannerad ********************************************** */
+#bannerad {
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  border: 1px solid #000;
+  padding: .8rem;
+  background-color: rgba(160, 129, 133, 0.8);
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold; }
+
+/* **************** image animation ************************* */
+.animation-box {
+  margin: 2rem auto;
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  border: 10px solid;
+  border-top-color: #856036;
+  border-left-color: #5d4426;
+  border-bottom-color: #856036;
+  border-right-color: #5d4426;
+  position: relative; }
+
+.tphoto {
+  position: absolute;
+  animation: round 20s infinite;
+  opacity: 0; }
+
+@keyframes round {
+  25% {
+    opacity: 1; }
+  40% {
+    opacity: 0; } }
+img:nth-child(1) {
+  animation-delay: 16s; }
+
+img:nth-child(2) {
+  animation-delay: 12s; }
+
+img:nth-child(3) {
+  animation-delay: 8s; }
+
+img:nth-child(4) {
+  animation-delay: 4s; }
+
+img:nth-child(5) {
+  animation-delay: 0s; }
+
+.tsubhead {
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: #116466;
+  border-top: 6px solid white;
+  border-bottom: 6px solid white;
+  padding: 1rem;
+  color: white;
+  text-shadow: 5px 5px 5px black; }
+
+.slider-box {
+  margin: 2rem auto;
+  overflow: hidden;
+  padding: 0px;
+  font-family: sans-serif;
+  border: 10px solid;
+  border-top-color: #856036;
+  border-left-color: #5d4426;
+  border-bottom-color: #856036;
+  border-right-color: #5d4426;
+  position: relative; }
+
+.slider-box, .slide img {
+  width: 600px;
+  height: 300px; }
+
+.magnify {
+  float: left;
+  transition: .3s; }
+
+.magnify:hover {
+  opacity: .9;
+  transform: scale(1.1); }
+
+.ease {
+  position: relative;
+  width: 600%;
+  left: 0;
+  animation: 20s slide infinite ease-in-out; }
+
+.ease:hover {
+  animation-play-state: paused; }
+
+@keyframes slide {
+  0% {
+    left: 0%; }
+  10% {
+    left: 0%; }
+  12% {
+    left: -100%; }
+  22% {
+    left: -100%; }
+  24% {
+    left: -200%; }
+  34% {
+    left: -200%; }
+  36% {
+    left: -300%; }
+  48% {
+    left: -300%; }
+  50% {
+    left: -400%; }
+  60% {
+    left: -400%; }
+  62% {
+    left: -500%; }
+  72% {
+    left: -500%; }
+  100% {
+    left: 0%; } }
+.contentbox {
+  display: block;
+  max-width: 60rem;
+  height: auto;
+  margin: auto;
+  border: 1px solid #000;
+  padding: 10px;
+  background-color: #2C3531;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic; }
+
+h2 {
+  text-align: center; }
+
+/* *********************************************************************** */
+/* -----------peach box -------- */
+.articlebox1 {
+  display: flex;
+  justify-items: flex-start;
+  flex-direction: column;
+  max-width: 60rem;
+  margin: 1rem auto;
+  background-color: #FFCB9A;
+  border: 1px solid #000;
+  padding: 1rem; }
+
+/* ----------- blue sapphire box -------- */
+.article1 {
+  padding: 1rem;
+  background-color: #116466; }
+
+.articleimg1 {
+  order: 2;
+  padding-bottom: 1rem; }
+
+.article-title {
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+  letter-spacing: 1pt;
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: #116466;
+  border: 6px solid black;
+  padding: 2rem;
+  color: white;
+  text-shadow: 5px 5px 5px black; }
+
+/* ----------- pale pink box -------- */
+.words {
+  padding: 1rem;
+  background-color: #D9B08C;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid #000; }
+
+.tarticle {
+  padding: 1rem;
+  background-color: #116466; }
+
+.herodiv {
+  position: relative; }
+
+.templeimg {
+  position: relative; }
+
+.temple-title {
+  background-color: #D9B08C;
+  font-family: 'Parisienne', cursive;
+  letter-spacing: 1pt;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 6px solid black; }
+
+#tdiv {
+  max-width: 60rem;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  background-color: #D9B08C;
+  border: 1px solid #000;
+  padding: 1rem;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.twords {
+  font-family: 'Montserrat', sans-serif;
+  color: black; }
+
+.weathersummary {
+  position: absolute;
+  z-index: 1;
+  margin: 0 auto;
+  top: 0rem;
+  left: 0rem;
+  width: auto;
+  height: auto;
+  background-color: rgba(10, 36, 169, 0.5);
+  padding: 1rem;
+  box-shadow: 5px 5px 5px black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold; }
+
+.weathertitle {
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid white; }
+
+.weatherinfo {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  column-gap: .5rem;
+  padding: .5rem .5rem .5rem .5rem;
+  font-size: 1.2rem; }
+
+.c1 {
+  display: inline-grid;
+  text-align: right;
+  color: white; }
+
+.c2 {
+  text-align: left;
+  color: yellow; }
+
+/* ---------------------- Contact ----------------------------------- */
+.contact-title {
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: #116466;
+  border: 6px solid black;
+  padding: 1rem;
+  color: white;
+  text-shadow: 5px 5px 5px black; }
+
+.contactbox {
+  display: flex;
+  justify-items: flex-start;
+  flex-direction: row;
+  flex-direction: column;
+  max-width: 60rem;
+  margin: 1rem auto;
+  background-color: #FFCB9A;
+  border: 1px solid #000;
+  padding: 1rem; }
+
+.contact {
+  padding: 1rem;
+  background-color: #116466; }
+
+.peach {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  border: 1px solid #000;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #D9B08C; }
+
+.contactimg {
+  display: none; }
+
+.address {
+  align-content: center;
+  justify-content: left;
+  background-color: #D9B08C;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  white-space: nowrap; }
+
+.media {
+  width: 2rem;
+  height: auto;
+  justify-content: left; }
+
+.pin {
+  width: .7rem;
+  height: auto;
+  background-color: transparent; }
+
+/* ----------------- Footer ----------------------------- */
+footer {
+  position: absolute;
+  z-index: 2;
+  width: auto;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  padding: 1rem;
+  background-color: #116466;
+  text-align: center;
+  line-height: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 900; }
+
+.link {
+  color: black; }
+
+/* ************* Storm Center ************************************************ */
+/*----------- MAIN --------------*/
+.storm-title {
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  background: #8D8741;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+  padding-top: .5rem;
+  padding-bottom: .5rem; }
+
+/*---------- Reservation Form------------------------*/
+/* --- Sushead - Please fill out this reservation form */
+.rsubhead {
+  text-align: center;
+  font-family: 'Bad Script', cursive;
+  font-weight: bold;
+  font-size: 2.5rem;
+  background-color: #116466;
+  border-top: 6px solid white;
+  border-bottom: 6px solid white;
+  padding: 1rem;
+  color: white;
+  text-shadow: 5px 5px 5px black; }
+
+/* -----------peach form box -------- */
+.reservationbox {
+  display: flex;
+  justify-items: flex-start;
+  flex-direction: column;
+  max-width: 60rem;
+  margin: 1rem auto;
+  background-color: #FFCB9A;
+  border: 1px solid #000;
+  padding: 1rem; }
+
+/* ----------- blue sapphire form box -------- */
+.formbox {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #116466; }
+
+/* ----------- tan form box -------- */
+#resform {
+  display: flex;
+  width: 50%;
+  min-width: 20rem;
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  background-color: #FBEEC1;
+  border-collapse: collapse;
+  justify-content: center; }
+
+/* ----blue fieldset boxes---- */
+form fieldset {
+  display: flex;
+  margin: 1rem;
+  border: 4px solid #445ba9;
+  border-collapse: collapse;
+  border-radius: 10px;
+  justify-content: center; }
+
+/* -----blue form title----- */
+form legend {
+  color: #445ba9;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: .5rem; }
+
+.top, .storm, .radio, .comment {
+  display: block;
+  border-collapse: collapse;
+  padding: .5rem;
+  color: #9c2c13;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+/* -----------------focus------------------- */
+.top:focus, .comment:focus {
+  box-shadow: 0 0 15px #979494; }
+
+/* --inside the input box---- */
+.top input,
+.top select,
+.comment input,
+textarea {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: solid 4px #9c968d;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 92%;
+  border-collapse: collapse;
+  background-color: rgba(178, 219, 245, 0.356); }
+
+/* ---Storm Severity (1 to 10)--- */
+#ratingvalue {
+  position: relative;
+  padding: .5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: solid 4px #9c968d;
+  border-radius: 4px;
+  background-color: rgba(178, 219, 245, 0.356); }
+
+.stormseverity {
+  padding-bottom: 1rem; }
+
+/* ---Storm Region input box--- */
+.top select {
+  width: 100%; }
+
+/* -----no, maybe, yes----- */
+form label.sbs {
+  display: block;
+  padding: .3rem;
+  color: #9c2c13;
+  font-weight: bold;
+  font-size: 1.2rem; }
+
+/* ---Label- Are you in danger?--- */
+.danger {
+  color: #9c2c13;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 0; }
+
+/* ---inside comment box--- */
+textarea {
+  height: 5rem;
+  width: 88%; }
+
+/* ---red/green submit button--- */
+.submit-button {
+  border: 4px solid black;
+  background-color: #9c2c13;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  width: 100%;
+  max-width: 15rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 10px 10px 10px black; }
+
+.submit-button:hover {
+  background-color: #448a41;
+  color: white; }
+
+form label.top input:required {
+  border: #9c2c13 solid 4px; }
+
+form label.top input:required:valid {
+  border: #448a41 solid 4px;
+  background-color: #ccf1cc; }
+
+input:hover,
+form label.top select {
+  cursor: pointer; }
+
+/* *********** Gallery Page ************************************************* */
+.gridbox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 60rem;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  height: auto;
+  margin: auto;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  background-color: #BC986A; }
+
+/* ----------------------------------------- */
+.gallery-title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  background: #8D8741;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+  padding: .5rem; }
+
+figure {
+  display: grid;
+  background-color: #659DBD;
+  padding: 1rem;
+  margin: 2rem auto;
+  display: grid; }
+
+img[data-src] {
+  filter: blur(0.5em);
+  width: 100%;
+  height: auto; }
+
+img {
+  grid-column: 1 / 1;
+  filter: blur(0em);
+  transition: filter 3s;
+  width: 100%;
+  height: auto; }
+
+figcaption {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: #8D8741;
+  padding: .8rem;
+  text-shadow: 3px 3px 5px black; }
+
+/* *********** Thank You Page ************************************************ */
+.thanks-title {
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+  font-weight: bold;
+  font-size: 4rem;
+  background-color: #116466;
+  border: 4px solid #000;
+  color: white;
+  text-shadow: 3px 3px 5px black; }
+
+.received {
+  justify-content: center;
+  display: flex;
+  min-width: 8rem;
+  background-color: #116466;
+  color: white;
+  padding: 2rem;
+  margin: 2rem;
+  border: 4px solid black; }
+
+.temarticle {
+  padding: 1rem;
+  background-color: #116466; }
+
+.herodiv {
+  position: relative; }
+
+#temdiv {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 60rem;
+  height: auto;
+  background-color: #116466;
+  border: 1px solid #000;
+  padding: 1rem;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+#temdiv section {
+  position: relative;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  padding-bottom: 1rem;
+  align-content: center;
+  background-color: #D9B08C;
+  margin-bottom: 2rem;
+  border: 1px solid black; }
+
+#temdiv h2 {
+  background-color: #116466;
+  font-family: 'Parisienne', cursive;
+  letter-spacing: 1pt;
+  padding: 1rem;
+  font-size: 1.9rem;
+  font-weight: bold;
+  border: 6px solid black;
+  line-height: 2rem; }
+
+#temdiv p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+#temdiv img {
+  position: relative; }
+
+.tweathersummary {
+  position: absolute;
+  z-index: 1;
+  margin: 0 auto;
+  top: 0rem;
+  left: 0rem;
+  width: auto;
+  height: auto;
+  background-color: rgba(10, 36, 169, 0.5);
+  padding: 1rem;
+  box-shadow: 5px 5px 5px black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold; }
+
+.tweathertitle {
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid white; }
+
+.tweatherinfo {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  column-gap: .5rem;
+  padding: .5rem .5rem .5rem .5rem;
+  font-size: 1.2rem; }
+
+.tc1 {
+  display: inline-grid;
+  text-align: right;
+  color: white; }
+
+.tc2 {
+  text-align: left;
+  color: yellow; }
+
+/* -----------peach box -------- */
+.servicesbox {
+  display: flex;
+  justify-items: flex-start;
+  flex-direction: column;
+  max-width: 60rem;
+  margin: 1rem auto;
+  background-color: #FFCB9A;
+  border: 1px solid #000;
+  padding: 1rem; }
+
+.services {
+  padding: 1rem;
+  background-color: #116466; }
+
+.services-title {
+  background-color: #D9B08C;
+  font-family: 'Parisienne', cursive;
+  letter-spacing: 1pt;
+  padding: 1rem;
+  font-size: 1.9rem;
+  font-weight: bold;
+  border: 6px solid black; }
+
+.sdiv {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #D9B08C;
+  border: 1px solid #000;
+  padding: 1rem;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+ul.square {
+  list-style-type: square;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.servicesimg {
+  align-content: center; }
+
+.references-box {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: bold; }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media only screen and (min-width: 560px) {
+  /* Media Query for medium + screens */ }
+@media only screen and (min-width: 560px) and (min-width: 32.5em) {
+  #logo {
+    width: 70%; }
+
+  .headings h1 {
+    font-size: 3rem; }
+
+  .headings .m {
+    letter-spacing: 1.5pt;
+    font-size: 2rem;
+    margin-left: 1rem; }
+
+  .navigation li:first-child {
+    text-align: center;
+    display: inline-block; }
+
+  .navigation {
+    display: flex; }
+
+  .navigation li:first-child {
+    display: none; }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%; }
+
+  .navigation li a {
+    font-size: 1.2rem;
+    text-align: center; }
+
+  .contentbox {
+    font-size: 1rem; }
+
+  /*******************************************************
+  *********5-Day Forecast Table ************************
+  ****************Start********************************* */
+  .forecastdiv {
+    display: block;
+    max-width: 60rem;
+    height: auto;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #000;
+    background-color: #BC986A;
+    align-content: center; }
+
+  .forecastheading {
+    align-content: center;
+    font-size: 2.2rem;
+    text-align: center;
+    background-color: #659DBD;
+    border: 4px solid #000;
+    padding: .4rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 3px 3px 5px black; }
+
+  #forecasttable {
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+    height: auto; }
+
+  #forecasttable td, #forecasttable th {
+    border: 4px solid black; }
+
+  #forecasttable th {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: #8D8741;
+    color: white; }
+
+  #forecasttable td {
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: white;
+    color: darkblue;
+    font-weight: bolder; }
+
+  /*******************End*********************************
+  *********5-Day Forecast Table ************************
+  ****************************************************** */
+  .article {
+    display: block; }
+
+  .contactimg {
+    display: flex;
+    height: 20%;
+    width: auto;
+    padding: 1rem; }
+
+  #sf-temple {
+    display: none; }
+
+  /* ************** Home Page *************************** */
+  /* -------------------townsites--------------------- */
+  .temple-title {
+    background-color: #D9B08C;
+    font-family: 'Parisienne', cursive;
+    letter-spacing: 1pt;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 6px solid black; }
+
+  #temdiv h2 {
+    background-color: #116466;
+    font-family: 'Parisienne', cursive;
+    letter-spacing: 1pt;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 6px solid black;
+    line-height: 3rem; }
+
+  .services-title {
+    letter-spacing: 1pt;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 6px solid black; } }
+/* end of media query */
+@media only screen and (min-width: 1028px) {
+  /* Desktop Views ****************************/ }
+@media only screen and (min-width: 1028px) and (min-width: 60em) {
+  .headings h1 {
+    font-size: 3rem; }
+
+  .headings .m {
+    font-size: 2rem; }
+
+  .contentbox {
+    font-size: 1.1rem; }
+
+  .contactimg {
+    display: flex;
+    padding: 1rem; }
+
+  #sf-temple {
+    display: flex;
+    padding-left: 1rem; }
+
+  footer {
+    font-size: 1.1rem; }
+
+  /* ******* Home Page ****************************************** */
+  /* **************** Gallery Page *********************************** */
+  /* box-shadow: 0 0 50px #333; */
+  /* ------------------------------------ */ }
+/* end of media query */
+
+/*# sourceMappingURL=styles.css.map */
