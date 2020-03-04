@@ -822,6 +822,113 @@ form {
   color: #056cb6;
   font-weight: 400; }
 
+.list-of-links {
+  font-weight: 400;
+  text-align: left; }
+
+.list-of-links ul {
+  list-style-type: none;
+  font-size: 1.2rem; }
+
+li {
+  text-align: left;
+  padding: .5rem;
+  border: 2px solid black;
+  margin-bottom: -1px; }
+
+.medgray {
+  background-color: #b4b3b5;
+  text-decoration: none; }
+
+.darkgray {
+  background-color: #727272; }
+
+.byuiblue {
+  background-color: #056cb6; }
+
+.lightgray {
+  background-color: #eaeaea; }
+
+.list-of-links__box {
+  padding: 1rem; }
+
+.list-of-links__information {
+  color: black;
+  text-decoration: none;
+  text-align: right; }
+
+.icon-triangle-down {
+  color: black;
+  font-size: 1rem;
+  padding-left: 4rem;
+  position: relative;
+  top: 2px; }
+
+.list-of-links__resources-title {
+  color: #eaeaea;
+  text-decoration: none; }
+
+.list-of-links__resources-item {
+  color: #056cb6;
+  text-decoration: none; }
+
+.list-of-links__dates-title {
+  color: #eaeaea;
+  text-decoration: none; }
+
+.list-of-links__dates-item {
+  color: black;
+  text-decoration: none; }
+
+.news__title {
+  text-align: left;
+  color: black;
+  font-weight: 400; }
+
+.newsroom {
+  text-align: left; }
+
+.newsroom .large {
+  display: grid;
+  grid-template-rows: 1fr 3fr; }
+
+.newsroom .small {
+  display: flex;
+  flex-direction: column; }
+
+.newsroom__article {
+  border-top: 2px solid #b4b3b5;
+  padding-left: 2rem; }
+
+.newsroom__article-img {
+  display: none; }
+
+.newsroom__article-date {
+  color: black; }
+
+.newsroom__article-title {
+  color: #056cb6; }
+
+.newsroom__article-description {
+  color: black;
+  font-family: serif; }
+
+.newsroom__button {
+  background-color: #056cb6;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: .5rem;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%; }
+
+.homepage__taylor-building {
+  position: absolute;
+  left: 50%;
+  margin-top: 4rem; }
+
 body {
-  background-color: #eaeaea;
+  background-color: white;
   color: #020202; }
