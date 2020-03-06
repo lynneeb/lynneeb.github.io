@@ -10,11 +10,6 @@ $body-font: #020202;
 $link-blue: #0076b6; //why do we have both of these blues?
 $byui-blue: #056cb6;
 
-// Utility classes
-// * {
-//   display: flex;
-//   flex-direction: column;
-//   }
 *,
 *:before,
 *:after {
@@ -22,7 +17,6 @@ $byui-blue: #056cb6;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -38,6 +32,8 @@ $byui-blue: #056cb6;
 
 * {
   font-family: 'BYUI Open Sans';
+  margin: 0;
+  padding: 0;
 }
 .site-banner {
   margin: 0 0;
@@ -61,8 +57,9 @@ $byui-blue: #056cb6;
 h1 {
   display:  none;
 }
-h2 {
-  font-weight: 300;
+.title {
+  padding: 2rem 1rem;
+  font-weight: 400;
   color: $dark-gray;
   text-align: center;
 }
@@ -82,18 +79,53 @@ form {
   display: none;
 }
 // **************************************
+.homepage {
+  margin: 0 0;
+  padding: 0 0;
+}
+.title__box {
+  margin: 0 0;
+  padding: 0;
+  width: 100%;
+  background-color: $light-gray;
+}
 .page-wrapper {
   display: flex;
   flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
   }
-
 .interest-box {
   color: $byui-blue;
   font-weight: 400;
 }
 .interest-box__hero {
-  max-width: 100%;
+  width: 100%;
 }
+.interest__image {
+  border: 1px solid black;
+  margin: 2rem 0;
+}
+figure > img {
+  display: block;
+  width: 100%;
+}
+.img-caption {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+}
+.img-caption > h3 {
+  padding-left: 1rem;
+  color: $byui-blue;
+}
+.icon-angle-right {
+  color: $byui-blue;
+  font-size: 1rem;
+  // position arrow icon
+  position: relative;
+  top: 5px;
+  }
 .list-of-links {
   font-weight: 400;
   text-align: left;
@@ -105,12 +137,14 @@ form {
 li {
   text-align: left;
   padding: .5rem;
-  border: 2px solid black;
+  border: 1px solid black;
   margin-bottom: -1px;
 }
 .medgray {
   background-color: $med-gray;
   text-decoration: none;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
 }
 .darkgray {
   background-color: $dark-gray;
@@ -127,15 +161,17 @@ padding: 1rem;
 .list-of-links__information {
   color: black;
   text-decoration: none;
-text-align: right;
+text-align: left;
 }
 .icon-triangle-down {
 color: black;
 font-size: 1rem;
-// position down arrow
-padding-left: 4rem;
+// position down arrow icon
 position: relative;
 top: 2px;
+}
+.list-of-links__resources {
+  margin: 2rem 0;
 }
 .list-of-links__resources-title {
   color: $light-gray;
@@ -156,18 +192,20 @@ top: 2px;
 .news__title {
   text-align: left;
   color: black;
-  font-weight: 400;
+  font-weight: 900;
+  padding-bottom: 1rem;
 }
-.newsroom {
-  text-align: left;
+.news__title {
+  padding: 1rem;
 }
-
 .newsroom__article {
   border-top: 2px solid $med-gray;
-  padding-left: 2rem;
 }
 .newsroom__article-img {
   display: none;
+}
+.newsroom__article-details {
+  padding: 1rem 0;
 }
 .newsroom__article-date {
   color: black;
@@ -178,6 +216,7 @@ top: 2px;
 .newsroom__article-description {
   color: black;
   font-family: serif;
+  font-size: 1.2rem;
 }
 .newsroom__button {
   background-color: $byui-blue;
@@ -189,9 +228,10 @@ top: 2px;
   border-radius: 5px;
   position: absolute;
   left: 50%;
+  margin-top: 1rem;
 }
 .taylor-building {
-  margin-top: 4rem;
+  margin-top: 8rem;
   margin-left: 50%;
 }
 body {
@@ -201,20 +241,33 @@ color: $body-font;
 
 /* Media Query for medium + screens */
 @media only screen and (min-width: 32.5em) {
-  // .page-wrapper {
-  // display: grid;
-  // grid-template-rows: repeat(8, 1fr);
-  // grid-template-columns: repeat(3, 1fr);
-  // align-items: center;
-  // }
+  .title__box {
+    margin: 0 0;
+    padding: 0;
+  }
+  .title {
+    text-align: left;
+    margin-left: 1rem;
+  }
   .page-wrapper {
-    border: 10px solid purple;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 10px;
+    gap: 2rem;
+    }
+    .figure__wrapper {
+      margin-top: 1rem;
+      gap: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .interest__image {
+      margin: 0 0;
     }
     .news__title {
+      margin-top: 10rem;
       margin-left: 2rem;
+      padding: 0;
+      padding-bottom: 1rem;
     }
     .newsroom-container {
       display: flex;
@@ -231,115 +284,14 @@ color: $body-font;
       display: block;
       width: 100%;
     }
-    .newsroom__article-description {
-font-size: 1.2rem;
+    .newsroom__article {
+      border-top: 2px solid $med-gray;
+      padding-left: 2rem;
     }
-    // .newsroom__button {
-      // position: relative;
-      // margin-top: 1rem;
-      // left: 50%;
-    // }
-    // .interest-box {
-    // border: 10px solid red;
-    //   display: grid;
-    //   gap: 10px;
-    // grid-template-columns: 1fr 1fr 1fr;
-    // }
-    // .interest-box > img {
-      // width: 100%;
-  // grid-column: 3fr;
-// }
-// .interest-box > figure {
-  // width: 100%;
-  // grid-column: 1fr;
-// }
-
-  // section > div {
-  //   grid-row-start: 1;
-  //   grid-row-end: 4;
-  //   grid-column-start: 1;
-  //   grid-column-end: 3;
-  // }
-  // section > aside {
-  //   grid-row-start: 1;
-  //   grid-row-end: 5;
-  //   grid-column-start: 3;
-  //   grid-column-end: 4;
-  // }
-  // section > article {
-  //   grid-row-start: 5;
-  //   grid-row-end: 9;
-  //   grid-column-start: 1;
-  //   grid-column-end: 3;
-  // }
-  // .interest-box {
-  //   display: grid;
-  //   grid-template-rows: repeat(3, 1fr);
-  //   grid-template-columns: repeat(4, 1fr);
-  //   align-items: center;
-  // }
-  // .interest-box__hero {
-  //   grid-row-start: 1;
-  //   grid-row-end: 3;
-  //   grid-column-start: 1;
-  //   grid-column-end: 4;
-  // }
-  // .interest__image1 {
-  //   grid-row-start: 3;
-  //   grid-row-end: 4;
-  //   grid-column-start: 1;
-  //   grid-column-end: 2;
-  // }
-  // .interest__image2 {
-  //   grid-row-start: 3;
-  //   grid-row-end: 4;
-  //   grid-column-start: 2;
-  //   grid-column-end: 3;
-  // }.interest__image3 {
-  //   grid-row-start: 3;
-  //   grid-row-end: 4;
-  //   grid-column-start: 3;
-  //   grid-column-end: 4;
-  // }
-  // .list-of-links {
-  //   display: grid;
-  //   grid-template-rows: repeat(16, 1fr);
-  //   grid-template-columns: 1fr;
-  //   align-items: center;
-  // }
-  // .list-of-links__information {
-  //   grid-row-start: 1;
-  //   grid-row-end: 2;
-  //   grid-column-start: 1;
-  //   grid-column-end: 2;
-  // }
-  // .list-of-links__resources {
-  //   grid-row-start: 3;
-  //   grid-row-end: 10;
-  //   grid-column-start: 1;
-  //   grid-column-end: 2;
-  // }
-  // .list-of-links__dates {
-  //   grid-row-start: 11;
-  //   grid-row-end: 16;
-  //   grid-column-start: 1;
-  //   grid-column-end: 2;
-  // }
-  // .newsroom {
-  //   display: grid;
-  //   grid-template-rows: repeat(7, 1fr);
-  //   grid-template-columns: 1fr;
-  // }
-  // .news__title {
-  //   grid-row-start: 1;
-  //   grid-row-end: 2;
-  //   grid-column-start: 4;
-  //   grid-column-end: 5;
-  // }
-  // .newsroom__article {
-  //   grid-row-start: 2;
-  //   grid-row-end: 7;
-  //   grid-column-start: 4;
-  //   grid-column-end: 5;
-  // }
+    .newsroom__article-details {
+      padding: 0 0;
+      }
+    .newsroom__article-description {
+      font-size: 1.2rem;
+    }
 }
