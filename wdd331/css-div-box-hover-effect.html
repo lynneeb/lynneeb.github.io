@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>CSS div box hover effect</title>
+    
+
+<!-- css div box hover effect using html and css | Exp- 1 | css div box container | web zone -->
+
+<style>
+
+	.container{
+		width: 90%;
+		padding: 10px;
+		background: #ddd;
+		margin: 100px auto;
+		display: flex;
+		justify-content: center;
+	}
+
+	.box {
+		width: 250px;
+		height: 300px;
+		background: orange;
+		margin: 0px 10px;
+		transition: 1s;
+	}
+
+	.box:hover {
+		transform:  scale(1.3);
+		background: #ff800a;
+		box-shadow: 2px 2px 2px #000;
+		z-index: 2;
+
+	}
+
+</style>
+</head>
+
+  <body>
+
+<div class="container">
+
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+
+</div>
+
+  </body>
+</html>
