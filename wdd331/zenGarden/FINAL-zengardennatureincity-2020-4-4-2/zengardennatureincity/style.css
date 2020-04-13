@@ -10,7 +10,7 @@
   padding: 1rem; }
 
 #zen-explanation {
-  background: url(../images/man-sitting-on-concrete-block-w800-h533-lowres.jpg);
+  background: url(zenImages/man-sitting-on-concrete-block-w800-h533-lowres.jpg);
   background-position: center;
   background-size: cover;
   padding: 2rem; }
@@ -33,7 +33,7 @@
   margin: 0; }
 
 #zen-participation {
-  background: url(../images/purple-daisy-w800-h600-lowres.jpg);
+  background: url(zenImages/purple-daisy-w800-h600-lowres.jpg);
   background-position: center;
   background-size: cover;
   padding: 2rem; }
@@ -56,7 +56,7 @@
   margin: 0; }
 
 #zen-benefits {
-  background: url(../images/steffi-pereira-DsDaET_OlCw-unsplash-w800-h533-lowres.jpg);
+  background: url(zenImages/steffi-pereira-DsDaET_OlCw-unsplash-w800-h533-lowres.jpg);
   background-position: center;
   background-size: cover;
   padding: 2rem; }
@@ -79,7 +79,7 @@
   margin: 0; }
 
 #zen-requirements {
-  background: url(../images/keytion-rNoHD6BoQbo-unsplash-w800-h800-lowres.png);
+  background: url(zenImages/keytion-rNoHD6BoQbo-unsplash-w800-h800-lowres.png);
   background-position: center;
   background-size: cover;
   padding: 2rem; }
@@ -111,7 +111,7 @@ footer {
   gap: 4rem;
   height: 300px;
   justify-content: center;
-  background: url(../images/visnu-deva-WZBSRWPKBDw-unsplash-w800-h400-lowres-cropped.jpg);
+  background: url(zenImages/visnu-deva-WZBSRWPKBDw-unsplash-w800-h400-lowres-cropped.jpg);
   background-position-y: center;
   background-size: cover;
   padding: 2rem; }
@@ -232,7 +232,7 @@ footer > a:nth-child(5):hover {
   flex-direction: column; }
 
 header {
-  background: url(../images/aaron-burson-withgrass.jpg);
+  background: url(zenImages/aaron-burson-withgrass.jpg);
   text-shadow: 3px 3px 10px #000000;
   background-position: center;
   background-size: cover;
