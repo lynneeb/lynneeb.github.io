@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css?family=Gothic+A1|Uncial+Antiqua&display=swap");
+.main {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+  margin: 1rem; }
+
+.main {
+  background-color: #DC9A76;
+  padding: 1rem; }
+
+#zen-explanation {
+  background: url(../images/man-sitting-on-concrete-block-w800-h533-lowres.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 2rem; }
+
+#zen-explanation > h3 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: left;
+  text-shadow: 5px 5px 5px #000000;
+  border-bottom: 2px solid #ffffff; }
+
+#zen-explanation > p {
+  color: #000000;
+  font-weight: 900;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  opacity: .8;
+  margin: 0; }
+
+#zen-participation {
+  background: url(../images/purple-daisy-w800-h600-lowres.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 2rem; }
+
+#zen-participation > h3 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: left;
+  text-shadow: 5px 5px 5px #000000;
+  border-bottom: 2px solid #ffffff; }
+
+#zen-participation > p {
+  color: #000000;
+  font-weight: 900;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  opacity: .8;
+  margin: 0; }
+
+#zen-benefits {
+  background: url(../images/steffi-pereira-DsDaET_OlCw-unsplash-w800-h533-lowres.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 2rem; }
+
+#zen-benefits > h3 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: left;
+  text-shadow: 5px 5px 5px #000000;
+  border-bottom: 2px solid #ffffff; }
+
+#zen-benefits > p {
+  color: #000000;
+  font-weight: 900;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  opacity: .8;
+  margin: 0; }
+
+#zen-requirements {
+  background: url(../images/keytion-rNoHD6BoQbo-unsplash-w800-h800-lowres.png);
+  background-position: center;
+  background-size: cover;
+  padding: 2rem; }
+
+#zen-requirements > h3 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: left;
+  text-shadow: 5px 5px 5px #000000;
+  border-bottom: 2px solid #ffffff; }
+
+#zen-requirements > p {
+  color: #000000;
+  font-weight: 900;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  opacity: .8;
+  margin: 0; }
+
+#zen-requirements > p:nth-last-child(1) {
+  margin-bottom: 24rem; }
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(2rem, 60px));
+  gap: 4rem;
+  height: 300px;
+  justify-content: center;
+  background: url(../images/visnu-deva-WZBSRWPKBDw-unsplash-w800-h400-lowres-cropped.jpg);
+  background-position-y: center;
+  background-size: cover;
+  padding: 2rem; }
+
+footer > a {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  font-weight: 900;
+  background-color: #302A26;
+  opacity: .8;
+  height: 80px;
+  width: 80px; }
+
+footer > a:nth-child(1) {
+  clip-path: circle(75%);
+  transition: clip-path 1s; }
+
+footer > a:nth-child(1):hover {
+  color: #000000;
+  clip-path: circle(25%);
+  background: orange; }
+
+footer > a:nth-child(2):hover {
+  background-color: transparent;
+  color: #000000;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid blue;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+footer > a:nth-child(3):hover {
+  background-color: transparent;
+  color: #000000;
+  width: 80px;
+  height: 40px;
+  background-color: green;
+  border-radius: 50px / 25px;
+  transition: 1s;
+  transform: scale(1.6);
+  z-index: 2;
+  position: relative;
+  animation: pulse 1s ease infinite alternate; }
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: green; }
+  25% {
+    background-color: blue; }
+  50% {
+    background-color: yellow; }
+  75% {
+    background-color: red; } }
+footer > a:nth-child(4):hover {
+  background-color: transparent;
+  color: #000000;
+  border-bottom: 66px solid purple;
+  border-left: 16.5px solid transparent;
+  border-right: 16.5px solid transparent;
+  height: 0;
+  width: 66px;
+  position: relative;
+  animation: movedown 2s infinite;
+  animation-direction: alternate-reverse; }
+
+@keyframes movedown {
+  0% {
+    left: 0px;
+    top: 0px; }
+  50% {
+    left: 0px;
+    top: 30px; }
+  100% {
+    left: 0px;
+    top: 0px; } }
+footer > a:nth-child(5):hover {
+  color: #000000;
+  height: 80px;
+  width: 80px;
+  background-color: red;
+  border-radius: 100%;
+  animation: pulse 3s ease infinite alternate,  nudge 3s linear infinite alternate; }
+
+@keyframes pulse {
+  0% {
+    background-color: red; }
+  25% {
+    background-color: blue; }
+  50% {
+    background-color: purple; }
+  75% {
+    background-color: yellow; }
+  100% {
+    background-color: red; } }
+@keyframes nudge {
+  0% {
+    transform: translate(0, 0); }
+  25% {
+    transform: translate(75px, 0); }
+  50% {
+    transform: translate(150px, 0); }
+  75% {
+    transform: translate(75px, 0); }
+  100% {
+    transform: translate(0, 0); } }
+.intro {
+  display: flex;
+  flex-direction: column; }
+
+header {
+  background: url(../images/aaron-burson-withgrass.jpg);
+  text-shadow: 3px 3px 10px #000000;
+  background-position: center;
+  background-size: cover;
+  padding: 40px; }
+
+header h1 {
+  padding-top: 30px;
+  padding-left: 20px;
+  color: white; }
+
+header h2 {
+  padding-left: 20px;
+  color: white; }
+
+.intro h1 {
+  font-size: 2.5rem; }
+
+.intro div {
+  background-color: white;
+  padding: 10px; }
+
+div .summary, div .preamble {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #C4EC76;
+  padding: 50px; }
+
+div .summary {
+  margin-top: 1rem;
+  padding-bottom: 20px; }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: #E6D5BE;
+  z-index: -100;
+  margin-right: 16px; }
+
+.select {
+  color: #78A83B;
+  text-transform: UPPERCASE;
+  font-size: 1.3em;
+  text-shadow: 1px 1px 4px #ffffff;
+  text-align: center;
+  padding: 10px; }
+
+.resources {
+  color: #ffffff;
+  text-transform: UPPERCASE;
+  font-size: 1.3em;
+  text-align: center;
+  padding: .5em;
+  margin: 10px; }
+
+.archives {
+  color: #ffffff;
+  text-transform: UPPERCASE;
+  font-size: 1.3em;
+  text-shadow: 1px 1px #DC9A76;
+  text-align: center; }
+
+.design-selection nav ul li {
+  color: #302A26;
+  list-style-type: none;
+  margin: 0 0 0 -2em;
+  line-height: .3;
+  padding: 10px; }
+.design-selection nav ul li a {
+  text-decoration: none; }
+.design-selection nav ul li a:hover {
+  color: #ffffff; }
+
+.design-archives {
+  background: #DC9A76;
+  margin: 8px;
+  text-align: center;
+  box-shadow: 1px 1px 4px #ffffff;
+  border: solid 1px #ffffff; }
+  .design-archives ul {
+    list-style-type: none;
+    padding: 10px; }
+  .design-archives li a {
+    color: #ffffff;
+    text-decoration: none; }
+  .design-archives li a:hover {
+    color: #ffffff; }
+
+.zen-resources {
+  background: #78A83B;
+  margin: 8px;
+  border: 1px solid #ffffff;
+  box-shadow: 1px 1px 4px #ffffff;
+  border-radius: 3px; }
+  .zen-resources ul {
+    list-style-type: none;
+    text-align: center;
+    margin-left: -2em; }
+  .zen-resources li a {
+    text-decoration: none;
+    color: #ffffff; }
+  .zen-resources li a:hover {
+    color: #ffffff; }
+
+.design-name {
+  color: #78A83B;
+  text-transform: UPPERCASE;
+  font-size: 1.1em;
+  line-height: 2em;
+  font-weight: bold; }
+  .design-name .design-name a:hover {
+    color: #ffffff; }
+
+.designer-name {
+  color: #302A26;
+  font-style: italic;
+  line-height: 1em; }
+
+.designer-name::after {
+  line-height: 80%; }
+
+.design-name::after {
+  content: '\A';
+  white-space: pre; }
+
+body {
+  background: white;
+  font-family: "Gothic A1", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4 {
+  font-family: "Uncial Antiqua", cursive; }
+
+p {
+  font-family: "Gothic A1", sans-serif; }
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column; }
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 55em) {
+  .page-wrapper {
+    display: grid;
+    grid-template-rows: repeat(10, 10%);
+    grid-template-columns: repeat(4, 1fr); }
+
+  .intro {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5; }
+
+  .main {
+    grid-row-start: 3;
+    grid-row-end: 11;
+    grid-column-start: 1;
+    grid-column-end: 4; }
+
+  .sidebar {
+    grid-row-start: 3;
+    grid-row-end: 11;
+    grid-column-start: 4;
+    grid-column-end: 5; } }

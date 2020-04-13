@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'main';
+@import 'intro';
+@import 'sidebar';
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1|Uncial+Antiqua&display=swap');
+
+body { 
+  background: white;
+  font-family: $font-body;
+	margin: 0; 
+  padding: 0;
+  }
+  h1, h2, h3, h4{
+    font-family: $font-headers;
+  }
+  p {
+    font-family: $font-body;
+  }
+
+  // display flex *********************
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 55em) {
+.page-wrapper {
+  display: grid;
+  grid-template-rows: repeat(10, 10%);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.intro {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.main {
+  grid-row-start: 3;
+  grid-row-end: 11;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  }
+
+.sidebar {
+  grid-row-start: 3;
+  grid-row-end: 11;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+}
+// *********************************

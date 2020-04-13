@@ -1,0 +1,137 @@
+// VARIABLES
+// $color-1: #78A83B; // green - rgb(120, 168, 59)
+// $color-2: #DC9A76; // peach - rgb(220, 154, 118)
+// $color-3: #E6D5BE; // light gray - rgb(230, 213, 190)
+// $color-4: #302A26; // dark gray - rgb(48, 42, 38)
+// $color-5: #C4EC76; // light green - rgb(196, 236, 118)
+// $color-6: #ffffff;
+// $text-upper: UPPERCASE;
+
+
+// SIDEBAR CONTAINER
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background: $color-3;
+    z-index: -100;
+    margin-right: 16px;
+    
+}
+// SIDE BAR TITLES
+.select {
+    color: $color-1;
+    text-transform: $text-upper;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 4px $color-6;
+    text-align: center;
+    padding: 10px;
+    }
+.resources {
+    color: $color-6;
+    text-transform: $text-upper;
+    font-size: 1.3em;
+    text-align: center;
+    padding: .5em;
+    margin: 10px;
+
+}
+.archives {
+    color: $color-6;
+    text-transform: $text-upper;
+    font-size: 1.3em;
+    text-shadow: 1px 1px $color-2;
+    text-align: center;
+    
+}
+
+    // SIDE BAR SECTION ONE
+.design-selection nav ul {    
+    li {
+        color: $color-4;
+        list-style-type: none;
+        margin: 0 0 0 -2em;        
+        line-height: .3;
+        padding: 10px;
+      } 
+    li a {
+        text-decoration: none;      
+      }
+     li a:hover {
+    color: $color-6;
+    }
+}  
+
+// SIDEBAR SECTION TWO
+
+.design-archives {
+    background: $color-2;
+    margin: 8px;
+    text-align: center;
+    box-shadow: 1px 1px 4px $color-6;
+    border: solid 1px $color-6;
+    
+        ul{
+            list-style-type: none;     
+            padding: 10px;
+            
+        }
+        li a {
+            color: $color-6;
+            text-decoration: none;      
+             }
+        li a:hover {
+            color: $color-6;
+    }
+} 
+
+// SIDE BAR SECTION THREE
+.zen-resources  { 
+    background: $color-1; 
+    margin: 8px;
+    border: 1px solid $color-6;
+    box-shadow: 1px 1px 4px $color-6;  
+    border-radius: 3px;
+    
+        ul  {  
+            list-style-type: none;
+            text-align: center;  
+            margin-left: -2em;
+            } 
+        li a {
+            text-decoration: none;
+            color: $color-6;
+                 }
+        li a:hover {
+                color: $color-6;
+    }
+}  
+
+.design-name {
+    color: $color-1;
+    text-transform: $text-upper;
+    font-size: 1.1em;
+    line-height: 2em;
+    font-weight: bold;
+
+    .design-name a:hover {
+        color:$color-6;
+    }
+
+}  
+.designer-name  {
+    color: $color-4;
+    font-style: italic;
+    line-height: 1em;
+}
+.designer-name::after {
+    line-height: 80%;
+
+}
+
+.design-name::after {
+ content: '\A'; 
+white-space: pre;
+// line-height: 90%;
+}
+
+

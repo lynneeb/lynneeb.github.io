@@ -1,0 +1,277 @@
+// VARIABLES
+// $color-1: #78A83B; // green - rgb(120, 168, 59)
+// $color-2: #DC9A76; // peach - rgb(220, 154, 118)
+// $color-3: #E6D5BE; // light gray - rgb(230, 213, 190)
+// $color-4: #302A26; // dark gray - rgb(48, 42, 38)
+// $color-5: #C4EC76; // light green - rgb(196, 236, 118)
+// $color-6: #ffffff; // white
+// $color-7: #000000; // black
+// $text-upper: UPPERCASE;
+// $font-body: 'Gothic A1', sans-serif;
+// $font-headers: 'Uncial Antiqua', cursive;
+
+.main {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+    margin: 1rem;
+}
+.main {
+    background-color: $color-2;
+    padding: 1rem;
+}
+
+// Explanation
+#zen-explanation {
+    background: url(../images/man-sitting-on-concrete-block-w800-h533-lowres.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+}
+#zen-explanation > h3 {
+    color: $color-6;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: left;
+    text-shadow: 5px 5px 5px $color-7;
+    border-bottom: 2px solid $color-6;
+}
+#zen-explanation > p {
+    color: $color-7;
+    font-weight: 900;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: $color-6;
+    opacity: .8;
+    margin: 0;
+} 
+
+// Participation
+#zen-participation {
+    background: url(../images/purple-daisy-w800-h600-lowres.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+
+}
+#zen-participation > h3 {
+    color: $color-6;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: left;
+    text-shadow: 5px 5px 5px $color-7;
+    border-bottom: 2px solid $color-6;
+}
+#zen-participation > p {
+    color: $color-7;
+    font-weight: 900;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: $color-6;
+    opacity: .8;
+    margin: 0;
+}
+
+// benefits
+#zen-benefits {
+    background: url(../images/steffi-pereira-DsDaET_OlCw-unsplash-w800-h533-lowres.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+
+}
+#zen-benefits > h3 {
+    color: $color-6;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: left;
+    text-shadow: 5px 5px 5px $color-7;
+    border-bottom: 2px solid $color-6;
+}
+#zen-benefits > p {
+    color: $color-7;
+    font-weight: 900;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: $color-6;
+    opacity: .8;
+    margin: 0;
+}
+
+// Requirements
+#zen-requirements {
+    background: url(../images/keytion-rNoHD6BoQbo-unsplash-w800-h800-lowres.png);
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+
+}
+#zen-requirements > h3 {
+    color: $color-6;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: left;
+    text-shadow: 5px 5px 5px $color-7;
+    border-bottom: 2px solid $color-6;
+}
+#zen-requirements > p {
+    color: $color-7;
+    font-weight: 900;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: $color-6;
+    opacity: .8;
+    margin: 0;
+}
+#zen-requirements > p:nth-last-child(1) {
+margin-bottom: 24rem;
+}
+
+// Footer
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(2rem, 60px));
+    gap: 4rem;
+    height: 300px;
+    justify-content: center;
+    background: url(../images/visnu-deva-WZBSRWPKBDw-unsplash-w800-h400-lowres-cropped.jpg);
+    background-position-y: center;
+    background-size: cover;
+    padding: 2rem;
+}
+footer > a {
+    color: $color-6;
+    text-align: center;
+    justify-content: center;
+    font-weight: 900;
+    background-color: $color-4;
+    opacity: .8;
+    height: 80px;
+    width: 80px;
+} 
+
+// CSS Shapes Animations
+// Shape 1 - Clip-path Circle *****************************
+footer > a:nth-child(1) {
+    clip-path: circle(75%);
+    transition: clip-path 1s;
+}
+footer > a:nth-child(1):hover {
+    color: $color-7;
+    clip-path: circle(25%);
+    background: orange;
+} 
+// Shape 2 - Triangle ********************************
+footer > a:nth-child(2):hover {
+    background-color: transparent;
+    color: $color-7;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid blue;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+// Shape 3 - Oval ******************************
+footer > a:nth-child(3):hover {
+    background-color: transparent;
+    color: $color-7;
+    width: 80px;
+    height: 40px;
+    background-color: green;
+    border-radius: 50px / 25px;
+    transition: 1s;
+    transform:  scale(1.6);
+    z-index: 2;
+    position: relative;
+    animation: pulse 1s ease infinite alternate; 
+}
+@keyframes pulse {
+    0%, 100% {
+        background-color: green;
+    }
+    25% {
+        background-color: blue;
+    }
+    50% {
+        background-color: yellow;
+    }
+    75% {
+        background-color: red;
+    }
+}
+// Shape 4 - Trapezoid ******************************
+footer > a:nth-child(4):hover {
+    background-color: transparent;
+    color: $color-7;
+    border-bottom: 66px solid purple;
+    border-left: 16.5px solid transparent;
+    border-right: 16.5px solid transparent;
+    height: 0;
+    width: 66px;
+    position: relative;
+    animation: movedown 2s infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes movedown {
+    0%   {left: 0px; top: 0px;}
+    50%  {left: 0px; top: 30px;}
+    100% {left: 0px; top: 0px;}
+}
+// Shape 5 - Circle *******************************
+footer > a:nth-child(5):hover {
+    color: $color-7;
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    border-radius: 100%;
+    animation: 
+      pulse 3s ease infinite alternate, 
+      nudge 3s linear infinite alternate;
+}
+@keyframes pulse {
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: blue;
+    }
+    50% {
+        background-color: purple;
+      }
+    75% {
+        background-color: yellow;
+      }
+    100% {
+        background-color: red;
+    }
+}
+@keyframes nudge {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(75px, 0);
+    }
+    50% {
+        transform: translate(150px, 0);
+    }
+    75% {
+        transform: translate(75px, 0);
+      }
+    100% {
+        transform: translate(0, 0);
+    }
+}  
